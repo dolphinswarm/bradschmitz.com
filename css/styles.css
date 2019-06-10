@@ -1,0 +1,158 @@
+/* ==== Color Library ==== */
+/* #000000 - Black */
+/* #D1D1D1 - Light Gray */
+/* #7F7F7F - Dark Gray */
+/* #F7941E - Main Orange */
+/* #FFB03D - Lighter Orange */
+
+/* ==== Fonts ==== */
+@font-face {
+    font-family: 'DepredationPixie';
+    src: url('../font/DepredationPixie.eot');
+    src: url('../font/DepredationPixie.eot?#iefix') format('embedded-opentype'),
+        url('../font/DepredationPixie.woff2') format('woff2'),
+        url('../font/DepredationPixie.woff') format('woff'),
+        url('../font/DepredationPixie.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==== General CSS ==== */
+body {
+	background-color: #D1D1D1;
+}
+
+header {
+	background-color: #F7941E;
+	margin: -8px -8px 0px -8px;
+	height: 150px;
+}
+
+footer {
+	background-color: #F7941E;	
+}
+
+/* ==== ID's ==== */
+#logo {
+
+	width: 200px;
+	display: block;
+	margin: 5px auto;
+}
+
+/* ==== Classes ==== */
+.headertabgroup {
+	float: right;
+	width: 50%;
+}
+
+.headertab {
+	float: left; 
+	display: block;
+	width: 33.3%;
+	text-align: center;
+	height: 150px;
+	text-decoration: none;
+	font-family: 'DepredationPixie';
+	color: #000000;
+	font-size: 1.9vw;
+	position: relative;
+/*	border-left: 0.1vw solid #000000;*/
+}
+
+.headertab img {
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+ 	transition: transform .25s ease-in-out;
+	width: 7vw;
+	display: block;
+	margin: 20px auto;
+	max-width: 95px;
+	min-width: 75px;
+}
+
+.headertab h2 {
+	display: block;
+	margin: 10px auto;
+  	position: absolute;
+    bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.headertab:hover {
+	background-color: #FFB03D;
+}
+
+.headertab:hover img {
+	-webkit-transform: rotate(30deg);
+ 	transition-transform: rotate(30deg);
+}
+
+.logoblock {
+	float: left;
+	display: block;
+	text-align: center;
+	font-family: 'DepredationPixie';
+	color: #000000;
+	background-color: #F7941E;
+	margin: 0px 45px 0px 30px;
+}
+
+.logoblock h1 {
+	margin: -5px;
+}
+
+/* ==== Media Queries ==== */
+/* */
+@media screen and (min-width: 1200px) {
+	.headertab {
+		font-size: 25px;
+	}
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+	
+	/* ==== Classes ==== */
+	.logoblock {
+		float: none;
+		margin: 0px auto;
+	}
+	
+	.headertabgroup {
+		float: none;
+		margin: 15px auto;
+		width: 100%;
+	}	
+
+	.headertab {
+		height: 70px;
+		line-height: 70px;
+		font-size: 2vw;
+		background-color: #D1D1D1;
+		width: 24.7%;
+		border-left: 0.4vw solid #000000;
+	}
+	
+	.headertab img {
+		display: inline-block;
+		margin: 0px;
+		vertical-align: middle;
+		min-width: 45px;
+	}
+	
+	.headertab h2 {
+		display: inline-block;
+		position: relative;
+		margin: 0px;
+		vertical-align: middle;
+	}
+	
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 414px) {
+	.headertabgroup {
+		display: none;
+	}
+}
