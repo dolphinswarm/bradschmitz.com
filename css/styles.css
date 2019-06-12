@@ -1,7 +1,9 @@
 /* ==== Color Library ==== */
 /* #000000 - Black */
-/* #D1D1D1 - Light Gray */
+/* #D1D1D1 - Lighter Gray */
+/* #A0A0A0 - Light Gray */
 /* #7F7F7F - Dark Gray */
+/* #23272A - Darker Gray */
 /* #F7941E - Main Orange */
 /* #FFB03D - Lighter Orange */
 
@@ -19,13 +21,17 @@
 
 /* ==== General CSS ==== */
 body {
-	background-color: #D1D1D1;
+	background-color: #23272A;
 }
 
 header {
 	background-color: #F7941E;
 	margin: -8px -8px 0px -8px;
-	height: 150px;
+	height: 195px;
+}
+
+header a {
+	text-decoration: none;
 }
 
 footer {
@@ -33,50 +39,75 @@ footer {
 }
 
 /* ==== ID's ==== */
-#logo {
-
-	width: 200px;
+#logoblock {
 	display: block;
-	margin: 5px auto;
+	text-align: left;
+	font-family: 'DepredationPixie';
+	color: #000000;
+	margin-left: 10px;
+	height: 130px;
+}
+
+#logoblock img {
+	width: 170px;
+	display: block;
+	margin: 5px 0px -20px 25px;
+}
+
+#logoblock h1 {
+	font-size: 35px;
+	margin-bottom: 5px;
+}
+
+#navblock {
+	display: block ;
+	text-align: center;
+	width: 100%;
+	background-color: #B0B0B0;
+	height: 61px;
+	border-top: 2px solid #D1D1D1;
+	border-bottom: 2px solid #D1D1D1;
+}
+
+#noleftborder {
+	margin-left: 0px;
+}
+
+#norightborder {
+	margin-right: 0px;
 }
 
 /* ==== Classes ==== */
-.headertabgroup {
-	float: right;
-	width: 50%;
-}
-
 .headertab {
-	float: left; 
-	display: block;
-	width: 33.3%;
+	display: inline-block;
+	height: 61px;
+	line-height: 61px;
+	width: 19.75%;
 	text-align: center;
-	height: 150px;
-	text-decoration: none;
 	font-family: 'DepredationPixie';
 	color: #000000;
 	font-size: 1.9vw;
-	position: relative;
 /*	border-left: 0.1vw solid #000000;*/
 }
 
 .headertab img {
 	-webkit-transition: -webkit-transform .25s ease-in-out;
  	transition: transform .25s ease-in-out;
-	width: 7vw;
-	display: block;
-	margin: 20px auto;
+	width: 66px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+/*
 	max-width: 95px;
 	min-width: 75px;
+*/
 }
 
 .headertab h2 {
-	display: block;
-	margin: 10px auto;
-  	position: absolute;
-    bottom: 0;
-	left: 0;
-	right: 0;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0px;
 }
 
 .headertab:hover {
@@ -86,20 +117,6 @@ footer {
 .headertab:hover img {
 	-webkit-transform: rotate(30deg);
  	transition-transform: rotate(30deg);
-}
-
-.logoblock {
-	float: left;
-	display: block;
-	text-align: center;
-	font-family: 'DepredationPixie';
-	color: #000000;
-	background-color: #F7941E;
-	margin: 0px 45px 0px 30px;
-}
-
-.logoblock h1 {
-	margin: -5px;
 }
 
 /* ==== Media Queries ==== */
