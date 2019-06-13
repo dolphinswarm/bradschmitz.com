@@ -69,6 +69,16 @@ footer {
 	border-bottom: 2px solid #D1D1D1;
 }
 
+#hamblock {
+	display: none;
+	text-align: center;
+	width: 100%;
+	background-color: #B0B0B0;
+	height: 61px;
+	border-top: 2px solid #D1D1D1;
+	border-bottom: 2px solid #D1D1D1;
+}
+
 #noleftborder {
 	margin-left: 0px;
 }
@@ -77,12 +87,18 @@ footer {
 	margin-right: 0px;
 }
 
+#active {
+	background-color: #7F7F7F;
+	color: #FFFFFF;
+	
+}
+
 /* ==== Classes ==== */
 .headertab {
 	display: inline-block;
 	height: 61px;
 	line-height: 61px;
-	width: 19.75%;
+	width: 19.5%;
 	text-align: center;
 	font-family: 'DepredationPixie';
 	color: #000000;
@@ -93,14 +109,12 @@ footer {
 .headertab img {
 	-webkit-transition: -webkit-transform .25s ease-in-out;
  	transition: transform .25s ease-in-out;
-	width: 66px;
+	width: 5vw;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	margin: 0px;
-/*
-	max-width: 95px;
-	min-width: 75px;
-*/
+	max-width: 66px;
+	min-width: 40px;
 }
 
 .headertab h2 {
@@ -120,10 +134,10 @@ footer {
 }
 
 /* ==== Media Queries ==== */
-/* */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 	.headertab {
 		font-size: 25px;
+		width: 19.75%;
 	}
 }
 
@@ -131,45 +145,41 @@ footer {
 @media screen and (max-width: 768px) {
 	
 	/* ==== Classes ==== */
-	.logoblock {
-		float: none;
-		margin: 0px auto;
-	}
-	
-	.headertabgroup {
-		float: none;
-		margin: 15px auto;
-		width: 100%;
-	}	
-
 	.headertab {
-		height: 70px;
-		line-height: 70px;
-		font-size: 2vw;
-		background-color: #D1D1D1;
-		width: 24.7%;
-		border-left: 0.4vw solid #000000;
+		font-size: 2.3vw;
+		width: 19.25%;
 	}
 	
 	.headertab img {
-		display: inline-block;
-		margin: 0px;
-		vertical-align: middle;
-		min-width: 45px;
+		display: none;
 	}
 	
 	.headertab h2 {
-		display: inline-block;
-		position: relative;
-		margin: 0px;
-		vertical-align: middle;
+
 	}
 	
 }
 
 /* Mobile Phones */
-@media screen and (max-width: 414px) {
-	.headertabgroup {
+@media screen and (max-width: 500px) {
+	
+	/* ==== ID's ==== */
+	#logoblock {
+		width: 100%;
+		margin: 0px auto;
+		text-align: center;
+	}
+	
+	#logoblock img {
+		margin: 5px auto -20px auto;
+	}
+	
+	#navblock {
 		display: none;
 	}
+	
+	#hamblock {
+		display: block;
+	}
+	
 }
