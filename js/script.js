@@ -13,6 +13,9 @@ $(document).ready(function(){
 		} else {
 			$("#sidenav").css("width", "0px");
 		}
+		
+		// Toggle animation for open / close
+		$("#bars").toggleClass("is-active");
 	})
 	
 	// =============================== On window resize...
