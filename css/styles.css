@@ -157,14 +157,14 @@ footer {
 
 /* ==== Classes ==== */
 .headertab {
-	display: inline-block;
+/*	display: inline-block;*/
 	height: 61px;
 	line-height: 61px;
-	width: 19.5%;
+/*	width: 19.5%;*/
 	text-align: center;
 	font-family: 'DepredationPixie';
 	color: #000000;
-	font-size: 1.9vw;
+/*	font-size: 1.9vw;*/
 /*	border-left: 0.1vw solid #000000;*/
 }
 
@@ -177,6 +177,7 @@ footer {
 	margin: 0px;
 	max-width: 66px;
 	min-width: 40px;
+	padding: -20px;
 }
 
 .headertab h2 {
@@ -195,16 +196,56 @@ footer {
  	transition-transform: rotate(30deg);
 }
 
+.headergroup {
+	display: inline-block;
+	width: 19.5%;
+	text-align: center;
+	font-family: 'DepredationPixie';
+	color: #000000;
+	font-size: 1.9vw;
+}
+
+.submenu {
+	position: absolute;
+	width: 19.5%;
+}
+
+.submenutab {
+	text-align: center;
+	width: 100%;
+	background-color: #B0B0B0;
+	color: #000000;
+    height: 0px;
+	overflow: hidden;
+    -webkit-transition: height 200ms ease-in;
+    -moz-transition: height 200ms ease-in;
+    -o-transition: height 200ms ease-in;
+	transition: height 200ms ease-in, outline 200ms ease-in;
+	outline: 0px solid #D1D1D1;
+}
+
+.headergroup:hover .submenutab {
+	height: 80px;
+	outline: 1px solid #D1D1D1;
+}
+
+/*
 .fa-bars {
 	color: #FFFFFF;
 	margin-top: 7px;
 }
+*/
 
 /* ==== Media Queries ==== */
 @media screen and (min-width: 1280px) {
+	/* ==== Classes ==== */
 	.headertab {
 		font-size: 25px;
-		width: 19.75%;
+/*		width: 19.75%;*/
+	}
+	
+	.headergroup {
+		width: 19.6%;
 	}
 }
 
@@ -214,7 +255,7 @@ footer {
 	/* ==== Classes ==== */
 	.headertab {
 		font-size: 2.3vw;
-		width: 19.25%;
+/*		width: 19.25%;*/
 	}
 	
 	.headertab img {
@@ -223,6 +264,10 @@ footer {
 	
 	.headertab h2 {
 
+	}
+	
+	.headergroup {
+		width: 19.25%;
 	}
 	
 }
