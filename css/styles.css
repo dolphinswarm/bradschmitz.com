@@ -213,7 +213,7 @@ footer {
 .submenutab {
 	text-align: center;
 	width: 100%;
-	background-color: #B0B0B0;
+	background-color: #FFFFFF;
 	color: #000000;
     height: 0px;
 	overflow: hidden;
@@ -224,8 +224,16 @@ footer {
 	outline: 0px solid #D1D1D1;
 }
 
+.submenutab h3 {
+	font-size: 26px;
+}
+
+.submenutab:hover{
+	background-color: #FFB03D;
+}
+
 .headergroup:hover .submenutab {
-	height: 80px;
+	height: 61px;
 	outline: 1px solid #D1D1D1;
 }
 
