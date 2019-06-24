@@ -187,14 +187,31 @@ footer {
 	margin: 0px;
 }
 
+/*
+.headertab i {
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+ 	transition: transform .25s ease-in-out;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+*/
+
 .headertab:hover {
 	background-color: #FFB03D;
 }
 
-.headertab:hover img {
+.headergroup:hover img {
 	-webkit-transform: rotate(30deg);
  	transition-transform: rotate(30deg);
 }
+
+/*
+.headergroup:hover i {
+	-webkit-transform: rotate(90deg);
+ 	transition-transform: rotate(90deg);
+}
+*/
 
 .headergroup {
 	display: inline-block;
@@ -213,19 +230,19 @@ footer {
 .submenutab {
 	text-align: center;
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: #DDDDDD;
 	color: #000000;
     height: 0px;
 	overflow: hidden;
-    -webkit-transition: height 200ms ease-in;
-    -moz-transition: height 200ms ease-in;
-    -o-transition: height 200ms ease-in;
-	transition: height 200ms ease-in, outline 200ms ease-in;
-	outline: 0px solid #D1D1D1;
+    -webkit-transition: height .25s ease-in;
+    -o-transition: height .25s ease-in;
+/*	transition: height .25s ease-in, outline .25s ease-in;*/
+	transition: height .25s ease-in;
+	outline: 1px solid #F7941E;
 }
 
 .submenutab h3 {
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .submenutab:hover{
@@ -234,7 +251,7 @@ footer {
 
 .headergroup:hover .submenutab {
 	height: 61px;
-	outline: 1px solid #D1D1D1;
+/*	outline: 1px solid #D1D1D1;*/
 }
 
 /*
@@ -255,6 +272,15 @@ footer {
 	.headergroup {
 		width: 19.6%;
 	}
+	
+	.submenu {
+		width: 19.6%;
+	}
+	
+	.submenutab h3 {
+		font-size: 30px;
+	}
+
 }
 
 /* Tablets */
@@ -276,6 +302,14 @@ footer {
 	
 	.headergroup {
 		width: 19.25%;
+	}
+	
+	.submenu {
+		width: 19.25%;
+	}
+	
+	.submenutab h3 {
+		font-size: 2.5vw;
 	}
 	
 }
