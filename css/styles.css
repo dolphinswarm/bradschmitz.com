@@ -46,7 +46,6 @@ footer {
 	display: block;
 	text-align: left;
 	font-family: 'DepredationPixie';
-	color: #000000;
 	margin-left: 2vw;
 	height: 130px;
 	width: 250px;
@@ -61,6 +60,7 @@ footer {
 #logoblock h1 {
 	font-size: 35px;
 	margin-bottom: 5px;
+	color: #000000;
 }
 
 #navblock {
