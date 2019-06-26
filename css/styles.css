@@ -20,7 +20,7 @@
     font-style: normal;
 }
 
-/* ==== General CSS ==== */
+/* ==== Tags ==== */
 body {
 	background-color: #F7941E;
 }
@@ -133,23 +133,23 @@ footer {
 	display: block;
 	margin-left: 20px;
 	font-family: 'DepredationPixie';
-	line-height: 30px;	
-  	text-decoration: none;
-  	font-size: 4vw;
-  	color: #F7941E;
-  	transition: 0.3s;
+	line-height: 30px;
+  text-decoration: none;
+  font-size: 4vw;
+  color: #F7941E;
+  transition: 0.3s;
 	width: 200px;
 }
 
 #sidenav a:hover {
   	color: #D1D1D1;
-	
+
 }
 
 #main {
 	margin: 0px -8px;
 	background-color: #23272A;
-	min-height: 100vh;
+	min-height: 62vh;
 }
 
 #greybar {
@@ -244,11 +244,11 @@ footer {
 	width: 100%;
 	background-color: #DDDDDD;
 	color: #000000;
-    height: 0px;
+  height: 0px;
 	overflow: hidden;
 	outline: 0px solid #D1D1D1;
-    -webkit-transition: height .25s ease-in;
-    -o-transition: height .25s ease-in;
+  -webkit-transition: height .25s ease-in;
+  -o-transition: height .25s ease-in;
 	transition: height .25s ease-in, outline .25s ease-in;
 /*	transition: height .25s ease-in;*/
 }
@@ -284,15 +284,15 @@ footer {
 		font-size: 25px;
 /*		width: 19.75%;*/
 	}
-	
+
 	.headergroup {
 		width: 19.6%;
 	}
-	
+
 	.submenu {
 		width: 19.6%;
 	}
-	
+
 	.submenutab h3 {
 		font-size: 30px;
 	}
@@ -301,55 +301,55 @@ footer {
 
 /* Tablets */
 @media screen and (max-width: 768px) {
-	
+
 	/* ==== Classes ==== */
 	.headertab {
 		font-size: 2.3vw;
 /*		width: 19.25%;*/
 	}
-	
+
 	.headertab img {
 		display: none;
 	}
-	
+
 	.headertab h2 {
 
 	}
-	
+
 	.headergroup {
 		width: 19.25%;
 	}
-	
+
 	.submenu {
 		width: 19.25%;
 	}
-	
+
 	.submenutab h3 {
 		font-size: 2.5vw;
 	}
-	
+
 }
 
 /* Mobile Phones */
 @media screen and (max-width: 500px) {
-	
+
 	/* ==== ID's ==== */
 	#logoblock {
 		width: 100%;
 		margin: 0px auto;
 		text-align: center;
 	}
-	
+
 	#logoblock img {
 		margin: 5px auto -20px auto;
 	}
-	
+
 	#navblock {
 		display: none;
 	}
-	
+
 	#hamblock {
 		display: block;
 	}
-	
+
 }
