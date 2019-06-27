@@ -44,12 +44,18 @@ header a {
 footer {
 	background-color: #F7941E;
 	margin: 0px -8px 0px -8px;
-	height: 120px;
+	height: 110px;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 footer h3 {
+  display: inline-block;
   margin-left: 2vw;
 	font-family: 'DepredationPixie';
+  color: #000000;
 }
 
 /* ==== ID's ==== */
@@ -154,7 +160,7 @@ footer h3 {
 #main {
 	margin: 0px -8px;
 	background-color: #23272A;
-	min-height: 65vh;
+	min-height: 66vh;
 }
 
 #greybar {
@@ -162,7 +168,7 @@ footer h3 {
 	text-align: center;
 	width: 100%;
 	background-color: #B0B0B0;
-	height: 30px;
+	height: 25px;
 	border-top: 2px solid #D1D1D1;
 	border-bottom: 2px solid #D1D1D1;
 }
