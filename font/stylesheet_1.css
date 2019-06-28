@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Free Pixel';
+    src: url('FreePixel-Regular.eot');
+    src: url('FreePixel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreePixel-Regular.woff2') format('woff2'),
+        url('FreePixel-Regular.woff') format('woff'),
+        url('FreePixel-Regular.ttf') format('truetype'),
+        url('FreePixel-Regular.svg#FreePixel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pixelmix';
+    src: url('pixelmix.eot');
+    src: url('pixelmix.eot?#iefix') format('embedded-opentype'),
+        url('pixelmix.woff2') format('woff2'),
+        url('pixelmix.woff') format('woff'),
+        url('pixelmix.ttf') format('truetype'),
+        url('pixelmix.svg#pixelmix') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

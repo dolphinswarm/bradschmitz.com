@@ -20,6 +20,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Free Pixel';
+    src: url('../font/FreePixel-Regular.eot');
+    src: url('../font/FreePixel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/FreePixel-Regular.woff2') format('woff2'),
+        url('../font/FreePixel-Regular.woff') format('woff'),
+        url('../font/FreePixel-Regular.ttf') format('truetype'),
+        url('../font/FreePixel-Regular.svg#FreePixel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pixelmix';
+    src: url('../font/pixelmix.eot');
+    src: url('../font/pixelmix.eot?#iefix') format('embedded-opentype'),
+        url('../font/pixelmix.woff2') format('woff2'),
+        url('../font/pixelmix.woff') format('woff'),
+        url('../font/pixelmix.ttf') format('truetype'),
+        url('../font/pixelmix.svg#pixelmix') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ==== Tags ==== */
 body {
 	background-color: #F7941E;
@@ -54,7 +78,7 @@ footer a {
 footer h3 {
   display: inline-block;
   margin-left: 2vw;
-	font-family: 'DepredationPixie';
+	font-family: 'pixelmix';
   color: #000000;
 }
 
