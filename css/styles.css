@@ -146,7 +146,7 @@ footer h3 {
 }
 
 #active {
-	background-color: #7F7F7F;
+	background-color: #FFB03D;
 	color: #FFFFFF;
 }
 
@@ -185,6 +185,19 @@ footer h3 {
 	margin: 0px -8px;
 	background-color: #23272A;
 	min-height: 66vh;
+  text-align: center;
+  font-family: 'pixelmix';
+  color: #FFFFFF;
+}
+
+#main h1 {
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 70px;
+}
+
+#main embed {
+  padding-top: 10px;
 }
 
 #greybar {
