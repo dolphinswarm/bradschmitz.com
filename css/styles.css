@@ -10,62 +10,62 @@
 
 /* ==== Fonts ==== */
 @font-face {
-    font-family: 'DepredationPixie';
-    src: url('../font/DepredationPixie.eot');
-    src: url('../font/DepredationPixie.eot?#iefix') format('embedded-opentype'),
-        url('../font/DepredationPixie.woff2') format('woff2'),
-        url('../font/DepredationPixie.woff') format('woff'),
-        url('../font/DepredationPixie.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'DepredationPixie';
+  src: url('../font/DepredationPixie.eot');
+  src: url('../font/DepredationPixie.eot?#iefix') format('embedded-opentype'),
+       url('../font/DepredationPixie.woff2') format('woff2'),
+       url('../font/DepredationPixie.woff') format('woff'),
+       url('../font/DepredationPixie.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Free Pixel';
-    src: url('../font/FreePixel-Regular.eot');
-    src: url('../font/FreePixel-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/FreePixel-Regular.woff2') format('woff2'),
-        url('../font/FreePixel-Regular.woff') format('woff'),
-        url('../font/FreePixel-Regular.ttf') format('truetype'),
-        url('../font/FreePixel-Regular.svg#FreePixel-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Free Pixel';
+  src: url('../font/FreePixel-Regular.eot');
+  src: url('../font/FreePixel-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../font/FreePixel-Regular.woff2') format('woff2'),
+       url('../font/FreePixel-Regular.woff') format('woff'),
+       url('../font/FreePixel-Regular.ttf') format('truetype'),
+       url('../font/FreePixel-Regular.svg#FreePixel-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'pixelmix';
-    src: url('../font/pixelmix.eot');
-    src: url('../font/pixelmix.eot?#iefix') format('embedded-opentype'),
-        url('../font/pixelmix.woff2') format('woff2'),
-        url('../font/pixelmix.woff') format('woff'),
-        url('../font/pixelmix.ttf') format('truetype'),
-        url('../font/pixelmix.svg#pixelmix') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'pixelmix';
+  src: url('../font/pixelmix.eot');
+  src: url('../font/pixelmix.eot?#iefix') format('embedded-opentype'),
+       url('../font/pixelmix.woff2') format('woff2'),
+       url('../font/pixelmix.woff') format('woff'),
+       url('../font/pixelmix.ttf') format('truetype'),
+       url('../font/pixelmix.svg#pixelmix') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Century Gothic';
-    src: url('../font/CenturyGothic-Bold.eot');
-    src: url('../font/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/CenturyGothic-Bold.woff2') format('woff2'),
-        url('../font/CenturyGothic-Bold.woff') format('woff'),
-        url('../font/CenturyGothic-Bold.ttf') format('truetype'),
-        url('../font/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic-Bold.eot');
+  src: url('../font/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../font/CenturyGothic-Bold.woff2') format('woff2'),
+       url('../font/CenturyGothic-Bold.woff') format('woff'),
+       url('../font/CenturyGothic-Bold.ttf') format('truetype'),
+       url('../font/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Century Gothic';
-    src: url('../font/CenturyGothic.eot');
-    src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic.eot');
+  src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
         url('../font/CenturyGothic.woff2') format('woff2'),
         url('../font/CenturyGothic.woff') format('woff'),
         url('../font/CenturyGothic.ttf') format('truetype'),
         url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ==== Tags ==== */
@@ -174,7 +174,7 @@ footer h3 {
 	color: #FFFFFF;
 }
 
-#sidenav {
+/* #sidenav {
 	height: 100%;
   width: 0;
   position: fixed;
@@ -185,8 +185,8 @@ footer h3 {
   transition: 0.5s;
   padding-top: 5px;
   background-color: #7F7F7F;
-/*	border-right: 2px solid #D1D1D1;*/
-}
+//border-right: 2px solid #D1D1D1;
+} */
 
 /* #sidenav a {
 	display: block;
@@ -210,9 +210,9 @@ footer h3 {
 	padding-bottom: 10px;
 	background-color: #23272A;
 	min-height: 66vh;
-  	text-align: center;
-  	font-family: 'Century Gothic';
-  	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Century Gothic';
+	color: #FFFFFF;
 }
 
 #title {
@@ -317,7 +317,7 @@ footer h3 {
 }
 
 .submenutab {
-	text-align: center;
+  text-align: center;
 	width: 100%;
 	background-color: #DDDDDD;
 	color: #000000;
@@ -355,22 +355,22 @@ footer h3 {
 */
 
 .sidenavgroup {
-  	min-width: 250px;
-  	width: 100%;
-  	border-bottom: 2px solid #D1D1D1;
-  	background-color: #B0B0B0;
+  min-width: 250px;
+  width: 100%;
+  border-bottom: 2px solid #D1D1D1;
+  background-color: #B0B0B0;
 }
 
 .sidenavgroup h2 {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-  	margin-left: 5px;
+  margin-left: 5px;
 	font-family: 'DepredationPixie';
-  	line-height: 30px;
-  	font-size: 30px;
-  	text-decoration: none;
-  	width: 130px;
+  line-height: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  width: 130px;
 }
 
 .sidenavgroup i {
@@ -428,10 +428,10 @@ footer h3 {
 
 .fancyheader h2 {
   margin: 0px;
-    font-family: 'DepredationPixie';
-    font-size: 30px;
-    display: inline-block;
-    vertical-align: middle;
+  font-family: 'DepredationPixie';
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .fancyheader img {
@@ -440,6 +440,24 @@ footer h3 {
   width: 50px;
   padding-left: 1vw;
   vertical-align: middle;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5px;
+  background-color: #7F7F7F;
+}
+
+.side-open {
+  width: 60%;
+  border-right: 2px solid #D1D1D1;
 }
 
 /* ==== Media Queries ==== */
@@ -529,6 +547,11 @@ footer h3 {
   .submenutab h3 {
     font-family: 'DepredationPixie';
   	font-size: 26px;
+  }
+
+  .fancyheader h2 {
+    font-family: 'DepredationPixie';
+    font-size: 25px;
   }
 
 }

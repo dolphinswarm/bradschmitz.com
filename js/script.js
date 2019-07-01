@@ -7,19 +7,9 @@ $(document).ready(function(){
 
 	// =============================== Toggle menu on hamburger click
 	$("#bars").on("click", function(){
-
-		// Get sidenav width
-		var width = $("#sidenav").css("width");
-
-		// If sidenav is 0, open; else, close
-		if (width == "0px") {
-			$("#sidenav").css({"width": "60%", "border-right": "2px solid #D1D1D1"});
-		} else {
-			$("#sidenav").css({"width": "0px", "border-right": "0px solid #D1D1D1"});
-		}
-
 		// Toggle animation for open / close
 		$("#bars").toggleClass("is-active");
+		$("#sidenav").toggleClass("side-open");
 	})
 
 	// =============================== On window resize...
