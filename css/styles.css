@@ -460,6 +460,17 @@ footer h3 {
   border-right: 2px solid #D1D1D1;
 }
 
+.contentgroup p {
+  text-align: left;
+  width: 80%;
+  margin: 10px auto 20px auto;
+  line-height: 28px;
+}
+
+.contentgroup p b {
+  color:  #F7941E;
+}
+
 /* ==== Media Queries ==== */
 @media screen and (min-width: 1280px) {
 	/* ==== Classes ==== */
