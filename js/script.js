@@ -40,7 +40,7 @@ $(document).ready(function(){
 		// }
 	})
 
-	// =============================== Main tab open / close on click
+	// =============================== Main tab open / close on click (MAY NEED OPTIMIZATION?)
 	$(".headergroup").on("click", function() {
 
 		// Get previous and current tabs
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 	})
 
-	// =============================== Side tab open / close on click
+	// =============================== Side tab open / close on click (MAY NEED OPTIMIZATION?)
 	$(".sidenavgroup").on("click", function() {
 
 		// Get previous and current tabs
@@ -113,6 +113,19 @@ $(document).ready(function(){
 		// alert("PreviousTab: " + previousTab + ", CurrentTab: " + currentTab);
 
 	})
+
+	// =============================== Autopause audio / video if another starts playing
+	$("audio").on("play", function() {
+	    $("audio").not(this).each(function(index, audio) {
+	        audio.pause();
+	    });
+	});
+
+	$("video").on("play", function() {
+	    $("video").not(this).each(function(index, video) {
+	        video.pause();
+	    });
+	});
 
 
 });
