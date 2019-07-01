@@ -486,7 +486,7 @@ footer h3 {
 @media screen and (max-width: 768px) {
 
 	/* ==== IDs ====*/
-	#main h1 {
+	#title {
 		font-size: 50px;
 	}
 
@@ -540,7 +540,7 @@ footer h3 {
 		display: block;
 	}
 
-	#main h1 {
+	#title {
 		font-size: 40px;
 	}
 
