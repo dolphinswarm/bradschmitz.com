@@ -399,7 +399,8 @@ footer h3 {
 }
 
 .contentgroup h3 {
-
+  margin: 0px 0px 10px 0px;
+  font-size: 30px;
 }
 
 .contentgroup embed {
@@ -566,7 +567,11 @@ footer h3 {
 
   	.fancyheader h2 {
     	font-family: 'DepredationPixie';
-    	font-size: 25px;
+    	font-size: 24px;
   	}
+
+    .contentgroup h3 {
+      font-size: 22px;
+    }
 
 }
