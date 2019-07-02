@@ -96,14 +96,14 @@ footer {
 }
 
 footer a {
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 footer h3 {
-  display: inline-block;
-  margin-left: 2vw;
+  	display: inline-block;
+  	margin-left: 2vw;
 	font-family: 'pixelmix';
-  color: #000000;
+  	color: #000000;
 }
 
 /* ==== ID's ==== */
@@ -317,15 +317,15 @@ footer h3 {
 }
 
 .submenutab {
-  text-align: center;
+  	text-align: center;
 	width: 100%;
 	background-color: #DDDDDD;
 	color: #000000;
-  height: 0px;
+  	height: 0px;
 	overflow: hidden;
 	outline: 0px solid #D1D1D1;
-  -webkit-transition: height .25s ease-in;
-  -o-transition: height .25s ease-in;
+  	-webkit-transition: height .25s ease-in;
+  	-o-transition: height .25s ease-in;
 	transition: height .25s ease-in, outline .25s ease-in;
 /*	transition: height .25s ease-in;*/
 }
@@ -355,40 +355,40 @@ footer h3 {
 */
 
 .sidenavgroup {
-  min-width: 250px;
-  width: 100%;
-  border-bottom: 2px solid #D1D1D1;
-  background-color: #B0B0B0;
+  	min-width: 250px;
+  	width: 100%;
+  	border-bottom: 2px solid #D1D1D1;
+  	background-color: #B0B0B0;
 }
 
 .sidenavgroup h2 {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-  margin-left: 5px;
+  	margin-left: 5px;
 	font-family: 'DepredationPixie';
-  line-height: 30px;
-  font-size: 30px;
-  text-decoration: none;
-  width: 130px;
+  	line-height: 30px;
+  	font-size: 30px;
+  	text-decoration: none;
+  	width: 130px;
 }
 
 .sidenavgroup i {
 	display: inline-block;
-  float: right;
-  margin-top: 30px;
-  margin-right: 20px;
-  vertical-align: middle;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
+  	float: right;
+  	margin-top: 30px;
+  	margin-right: 20px;
+  	vertical-align: middle;
+  	-webkit-transition: -webkit-transform .25s ease-in-out;
+  	transition: transform .25s ease-in-out;
 }
 
 .sidenavgroup img {
 	display: inline-block;
-  width: 50px;
-  margin-top: 14px;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
+	width: 50px;
+  	margin-top: 14px;
+  	-webkit-transition: -webkit-transform .25s ease-in-out;
+  	transition: transform .25s ease-in-out;
 }
 
 .contentgroup {
@@ -415,60 +415,64 @@ footer h3 {
 }
 
 .fancyheader {
-  width: 100%;
-  background-color: #F7941E;
-  border: 2px solid #D1D1D1;
-  color: #000000;
-  text-align: left;
-  margin:  10px 0px;
-  height: 50px;
-  line-height: 50px;
-  padding: 5px;
+  	width: 100%;
+  	background-color: #F7941E;
+  	border: 2px solid #D1D1D1;
+  	color: #000000;
+  	text-align: left;
+  	margin:  10px 0px;
+  	height: 50px;
+  	line-height: 50px;
+  	padding: 5px;
 }
 
 .fancyheader h2 {
-  margin: 0px;
-  font-family: 'DepredationPixie';
-  font-size: 30px;
-  display: inline-block;
-  vertical-align: middle;
+  	margin: 0px;
+  	font-family: 'DepredationPixie';
+  	font-size: 30px;
+  	display: inline-block;
+  	vertical-align: middle;
 }
 
 .fancyheader img {
-  margin: 0px;
-  display: inline-block;
-  width: 50px;
-  padding-left: 1vw;
-  vertical-align: middle;
+  	margin: 0px;
+  	display: inline-block;
+  	width: 50px;
+  	padding-left: 1vw;
+  	vertical-align: middle;
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 5px;
-  background-color: #7F7F7F;
+  	height: 100%;
+  	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 5px;
+  	background-color: #7F7F7F;
 }
 
 .side-open {
-  width: 60%;
-  border-right: 2px solid #D1D1D1;
+  	width: 60%;
+  	border-right: 2px solid #D1D1D1;
 }
 
 .contentgroup p {
-  text-align: left;
-  width: 80%;
-  margin: 10px auto 20px auto;
-  line-height: 28px;
+  	text-align: left;
+  	width: 80%;
+  	margin: 10px auto 20px auto;
+  	line-height: 28px;
 }
 
 .contentgroup p b {
-  color:  #F7941E;
+  	color:  #F7941E;
+}
+
+.contentgroup .centered {
+	text-align: center;
 }
 
 /* ==== Media Queries ==== */
@@ -555,14 +559,14 @@ footer h3 {
 		font-size: 40px;
 	}
 
-  .submenutab h3 {
-    font-family: 'DepredationPixie';
-  	font-size: 26px;
-  }
+  	.submenutab h3 {
+  		font-family: 'DepredationPixie';
+  		font-size: 26px;
+  	}
 
-  .fancyheader h2 {
-    font-family: 'DepredationPixie';
-    font-size: 25px;
-  }
+  	.fancyheader h2 {
+    	font-family: 'DepredationPixie';
+    	font-size: 25px;
+  	}
 
 }
