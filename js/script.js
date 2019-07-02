@@ -17,7 +17,13 @@ $(document).ready(function(){
 
 		// If window is greater than 500px, collapse sidenav
 		if ($(window).width() > 500) {
-			$("#sidenav").css({"width": "0px", "border-right": "0px solid #D1D1D1"});
+			if ($("#bars").hasClass("is-active")) {
+				$("#bars").removeClass("is-active");
+			}
+			if ($("#sidenav").hasClass("side-open")) {
+				$("#sidenav").removeClass("side-open");
+			}
+
 		}
 
 		// If window is less than or equal to 500px, collapse menus - UNNECESSARY FUNCITONALITY PROBABLY, WANT PEOPLE TO BE ABLE TO "SAVE" THEIR TABS
