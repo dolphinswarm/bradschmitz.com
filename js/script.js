@@ -16,7 +16,7 @@ $(document).ready(function(){
 	$(window).on("resize", function() {
 
 		// If window is greater than 500px, collapse sidenav
-		if ($(window).width() > 500) {
+		if ($(window).width() > 500 - 18) {
 			if ($("#bars").hasClass("is-active")) {
 				$("#bars").removeClass("is-active");
 			}
