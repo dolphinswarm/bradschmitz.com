@@ -476,6 +476,28 @@ footer h3 {
 	text-align: center;
 }
 
+.contentgroup .viewbutton {
+  background-color: #F7941E;
+  border: 2px solid #D1D1D1;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+  height: 50px;
+  font-size: 22px;
+  font-family: 'DepredationPixie';
+  text-decoration: none;
+}
+
+.contentgroup .viewbutton:hover {
+	background-color: #FFB03D;
+}
+
+.hide {
+  display: none;
+}
+
 /* ==== Media Queries ==== */
 @media screen and (min-width: 1280px) {
 	/* ==== Classes ==== */

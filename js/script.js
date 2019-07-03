@@ -123,5 +123,22 @@ $(document).ready(function(){
 	    });
 	});
 
+	// =============================== Score view button handling
+	$(".viewbutton").on("click", function() {
+		if ($(this).text() == "View Score") {
+			$(this).text("Close Score");
+		} else {
+			$(this).text("View Score");
+		}
+
+		if ($("#landwardhoviewbutton")) {
+			$("#landwardhoview").toggleClass("hide");
+		}
+
+		if ($("#devoidviewbutton")) {
+			$("#devoidview").toggleClass("hide");
+		}
+	});
+
 
 });
