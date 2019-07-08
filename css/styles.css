@@ -498,6 +498,25 @@ footer h3 {
   display: none;
 }
 
+.contentgroup ul {
+	text-align: left;
+	width: 78%;
+	margin: 0px auto;
+	list-style: none;
+	color: #F7941E;
+}
+
+.contentgroup ul li {
+	padding: 2px;
+}
+
+.contentgroup ul li:before {
+	content: "\2022";
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-left: -20px;
+	margin-right: 10px;
+}
 /* ==== Media Queries ==== */
 @media screen and (min-width: 1280px) {
 	/* ==== Classes ==== */
