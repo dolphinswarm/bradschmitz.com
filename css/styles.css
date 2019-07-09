@@ -354,40 +354,40 @@ footer h3 {
 }
 
 .sidenavgroup {
-  min-width: 250px;
-  width: 100%;
-  border-bottom: 2px solid #D1D1D1;
-  background-color: #B0B0B0;
+	min-width: 250px;
+	width: 100%;
+	border-bottom: 2px solid #D1D1D1;
+	background-color: #B0B0B0;
 }
 
 .sidenavgroup h2 {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-  margin-left: 5px;
+	margin-left: 5px;
 	font-family: 'DepredationPixie';
-  line-height: 30px;
-  font-size: 30px;
-  text-decoration: none;
-  width: 130px;
+	line-height: 30px;
+	font-size: 30px;
+	text-decoration: none;
+	width: 130px;
 }
 
 .sidenavgroup i {
 	display: inline-block;
-  float: right;
-  margin-top: 30px;
-  margin-right: 20px;
-  vertical-align: middle;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+	vertical-align: middle;
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+	transition: transform .25s ease-in-out;
 }
 
 .sidenavgroup img {
 	display: inline-block;
 	width: 50px;
-  margin-top: 14px;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
+	margin-top: 14px;
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+	transition: transform .25s ease-in-out;
 }
 
 /* ====== Content Group, Subcontent Group, and Fancy Header */
@@ -396,12 +396,12 @@ footer h3 {
 	text-align: center;
 	margin: 0px auto;
 	padding-bottom: 10px;
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 .contentgroup h3 {
-  margin: 0px 0px 10px 0px;
-  font-size: 30px;
+	margin: 0px 0px 10px 0px;
+	font-size: 30px;
 }
 
 .contentgroup embed {
@@ -416,9 +416,10 @@ footer h3 {
 	text-decoration: none;
 }
 
-.contentgroup img {
-  max-width: 100%;
-  border: 2px solid #D1D1D1;
+.contentgroup > img, .subcontentgroup-onethird img, .subcontentgroup-twothirds img {
+	max-width: 100%;
+	width: 100%;
+	border: 2px solid #D1D1D1;
 }
 
 .contentgroup p {
@@ -437,18 +438,23 @@ footer h3 {
 	text-align: center;
 }
 
+.contentgroup .leftalign {
+	text-align: left;
+	margin-left: 3vw;
+}
+
 .contentgroup .viewbutton {
-  background-color: #F7941E;
-  border: 2px solid #D1D1D1;
-  color: #000000;
-  text-align: center;
-  display: block;
-  margin: 10px auto;
-  width: 150px;
-  height: 50px;
-  font-size: 22px;
-  font-family: 'DepredationPixie';
-  text-decoration: none;
+	background-color: #F7941E;
+	border: 2px solid #D1D1D1;
+	color: #000000;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	width: 150px;
+	height: 50px;
+	font-size: 22px;
+	font-family: 'DepredationPixie';
+	text-decoration: none;
 }
 
 .contentgroup .viewbutton:hover {
@@ -465,7 +471,7 @@ footer h3 {
 
 .contentgroup ul li {
 	padding: 2px;
-  font-size: 19px;
+	font-size: 19px;
 }
 
 .contentgroup ul li:before {
@@ -477,15 +483,15 @@ footer h3 {
 }
 
 .subcontentgroup-onethird {
-  vertical-align: middle;
-  width: 30%;
-  display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+	display: inline-block;
 }
 
 .subcontentgroup-twothirds {
-  vertical-align: middle;
-  width: 60%;
-  display: inline-block;
+	vertical-align: middle;
+	width: 60%;
+	display: inline-block;
 }
 
 .fancyheader {
@@ -514,7 +520,6 @@ footer h3 {
   	width: 50px;
   	padding-left: 1vw;
   	vertical-align: middle;
-    border: none;
 }
 
 /* ====== JavaScript Classes */
@@ -537,7 +542,6 @@ footer h3 {
   display: none;
 }
 
-
 /* ============ Media Queries ============ */
 @media screen and (min-width: 1280px) {
 	/* ==== Classes ==== */
@@ -556,6 +560,12 @@ footer h3 {
 
 	.submenutab h3 {
 		font-size: 30px;
+	}
+	
+	.contentgroup > img, .subcontentgroup-onethird img, .subcontentgroup-twothirds img {
+		max-width: 350px;
+		width: 350px;
+		border: 2px solid #D1D1D1;
 	}
 
 }
@@ -593,6 +603,17 @@ footer h3 {
 	.submenutab h3 {
 		font-size: 2.5vw;
 	}
+	
+	.subcontentgroup-onethird, .subcontentgroup-twothirds {
+		width: 100%;
+		display: block;
+	}
+	
+	.contentgroup > img, .subcontentgroup-onethird img, .subcontentgroup-twothirds img {
+		max-width: 80%;
+		width: 80%;
+		border: 2px solid #D1D1D1;
+	}
 
 }
 
@@ -629,11 +650,15 @@ footer h3 {
 
   	.fancyheader h2 {
     	font-family: 'DepredationPixie';
-    	font-size: 24px;
+    	font-size: 6vw;
   	}
 
     .contentgroup h3 {
-      font-size: 22px;
+      font-size: 6vw;
+    }
+	
+	.contentgroup p {
+      font-size: 17px;
     }
 
     .fancyheader {
