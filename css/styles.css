@@ -486,25 +486,39 @@ footer h3 {
 	margin-right: 10px;
 }
 
+.contentgroup .socialmedialogo {
+	width: 75px;
+	border: none;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+.contentgroup .socialmedianame {
+	font-size: 30px;
+	font-weight: bold;
+}
+
 .subcontentgroup-onethird {
 	vertical-align: middle;
 	width: 30%;
 	display: inline-block;
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .subcontentgroup-twothirds {
 	vertical-align: middle;
 	width: 60%;
 	display: inline-block;
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .subcontentgroup-half {
 	vertical-align: top;
 	width: 45%;
 	display: inline-block;
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .fancyheader {
@@ -695,5 +709,10 @@ footer h3 {
     audio {
       width: 90%;
     }
+	
+	.contentgroup .socialmedianame {
+		font-size: 20px;
+		font-weight: bold;
+	}
 
 }
