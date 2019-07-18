@@ -141,22 +141,22 @@ $(document).ready(function(){
 	});
 
 	// =============================== handle form submission
-	$("#contactform").on("submit", function(event) {
-		event.preventDefault();
-
-		var formData = {};
-		formData.email = $("#email").val();
-		formData.fname = $("#fname").val();
-		formData.lname = $("#lname").val();
-		formData.subject = $("#subject").val();
-		formData.content = $("#content").val();
-
-		$.ajax({
-			type: "POST",
-			url: "php/mail.php",
-			contentType: "application/json",
-			data: JSON.stringify(formData)
-		});
-		alert("MEOW");
-	});
+	// $("#contactform").on("submit", function(event) {
+	// 	event.preventDefault();
+	// 
+	// 	var formData = {};
+	// 	formData.email = $("#email").val();
+	// 	formData.fname = $("#fname").val();
+	// 	formData.lname = $("#lname").val();
+	// 	formData.subject = $("#subject").val();
+	// 	formData.content = $("#content").val();
+	//
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "php/mail.php",
+	// 		contentType: "application/json",
+	// 		data: JSON.stringify(formData)
+	// 	});
+	// 	alert("MEOW");
+	// });
 });
