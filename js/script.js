@@ -125,25 +125,35 @@ $(document).ready(function(){
 
 	// =============================== Score view button handling
 	$(".viewbutton").on("click", function() {
-		if ($(this).text() == "View Score") {
-			$(this).text("Close Score");
-		} else {
-			$(this).text("View Score");
-		}
+		// if ($(this).text() == "View Score") {
+		// 	$(this).text("Close Score");
+		// } else {
+		// 	$(this).text("View Score");
+		// }
 
-		if ($("#landwardhoviewbutton")) {
+		if ($(this).is("#landwardhoviewbutton")) {
 			$("#landwardhoview").toggleClass("hide");
+			if ($("#landwardhoviewbutton").text() == "View Score") {
+				$("#landwardhoviewbutton").text("Close Score");
+			} else {
+				$("#landwardhoviewbutton").text("View Score");
+			}
 		}
 
-		if ($("#devoidviewbutton")) {
+		else if ($(this).is("#devoidviewbutton")) {
 			$("#devoidview").toggleClass("hide");
+			if ($("#devoidviewbutton").text() == "View Score") {
+				$("#devoidviewbutton").text("Close Score");
+			} else {
+				$("#devoidviewbutton").text("View Score");
+			}
 		}
 	});
 
 	// =============================== handle form submission
 	// $("#contactform").on("submit", function(event) {
 	// 	event.preventDefault();
-	// 
+	//
 	// 	var formData = {};
 	// 	formData.email = $("#email").val();
 	// 	formData.fname = $("#fname").val();
