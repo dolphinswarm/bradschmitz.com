@@ -557,12 +557,15 @@ form textarea {
   	color: #000000;
   	text-align: left;
   	margin: 10px auto;
-  	height: 50px;
+  	min-height: 50px;
+	height: auto;
+/*	height: 50px;*/
   	line-height: 50px;
   	padding: 5px;
 }
 
 .fancyheader h2 {
+	width: 80%;
   	margin: 0px;
   	font-family: 'DepredationPixie';
   	font-size: 30px;
@@ -651,6 +654,10 @@ form textarea {
 
 
 	/* ==== Classes ==== */
+	.fancyheader {
+		line-height: 40px;
+	}
+	
 	.headertab {
 		font-size: 2.3vw;
 /*		width: 19.25%;*/
@@ -691,6 +698,11 @@ form textarea {
 	.mobilebar {
 		display: block;
 	}
+	
+	.youtubevideo {
+	  	width: 432px;
+	  	height: 243px;
+	}
 
 }
 
@@ -724,10 +736,15 @@ form textarea {
   		font-family: 'DepredationPixie';
   		font-size: 26px;
   	}
+	
+	.fancyheader {
+		line-height: 30px;
+	}
 
   	.fancyheader h2 {
     	font-family: 'DepredationPixie';
-    	font-size: 6vw;
+    	font-size: 5.5vw;
+		width: 75%
   	}
 
     .contentgroup h3 {
@@ -750,5 +767,11 @@ form textarea {
 		font-size: 20px;
 		font-weight: bold;
 	}
+	
+	.youtubevideo {
+		width: 64vw;
+	  	height: 36vw;
+	}
+
 
 }
