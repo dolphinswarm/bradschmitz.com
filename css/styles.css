@@ -118,21 +118,48 @@ form {
 
 form label {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
+  margin-left: 4.5vw;
 }
 
 form input {
   display: block;
 	font-family: 'Century Gothic';
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 20px;
+  border: 2px solid #D1D1D1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 30px;
+  width: 80%;
+  margin: 0px auto;
 }
 
 form textarea {
   display: block;
 	font-family: 'Century Gothic';
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 20px;
   resize: none;
   height: 200px;
+  border: 2px solid #D1D1D1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0px auto;
+}
+
+form #submit {
+  font-size: 25px;
+  width: 30%;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #B0B0B0;
+  background-color: #D1D1D1;
+}
+
+form #submit:hover {
+  background-color: #FFB03D;
 }
 
 /* ============ ID's ============ */
@@ -652,12 +679,16 @@ form textarea {
     margin-top: 10px;
   }
 
+  form #submit {
+    width: 45%;
+  }
+
 
 	/* ==== Classes ==== */
 	.fancyheader {
 		line-height: 40px;
 	}
-	
+
 	.headertab {
 		font-size: 2.3vw;
 /*		width: 19.25%;*/
@@ -698,7 +729,7 @@ form textarea {
 	.mobilebar {
 		display: block;
 	}
-	
+
 	.youtubevideo {
 	  	width: 432px;
 	  	height: 243px;
@@ -736,7 +767,7 @@ form textarea {
   		font-family: 'DepredationPixie';
   		font-size: 26px;
   	}
-	
+
 	.fancyheader {
 		line-height: 30px;
 	}
@@ -767,11 +798,34 @@ form textarea {
 		font-size: 20px;
 		font-weight: bold;
 	}
-	
+
 	.youtubevideo {
 		width: 64vw;
 	  	height: 36vw;
 	}
 
+  form {
+    width: 80%;
+  }
+
+  form label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 4.5vw;
+  }
+
+  form input {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  form textarea {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  form #submit {
+    font-size: 23px;
+  }
 
 }
