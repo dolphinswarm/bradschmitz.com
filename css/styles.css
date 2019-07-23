@@ -464,6 +464,11 @@ form #submit:hover {
 	font-size: 30px;
 }
 
+
+.contentgroup h4 {
+	font-size: 20px;
+}
+
 .contentgroup embed {
 	min-width: 300px;
 	width: 90%;
