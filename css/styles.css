@@ -162,6 +162,10 @@ form #submit:hover {
   background-color: #FFB03D;
 }
 
+hr {
+  width: 95%;
+}
+
 /* ============ ID's ============ */
 #logoblock {
 	display: block;
