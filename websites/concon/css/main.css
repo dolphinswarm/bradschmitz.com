@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS STYLING */
+html {
+	overflow-x: hidden;
+}
+header {
+	background-color: #2674C3;
+	margin: -8.49px;
+}
+#logo {
+	width: 300px;
+	margin: 15px 0px 15px 30px;
+}
+#id {
+	width: 300px;
+	margin: 15px 0px 15px 30px;
+}
+.searchbar {
+	float: right;
+	margin-top: 0px;
+	position: absolute;
+	top: 40px;
+	right: 20px;
+}
+
+.searchbar input[type=text] {
+	padding: 6px;
+	font-size: 17px;
+	border: none;
+	height: 20px;
+}
+
+.searchbar button {
+  float: right;
+  padding: 6px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background: #ccc;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+	width: 16.61%;
+	border-left: 1px solid dodgerblue;
+	background-color: #0064C8;
+	font: bold 30px Times New Roman;
+	font-color: white;
+	height: 60px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+	.navbar li a:hover {
+		background-color: dodgerblue;
+	}
+
+	.navbar li a:hover #navicon {
+		transform: rotate(-20deg) translateY(-2px);
+	}
+}
+
+
+.active {
+    background-color: #6DB6FF;
+}
+
+#navicon {
+	vertical-align: middle;
+	margin-left: 12px;
+	transform: translateY(-2px);
+	width: 30px;
+}
+
+body {
+	background-image: url("../img/background-image.png");
+}
+
+h1 {
+	font: bold 72px Times New Roman;
+	margin-top: 20px;
+	margin-bottom: -40px;
+}
+
+h2 {
+	font:  normal 40px Times New Roman;
+	margin-bottom: -35px;
+}
+
+p {
+	font: 30px Times New Roman;
+	margin-top: 0px;
+	width: 65%;
+}
+
+hr {
+	width: 65%;
+}
+
+footer {
+	background-color: #2674C3;
+	margin: -8.49px;
+	padding: 1px 30px 0px 30px;
+	box-shadow: 0px 20px #2674C3;
+}
+
+footer table {
+	width: 80%;
+	padding: 0px;
+	margin-top: 3px;
+	margin-bottom: -3px;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+footer tr {
+	height: 10px;
+}
+
+footer td {
+	vertical-align: middle;
+	color: white;
+	font-size: 16px;
+}
+
+footer h3 {
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer img {
+	width: 20px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1480px) {
+	.navbar li {
+		width: 16.59%;
+		font: bold 25px Times New Roman;
+		height: 59px;
+	}	
+}
+
+@media screen and (max-width: 1140px) {
+	.navbar li {
+		width: 16.51%;
+		font: bold 20px Times New Roman;
+		height: 53px;
+	}	
+	#headerimg {
+		position: absolute;
+		overflow-x: hidden;
+		right: 0px;
+	}
+	#navicon {
+		width: 25px;
+		margin-left: 6px;
+	}
+	footer td {
+		font-size: 15px;
+	}
+	footer h3 {
+		font-size: 18px;
+	}
+	footer table {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.navbar li {
+		width: 16.51%;
+		border-left: 1px solid dodgerblue;
+		font: bold 2vw Times New Roman;
+		height: 45px;
+	}
+	#headerimg {
+		position: absolute;
+		left: 240px;
+	}
+	#navicon {
+		display: none;
+	}
+	footer h3 {
+		font-size: 16px;
+	}
+	footer td {
+		font-size: 12px;
+	}
+	footer table {
+		width: 90%;
+	}
+	.searchbar input[type=text] {
+		width: 150px;
+	}		
+}
+
+@media screen and (max-width: 600px) {
+	#logo {
+		padding-bottom: 35px;
+		margin-left: 20%;
+	}
+	#headerimg {
+		display: none;
+	}
+	.navbar li {
+		width: 33.1%;
+		border-top: 1px solid dodgerblue;
+		font: bold 20px Times New Roman;
+		height: 53px;
+	}
+	.searchbar {
+		margin-top: 0px;
+		position: absolute;
+		top: 165px;
+		right: 190px;
+	}
+	#navicon {
+		display: inline-block;
+		margin-left: 10px;
+	}
+	footer h3 {
+		font-size: 14px;
+	}
+	footer td {
+		font-size: 10px;
+	}
+	footer table {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 440px) {
+	#logo {
+		padding-bottom: 35px;
+		margin-left: 20%;
+	}
+	.navbar li {
+		width: 33%;
+		border-top: 1px solid dodgerblue;
+		font: bold 18px Times New Roman;
+		height: 50px;
+	}
+	.searchbar {
+		margin-top: 0px;
+		position: absolute;
+		top: 165px;
+		right: 100px;
+	}
+	#navicon {
+		display: inline-block;
+		margin-left: 5px;
+		width: 20px;
+	}
+	footer h3 {
+		font-size: 14px;
+	}
+	footer td {
+		font-size: 10px;
+	}
+	footer table {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 340px) {
+	#logo {
+		padding-bottom: 35px;
+		margin-left: 5%;
+		width: 80%;
+	}
+	.navbar li {
+		width: 32.9%;
+		border-top: 1px solid dodgerblue;
+		font: bold 11px Times New Roman;
+		height: 46px;
+	}
+	.searchbar {
+		margin-top: 0px;
+		position: absolute;
+		top: 145px;
+		right: 50px;
+	}
+	#navicon {
+		display: inline-block;
+		margin-left: 2px;
+		width: 20px;
+	}
+	footer h3 {
+		font-size: 14px;
+	}
+	footer td {
+		font-size: 10px;
+	}
+	footer table {
+		width: 100%;
+	}
+}

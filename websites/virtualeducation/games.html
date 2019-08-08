@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+	<!-- Heading -->
+	<head>
+		<!-- Settings -->
+		<meta charset="utf-8">
+		<title>Virtual Education - Home</title>
+		<link rel="stylesheet" type = "text/css" href="css/main.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		
+		<!-- Internal CSS -->
+		<style>
+			.accordion {
+				background-color: #eee;
+    			color: #444;
+				padding: 10px;
+    			width: 100%;
+    			border: none;
+    			text-align: left;
+    			outline: none;
+			    font-size: 25px;
+    			transition: 0.4s;
+				height: 65px;
+			}
+
+			.accordion:after {
+				content: '\002B';
+				color: #444;
+				font-weight: bold;
+				float: right;
+				margin-left: 5px;
+				margin-top: 1vw;
+			}
+
+			.active:after {
+				content: "\2212";
+			}
+
+			.panel {
+				background-color: #eee;
+				padding: 0 18px;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+			}
+			
+			.panel p {
+				color: #444; 
+				padding: 5px;
+				margin: 0px;
+				font-size: 16px;
+			}
+			
+			.panel img {
+				display: block;
+				width: 70vw;
+				border: double 5px #F7931E;
+				margin: 5px auto;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<!-- Body -->
+	<body>
+		
+		<!-- Header -->
+		<header class="header" id="myHeader">
+			<!-- Logo -->
+			<a href="index.html"><img src="img/VE_Logo-Orange.png" id="logo"></a>
+				
+			<!-- Search -->
+			<div class="searchbar">
+				<input type="text" placeholder="Search..." >
+				<button type="submit" onclick="alert('No results found. Try a different search!')" style="height: 32px;"><img src="img/searchicon.png"></button>
+			</div>
+		</header>
+		
+		<!-- Body content -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">/\</button>
+		
+		<div class="content">
+			
+			<!-- Title and Intro -->
+			<h1>Games</h1>
+			<p>Currently, Virtual Education has developed six games that will help to educate students or train workers. Many more are in development currently!</p>
+			
+			<!-- Panel 1: Oregon Trail VR -->
+			<button class="accordion" style="background-color: skyblue;"><img src="img/oregon_trail_vr_logo.png" style="width: 75vw;"></button>
+			<div class="panel">
+			  	<p>The classic western adventure has been brought to life with virtual reality! See through the eyes of a settler and travel along the historical Oregon Trail in the first person, encountering rivers, forts, bandits, landmarks, wildlife, and more! Perfect for elementary students learning about westward expansion.</p>
+				<img src="img/oregon_trail_vr.jpg">
+				<br>
+			</div>
+			<br>
+			
+			<!-- Panel 2: Around the World VR -->
+			<button class="accordion" style="background-color: royalblue;"><img src="img/around_the_world_vr_logo.png" style="width: 75vw;"></button>
+			<div class="panel">
+			  	<p>Explore some of the world's most famous landmarks- in the firs! From the slopes of Machu Picchu to the magnificence of the Sistene Chapel, adventure the world from the comfort of your own home or classroom!</p>
+				<img src="img/around_the_world_vr.jpg">
+				<br>
+			</div>
+			<br>
+			
+			<!-- Panel 3: VRMath -->
+			<button class="accordion" style="background-color: darkorange;"><img src="img/vrmath_logo.png" style="width: 25vw;"></button>
+			<div class="panel">
+			  	<p>Is are your students not understanding math, or is it too hard for them to visualize? VRMath will help your students to understand math of all ages, from basic math to geometry to calculus!</p>
+				<img src="img/vrmath.jpg">
+				<br>
+			</div>
+			<br>
+			
+			<!-- Panel 4: Across the Universe VR -->
+			<button class="accordion" style="background-color: black;"><img src="img/across_the_universe_vr_logo.png" style="width: 75vw;"></button>
+			<div class="panel">
+			  	<p>Who needs rocket ships and space suits to explore space when you can do it from your own classroom or home? Take a trip through the stars and learn about the planets in our solar system, stars, black holes, galaxies, and much more!</p>
+				<img src="img/across_the_universe_vr.jpg">
+				<br>
+			</div>
+			<br>
+			
+			<!-- Panel 5: Bomb Disarming VR -->
+			<button class="accordion" style="background-color: dimgrey;"><img src="img/bomb_disarming_vr_logo.png" style="width: 75vw;"></button>
+			<div class="panel">
+			  	<p>Disarming bombs can be dangerous and difficult... but not with Bomb Disarming VR! Learn how to disarm many different types of bombs, including pipe bombs, cartoon bombs, and more!</p>
+				<img src="img/bomb_disarming_vr.jpg">
+				<br>
+			</div>
+			<br>
+			
+			<!-- Panel 6: Flight Simulator VR -->
+			<button class="accordion" style="background-color: skyblue;"><img src="img/flight_simulator_vr_logo.png" style="width: 75vw;"></button>
+			<div class="panel">
+			  	<p>Need to learn to fly a plane for personal or commercial purposes? Flight Simulator VR teaches you the ropes of flying aircraft, from takeoff to landing. Flight Simulator VR even includes manuver training for novice pilots!</p>
+				<img src="img/flight_simulator_vr.jpg">
+				<br>
+			</div>
+			<br>
+			
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer" id="myFooter">
+			<ul>
+				<a href="index.html"><li><img src="img/house-icon.png"></li></a>
+				<a href="games.html"><li id="activeIcon"><img src="img/game-icon.png"></li></a>
+				<a href="goals.html"><li><img src="img/globe-icon.png"></li></a>
+				<a href="buy.html"><li><img src="img/money-icon.png"></li></a>
+			</ul>
+		</footer>
+	</body>
+	
+	<!-- JavaScript -->
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		  });
+		}
+	</script>
+</html>
