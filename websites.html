@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Brad Schmitz">
 		<meta name="description" content="The personal website of Miami University student Brad Schmitz!">
-		<title>Brad Schmitz</title>
+		<title>Websites - Brad Schmitz</title>
 
 		<!-- CSS: External and Internal (includes FontAwesome for icons, and Hamburgers by Jon Suh for fancy hamburger menu) -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -245,24 +245,29 @@
 			<!-- Appalogue -->
 			<div class="contentgroup">
 				<h3>Appalogue</h3>
-				<!-- width="560" height="315" -->
-				<p><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>.</p>
-				<hr>
+				<img src="img/appalogue.PNG">
+				<button type="button" class="viewbutton" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Site</button>
+				<p><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use. Because none of us had used Ruby / Ruby on Rails before, our group settled on this technology for the learning experience. While setting up the application was intially very rough, we soon got the hang of Ruby on Rails.</p>
+				
+				<p>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page inb te bottom navbar, if the user is confused or needs additional help.</p>
+				
+				<p>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
+				
+				<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/Appalogue/','_blank')"><img src="img/github_logo_transparent.png">View GitHub Repository</button>
 			</div>
 
 			<!-- HTML / CSS / JavaScript / PHP Header -->
 			<div class="contentgroup">
 				<div class="fancyheader">
 					<img src="img/projects_icon_large.png" alt="Code Icon">
-					<h2 id="web">PHP Web Applications</h2>
+					<h2 id="php">PHP Web Applications</h2>
 				</div>
 			</div>
 
 			<!-- CSE 383: Food Tracker -->
 			<div class="contentgroup">
-				<h3>Appalogue</h3>
-				<!-- width="560" height="315" -->
-				<p><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>.</p>
+				<h3>Simple Food Tracker</h3>
+				<p><b>Simple Food Tracker</b> is a pretty basic PHP-based web application </b>.</p>
 				<hr>
 			</div>
 
