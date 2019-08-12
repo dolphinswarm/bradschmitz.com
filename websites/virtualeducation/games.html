@@ -7,8 +7,8 @@
 		<title>Virtual Education - Home</title>
 		<link rel="stylesheet" type = "text/css" href="css/main.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<!-- Internal CSS -->
 		<style>
 			.accordion {
@@ -44,49 +44,49 @@
 				overflow: hidden;
 				transition: max-height 0.2s ease-out;
 			}
-			
+
 			.panel p {
-				color: #444; 
+				color: #444;
 				padding: 5px;
 				margin: 0px;
 				font-size: 16px;
 			}
-			
+
 			.panel img {
 				display: block;
 				width: 70vw;
 				border: double 5px #F7931E;
 				margin: 5px auto;
 			}
-			
+
 		</style>
-		
+
 	</head>
-	
+
 	<!-- Body -->
 	<body>
-		
+		<div class="page">
 		<!-- Header -->
 		<header class="header" id="myHeader">
 			<!-- Logo -->
 			<a href="index.html"><img src="img/VE_Logo-Orange.png" id="logo"></a>
-				
+
 			<!-- Search -->
 			<div class="searchbar">
 				<input type="text" placeholder="Search..." >
 				<button type="submit" onclick="alert('No results found. Try a different search!')" style="height: 32px;"><img src="img/searchicon.png"></button>
 			</div>
 		</header>
-		
+
 		<!-- Body content -->
 		<button onclick="topFunction()" id="myBtn" title="Go to top">/\</button>
-		
+
 		<div class="content">
-			
+
 			<!-- Title and Intro -->
 			<h1>Games</h1>
 			<p>Currently, Virtual Education has developed six games that will help to educate students or train workers. Many more are in development currently!</p>
-			
+
 			<!-- Panel 1: Oregon Trail VR -->
 			<button class="accordion" style="background-color: skyblue;"><img src="img/oregon_trail_vr_logo.png" style="width: 75vw;"></button>
 			<div class="panel">
@@ -95,7 +95,7 @@
 				<br>
 			</div>
 			<br>
-			
+
 			<!-- Panel 2: Around the World VR -->
 			<button class="accordion" style="background-color: royalblue;"><img src="img/around_the_world_vr_logo.png" style="width: 75vw;"></button>
 			<div class="panel">
@@ -104,7 +104,7 @@
 				<br>
 			</div>
 			<br>
-			
+
 			<!-- Panel 3: VRMath -->
 			<button class="accordion" style="background-color: darkorange;"><img src="img/vrmath_logo.png" style="width: 25vw;"></button>
 			<div class="panel">
@@ -113,7 +113,7 @@
 				<br>
 			</div>
 			<br>
-			
+
 			<!-- Panel 4: Across the Universe VR -->
 			<button class="accordion" style="background-color: black;"><img src="img/across_the_universe_vr_logo.png" style="width: 75vw;"></button>
 			<div class="panel">
@@ -122,7 +122,7 @@
 				<br>
 			</div>
 			<br>
-			
+
 			<!-- Panel 5: Bomb Disarming VR -->
 			<button class="accordion" style="background-color: dimgrey;"><img src="img/bomb_disarming_vr_logo.png" style="width: 75vw;"></button>
 			<div class="panel">
@@ -131,7 +131,7 @@
 				<br>
 			</div>
 			<br>
-			
+
 			<!-- Panel 6: Flight Simulator VR -->
 			<button class="accordion" style="background-color: skyblue;"><img src="img/flight_simulator_vr_logo.png" style="width: 75vw;"></button>
 			<div class="panel">
@@ -140,9 +140,9 @@
 				<br>
 			</div>
 			<br>
-			
+
 		</div>
-		
+
 		<!-- Footer -->
 		<footer class="footer" id="myFooter">
 			<ul>
@@ -152,8 +152,14 @@
 				<a href="buy.html"><li><img src="img/money-icon.png"></li></a>
 			</ul>
 		</footer>
+		</div>
+
+		<div class="message">
+			<h2>You must be on a mobile device to view this page!</h2>
+			<p>Either go to a mobile device or shrink your browser's viewport!<p>
+		</div>
 	</body>
-	
+
 	<!-- JavaScript -->
 	<script>
 		// When the user scrolls down 20px from the top of the document, show the button
@@ -172,7 +178,7 @@
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		}
-		
+
 		var acc = document.getElementsByClassName("accordion");
 		var i;
 
@@ -184,7 +190,7 @@
 			  panel.style.maxHeight = null;
 			} else {
 			  panel.style.maxHeight = panel.scrollHeight + "px";
-			} 
+			}
 		  });
 		}
 	</script>
