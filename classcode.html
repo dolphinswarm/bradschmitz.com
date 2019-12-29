@@ -226,9 +226,78 @@
 		<!-- MAIN CONTENT -->
 		<section id="main">
 			<!-- Main Title -->
-			<h1 id="title">Software</h1>
+			<h1 id="title">Class Code</h1>
+			
+			<!-- Courses Taken Header -->
 			<div class="contentgroup">
-				<p><b>Note</b>: this page is mainly for standard computer software. My web-based software is on the <b><a href="websites.html">websites</a></b> page, and my game-related software is on the <b><a href="videogames.html">video games</a></b> page.</p>
+				<div class="fancyheader">
+					<img src="img/projects_icon_large.png" alt="Code Icon">
+					<h2 id="courses">Programming Courses Taken</h2>
+				</div>
+			</div>
+			
+			<!-- Content Group -->
+			<div class="contentgroup courselist">
+				<h3>Computer Science Courses</h3>
+				<ul>
+					<a href="#webapps"><li><b>CSE 201</b>: Introduction to Software Engineering</li></a>
+					<a href="#java"><li><b>CSE 271</b>: Object-Oriented Programming</li></a>
+					<a href="#java"><li><b>CSE 274</b>: Data Abstraction and Data Structures</li></a>
+					<a href="#c++"><li><b>CSE 278</b>: Introduction to Systems Programming (Systems 1)</li></a>
+					<a href="#opengl"><li><b>CSE 287 (now 386)</b>: Foundations of Computer Graphics and Games</li></a>
+					<a href="#c++"><li><b>CSE 381</b>: OS, Currency, Virtualization, and Security (Systems 2)</li></a>
+					<a href="#webapps"><li><b>CSE 383</b>: Web Application Programming</li></a>
+					<a href="#opengl"><li><b>CSE 387</b>: Advanced Graphics and Game Engine Design</li></a>
+				</ul>
+				<h3>Interactive Media Studies Courses</h3>
+				<ul>
+					<li><b>IMS 212</b>: Introduction to Game Design</li>
+					<a href="#webapps"><li><b>IMS 222</b>: Introduction to Interaction Design and Development</li></a>
+					<a href="#webapps"><li><b>IMS 257 (now 322)</b>: Intermediate Interaction Design and Development</li></a>
+					<li><b>IMS 315</b>: User Experience Research</li>
+					<a href="#unity"><li><b>IMS 461</b>: Virtual and Augmented Reality</li></a>
+				</ul>
+				<h3>Statistics Courses</h3>
+				<ul>
+					<a href="#sas"><li><b>STA 402</b>: Statistical Programming</li></a>
+				</ul>
+			</div>
+			
+			<!--  Header -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/projects_icon_large.png" alt="Code Icon">
+					<h2 id="webapps">Web Applications</h2>
+				</div>
+			</div>
+			
+			<!-- Appalogue -->
+			<div class="contentgroup">
+				<h3>Appalogue - Ruby on Rails App Directory</h3>
+				<img src="img/appalogue.png">
+				<button type="button" class="viewbutton" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Site</button>
+				<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/Appalogue/','_blank')"><img src="img/github_logo_transparent.png">View GitHub Repository</button>
+				<p><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use. Because none of us had used Ruby / Ruby on Rails before, our group settled on this technology for the learning experience. While setting up the application was intially very rough, we soon got the hang of Ruby on Rails.</p>
+				<p>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.</p>
+				<p>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
+				<hr>
+			</div>
+			
+			<!-- Food Tracker Application -->
+			<div class="contentgroup">
+				<h3>PHP-Based Simple Food Tracker</h3>
+				<img src="img/foodtracker.png" style="max-width: 500px">
+				<button type="button" class="viewbutton" onclick="window.open('http://ceclnx01.cec.miamioh.edu/~schmitb3/cse383/cse-383-final-project/','_blank')">View Site</button>
+				<p><b>Simple Food Tracker</b> is a PHP-based web application that allows users to track specific food items they've eaten. This project was the final project for <b>CSE 383: Web Application Programming</b>, which I did with another student. This project's goal was to create a RESTful web-based API using AJAX calls, which were then processed by a PHP backend.</p>
+				<hr>
+			</div>
+			
+			<!-- IMS 222: Virtual Education -->
+			<div class="contentgroup">
+				<h3>Virtual Education - Mobile Website</h3>
+				<img src="img/virtualeducation.png" style="max-width: 500px">
+				<button type="button" class="viewbutton" onclick="window.location.href='websites/virtualeducation/index.html'">View Site</button>
+				<p>*TO EDIT*</p>
 			</div>
 
 			<!-- C++ OpenGL Graphics Header -->

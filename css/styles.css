@@ -10,62 +10,62 @@
 
 /* ============ Fonts ============ */
 @font-face {
-  font-family: 'DepredationPixie';
-  src: url('../font/DepredationPixie.eot');
-  src: url('../font/DepredationPixie.eot?#iefix') format('embedded-opentype'),
-       url('../font/DepredationPixie.woff2') format('woff2'),
-       url('../font/DepredationPixie.woff') format('woff'),
-       url('../font/DepredationPixie.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DepredationPixie';
+	src: url('../font/DepredationPixie.eot');
+	src: url('../font/DepredationPixie.eot?#iefix') format('embedded-opentype'),
+		 url('../font/DepredationPixie.woff2') format('woff2'),
+		 url('../font/DepredationPixie.woff') format('woff'),
+		 url('../font/DepredationPixie.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Free Pixel';
-  src: url('../font/FreePixel-Regular.eot');
-  src: url('../font/FreePixel-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../font/FreePixel-Regular.woff2') format('woff2'),
-       url('../font/FreePixel-Regular.woff') format('woff'),
-       url('../font/FreePixel-Regular.ttf') format('truetype'),
-       url('../font/FreePixel-Regular.svg#FreePixel-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Free Pixel';
+	src: url('../font/FreePixel-Regular.eot');
+	src: url('../font/FreePixel-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/FreePixel-Regular.woff2') format('woff2'),
+		 url('../font/FreePixel-Regular.woff') format('woff'),
+		 url('../font/FreePixel-Regular.ttf') format('truetype'),
+		 url('../font/FreePixel-Regular.svg#FreePixel-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'pixelmix';
-  src: url('../font/pixelmix.eot');
-  src: url('../font/pixelmix.eot?#iefix') format('embedded-opentype'),
-       url('../font/pixelmix.woff2') format('woff2'),
-       url('../font/pixelmix.woff') format('woff'),
-       url('../font/pixelmix.ttf') format('truetype'),
-       url('../font/pixelmix.svg#pixelmix') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'pixelmix';
+	src: url('../font/pixelmix.eot');
+	src: url('../font/pixelmix.eot?#iefix') format('embedded-opentype'),
+		 url('../font/pixelmix.woff2') format('woff2'),
+		 url('../font/pixelmix.woff') format('woff'),
+		 url('../font/pixelmix.ttf') format('truetype'),
+		 url('../font/pixelmix.svg#pixelmix') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Century Gothic';
-  src: url('../font/CenturyGothic-Bold.eot');
-  src: url('../font/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../font/CenturyGothic-Bold.woff2') format('woff2'),
-       url('../font/CenturyGothic-Bold.woff') format('woff'),
-       url('../font/CenturyGothic-Bold.ttf') format('truetype'),
-       url('../font/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'Century Gothic';
+	src: url('../font/CenturyGothic-Bold.eot');
+	src: url('../font/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/CenturyGothic-Bold.woff2') format('woff2'),
+		 url('../font/CenturyGothic-Bold.woff') format('woff'),
+		 url('../font/CenturyGothic-Bold.ttf') format('truetype'),
+		 url('../font/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Century Gothic';
-  src: url('../font/CenturyGothic.eot');
-  src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
-        url('../font/CenturyGothic.woff2') format('woff2'),
-        url('../font/CenturyGothic.woff') format('woff'),
-        url('../font/CenturyGothic.ttf') format('truetype'),
-        url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Century Gothic';
+	src: url('../font/CenturyGothic.eot');
+	src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+		 url('../font/CenturyGothic.woff2') format('woff2'),
+		 url('../font/CenturyGothic.woff') format('woff'),
+		 url('../font/CenturyGothic.ttf') format('truetype'),
+		 url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* ============ Tags ============ */
@@ -74,15 +74,20 @@ body {
 }
 
 header {
+	/* Appearance */
 	background-color: #F7941E;
-	margin: -8px -8px 0px -8px;
 	height: 195px;
+	
+	/* Properties */
+	user-select: none;
+	margin: -8px -8px 0px -8px;
+	
+	/* Font */
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
 }
 
 header a {
@@ -107,63 +112,63 @@ footer h3 {
 }
 
 form {
-  background-color: #F7941E;
-  border: 2px solid #D1D1D1;
-  color: #000000;
-  text-align: left;
-  width: 50%;
-  margin: 0px auto;
-  padding: 30px;
+	background-color: #F7941E;
+	border: 2px solid #D1D1D1;
+	color: #000000;
+	text-align: left;
+	width: 50%;
+	margin: 0px auto;
+	padding: 30px;
 }
 
 form label {
-  font-weight: bold;
-  font-size: 25px;
-  margin-left: 4.5vw;
+	font-weight: bold;
+	font-size: 25px;
+	margin-left: 4.5vw;
 }
 
 form input {
-  display: block;
+	display: block;
 	font-family: 'Century Gothic';
-  font-size: 20px;
-  line-height: 20px;
-  border: 2px solid #D1D1D1;
-  border-radius: 4px;
-  box-sizing: border-box;
-  height: 30px;
-  width: 80%;
-  margin: 0px auto;
+	font-size: 20px;
+	line-height: 20px;
+	border: 2px solid #D1D1D1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 30px;
+	width: 80%;
+	margin: 0px auto;
 }
 
 form textarea {
-  display: block;
+	display: block;
 	font-family: 'Century Gothic';
-  font-size: 20px;
-  line-height: 20px;
-  resize: none;
-  height: 200px;
-  border: 2px solid #D1D1D1;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 80%;
-  margin: 0px auto;
+	font-size: 20px;
+	line-height: 20px;
+	resize: none;
+	height: 200px;
+	border: 2px solid #D1D1D1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0px auto;
 }
 
 form #submit {
-  font-size: 25px;
-  width: 30%;
-  height: 40px;
-  font-weight: bold;
-  border: 2px solid #B0B0B0;
-  background-color: #D1D1D1;
+	font-size: 25px;
+	width: 30%;
+	height: 40px;
+	font-weight: bold;
+	border: 2px solid #B0B0B0;
+	background-color: #D1D1D1;
 }
 
 form #submit:hover {
-  background-color: #FFB03D;
+	background-color: #FFB03D;
 }
 
 hr {
-  width: 95%;
+	width: 95%;
 }
 
 /* ============ ID's ============ */
@@ -554,13 +559,22 @@ hr {
 	background-color: #222222;
 }
 
+.contentgroup ul a{
+	color: #FFFFFF;
+}
+
+.contentgroup ul a:hover {
+	color: #FFB03D;
+}
+
 .contentgroup .githubbutton img {
 	margin-top: 5px;
 	width: 30px;
 	float: left;
 }
 
-.contentgroup ul {
+.contentgroup ul, .contentgroup ol {
+	counter-reset: li;
 	text-align: left;
 	width: 78%;
 	margin: -15px auto 0px auto;
@@ -568,7 +582,8 @@ hr {
 	color: #F7941E;
 }
 
-.contentgroup ul li {
+.contentgroup ul li, .contentgroup ol li {
+	counter-increment: li;
 	padding: 2px;
 	font-size: 19px;
 }
@@ -579,6 +594,17 @@ hr {
 	font-weight: bold;
 	margin-left: -20px;
 	margin-right: 10px;
+}
+
+.contentgroup ol li:before {
+	color: #FFFFFF;
+	font-weight: bold;
+	content: '.'counter(li);
+    display: inline-block;
+	margin-left: -20px;
+	margin-right: 10px;
+	text-align: right;
+	direction: rtl;
 }
 
 .contentgroup .socialmedialogo {
@@ -676,6 +702,28 @@ hr {
   height: 315px;
   /* border: none; */
   border: 2px solid #D1D1D1;
+}
+
+.courselist h3 {
+	text-align: left;
+  	width: 80%;
+  	margin: 0px auto 20px auto;
+}
+
+.courselist a {
+	font-weight: normal;
+}
+
+.courselist a:hover li, .courselist a:hover b{
+	color: #FFB03D;
+}
+
+.courselist li {
+	color: white;
+}
+
+.courselist b {
+	color: #F7941E;
 }
 
 /* ============ Media Queries ============ */
