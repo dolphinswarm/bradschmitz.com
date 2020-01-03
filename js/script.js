@@ -112,15 +112,15 @@ $(document).ready(function(){
 
 	// =============================== Autopause audio / video if another starts playing
 	$("audio").on("play", function() {
-	    $("audio").not(this).each(function(index, audio) {
-	        audio.pause();
-	    });
+		$("audio").not(this).each(function(index, audio) {
+			audio.pause();
+		});
 	});
 
 	$("video").on("play", function() {
-	    $("video").not(this).each(function(index, video) {
-	        video.pause();
-	    });
+		$("video").not(this).each(function(index, video) {
+			video.pause();
+		});
 	});
 
 	// =============================== Score view button handling
@@ -146,6 +146,15 @@ $(document).ready(function(){
 				$("#devoidviewbutton").text("Close Score");
 			} else {
 				$("#devoidviewbutton").text("View Score");
+			}
+		}
+		
+		else if ($(this).is("#reportviewbutton")) {
+			$("#reportview").toggleClass("hide");
+			if ($("#reportviewbutton").text() == "View Report") {
+				$("#reportviewbutton").text("Close Report");
+			} else {
+				$("#reportviewbutton").text("View Report");
 			}
 		}
 	});
