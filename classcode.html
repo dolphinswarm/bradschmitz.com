@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Brad Schmitz">
 		<meta name="description" content="The personal website of Miami University student Brad Schmitz!">
-		<title>Software - Brad Schmitz</title>
+		<title>Class Code - Brad Schmitz</title>
 
 		<!-- CSS: External and Internal (includes FontAwesome for icons, and Hamburgers by Jon Suh for fancy hamburger menu) -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -228,6 +228,73 @@
 			<!-- Main Title -->
 			<h1 id="title">Class Code</h1>
 			
+			<!-- Course Projects Header -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/projects_icon_large.png" alt="Code Icon">
+					<h2 id="webapps">Course Projects</h2>
+				</div>
+			</div>
+			
+			<!-- Gallery -->
+			<div class="contentgroup">
+				<div class="gallery">
+					<div class="subcontentgroup-onethird modalopener" id="appalogue">
+						<img src="img/appalogue.png" alt="Appalogue Icon" class="modalopener">
+						<h4 class="modalopener">Appalogue - Ruby on Rails App Directory</h4>
+						<button type="button" class="viewbutton" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Site</button>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/Appalogue/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use.<br><br>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.<br><br>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
+					</div>
+					<div class="subcontentgroup-onethird modalopener" id="virtualeducation">
+						<div class="padding modalopener"></div>
+						<img src="img/virtualeducation.PNG" alt="Virtual Education Icon" class="modalopener">
+						<h4 class="modalopener">Virtual Education - Mobile Website</h4>
+						<button type="button" class="viewbutton" onclick="window.location.href='websites/virtualeducation/index.html'">View Site</button><br>
+						<p class="hide"><b>Virtual Education</b> is a simple website that was made for <b>IMS 222: Introduction to Interaction Design and Development</b>. The focus of this class was on designing effective interfaces with HTML, CSS, and JavaScript for various devices; this project was for mobile phones. While designing the website, I tried to design the UI to be as mobile-friendly as possible, such as placing the navbar at the bottom of the screen and including a button to immediately return to the top of a scrolled page.<br><br></p>
+					</div>
+					<div class="subcontentgroup-onethird modalopener" id="foodtracker">
+						<div class="padding modalopener"></div>
+						<img src="img/foodtracker.PNG" alt="Food Tracker Icon" class="modalopener">
+						<h4 class="modalopener">PHP Food Tracker</h4>
+						<button type="button" class="viewbutton" onclick="window.open('http://ceclnx01.cec.miamioh.edu/~schmitb3/cse383/cse-383-final-project/','_blank')">View Site</button>
+					</div>
+					<div class="subcontentgroup-onethird modalopener" id="baa">
+						<div class="padding modalopener"></div>
+						<img src="img/baa.png" alt="Bussiness Assessment Association Icon" class="modalopener">
+						<h4 class="modalopener">Business Assessment Association</h4>
+						<button type="button" class="viewbutton" onclick="window.location.href='websites/baa/index.html'">View Site</button>
+					</div>
+					<div class="subcontentgroup-onethird modalopener" id="gameengine">
+						<div class="padding modalopener"></div>
+						<div class="padding modalopener"></div>
+						<img src="img/gameengine.png" alt="OpenGL Game Engine"  class="modalopener">
+						<h4 class="modalopener">OpenGL Game Engine</h4>
+					</div>
+					<div class="subcontentgroup-onethird modalopener" id="raytracer">
+						<div class="padding modalopener"></div>
+						<div class="padding modalopener"></div>
+						<img src="img/raytracer.PNG" alt="OpenGL Ray Tracer" class="modalopener">
+						<h4 class="modalopener">OpenGL Ray Tracer</h4>
+					</div>
+					<div class="subcontentgroup-onethird modalopener" id="vertexgrahics">
+						<div class="padding modalopener"></div>
+						<div class="padding modalopener"></div>
+						<img src="img/vertexgraphics.png" alt="OpenGL Vertex Graphics Engine" class="modalopener">
+						<h4 class="modalopener">OpenGL Vertex Graphics Engine</h4>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Modal -->
+			<div id="modal">
+				<div id="modalcontent">
+					<h1 id="modaltitle"></h1>
+					<img src="img/brad_casual_professional.jpg" id="modalimg" alt="Placeholder">
+					<p id="modaltext"></p>
+				</div>
+			</div>
+			
 			<!-- Courses Taken Header -->
 			<div class="contentgroup">
 				<div class="fancyheader">
@@ -236,42 +303,74 @@
 				</div>
 			</div>
 			
-			<!-- Content Group -->
+			<!-- Courses Taken -->
 			<div class="contentgroup courselist">
 				<h3>Computer Science Courses</h3>
 				<ul>
-					<a href="#webapps"><li><b>CSE 201</b>: Introduction to Software Engineering</li></a>
-					<a href="#java"><li><b>CSE 271</b>: Object-Oriented Programming</li></a>
-					<a href="#java"><li><b>CSE 274</b>: Data Abstraction and Data Structures</li></a>
-					<a href="#c++"><li><b>CSE 278</b>: Introduction to Systems Programming (Systems 1)</li></a>
-					<a href="#opengl"><li><b>CSE 287 (now 386)</b>: Foundations of Computer Graphics and Games</li></a>
-					<a href="#c++"><li><b>CSE 381</b>: OS, Currency, Virtualization, and Security (Systems 2)</li></a>
-					<a href="#webapps"><li><b>CSE 383</b>: Web Application Programming</li></a>
-					<a href="#opengl"><li><b>CSE 387</b>: Advanced Graphics and Game Engine Design</li></a>
+					<div class="tooltip">
+						<li><b>CSE 201</b>: Introduction to Software Engineering</li>
+						<span class="tooltiptext">Principles of software engineering: Introduction to all phases of the software development life cycle and associated tools and engineering methods including the unified modeling language (UML).</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 271</b>: Object-Oriented Programming</li>
+						<span class="tooltiptext">The design and implementation of software using object-oriented programming techniques including inheritance, polymorphism, object persistence, and operator overloading. Students will analyze program specifications and identify appropriate objects and classes. Additional programming topics include dynamic memory recursion, using existing object libraries, and binary/ASCII file processing.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 274</b>: Data Abstraction and Data Structures</li>
+						<span class="tooltiptext">Abstract data types and their implementation as data structures using object-oriented programming. Use of object-oriented principles in the selection and analysis of various ADT implementations. Sequential and linked storage representations: lists, stacks, queues, and tables. Nonlinear data structures: trees and graphs. Recursion, sorting, searching, and algorithm complexity.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 278</b>: Introduction to Systems Programming (Systems 1)</li>
+						<span class="tooltiptext">Principles of Von Neumann computer architecture through the C/C++ programming language. Data representation and computer arithmetic. Memory hierarchy. CPU structure and instruction sets. Network programming including use of sockets. Database programming through SQL.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 287 (now 386)</b>: Foundations of Computer Graphics and Games</li>
+						<span class="tooltiptext">Introduction to techniques used to create images on the computer. The course covers the algorithms and mathematical theory behind three dimensional image generation with an emphasis on 3D geometry, 3D transformations, and the graphics pipeline.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 381</b>: OS, Currency, Virtualization, and Security (Systems 2)</li>
+						<span class="tooltiptext">Introduction to operating systems concepts. The operating system as a resource manager. The principles for the design and implementation of operating systems. Process scheduling and deadlock prevention. Memory management, virtual memory, paging, and segmentation. Interrupt processing. Device management, I/O systems and I/O processing. Concurrency and multithreading. Virtualization and cloud services. Security and protection.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 383</b>: Web Application Programming</li>
+						<span class="tooltiptext">An introduction to the software, concepts and methodologies necessary to design and implement web applications. Students will design and construct web applications utilizing remote servers on multiple platforms. Projects will be used to enable the students to apply the principles and techniques presented in class.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 387</b>: Advanced Graphics and Game Engine Design</li>
+						<span class="tooltiptext">Graphics hardware, game engine architectures, and the mathematics and algorithms used to create digital games. Topics will include shader based rendering and programming. Students will implement portions of a game engine which incorporates animation, collision detection, and simulated physics.</span>
+					</div><br>
 				</ul>
 				<h3>Interactive Media Studies Courses</h3>
 				<ul>
-					<li><b>IMS 212</b>: Introduction to Game Design</li>
-					<a href="#webapps"><li><b>IMS 222</b>: Introduction to Interaction Design and Development</li></a>
-					<a href="#webapps"><li><b>IMS 257 (now 322)</b>: Intermediate Interaction Design and Development</li></a>
-					<li><b>IMS 315</b>: User Experience Research</li>
-					<a href="#unity"><li><b>IMS 461</b>: Virtual and Augmented Reality</li></a>
+					<div class="tooltip">
+						<li><b>IMS 222</b>: Introduction to Interaction Design and Development</li>
+						<span class="tooltiptext">Investigate interactive design and front-end development as it relates to a variety media types. Using industry standard tools, students will learn to design, implement, and refine interactive media for specific audiences. For the purpose of this class, interactive media includes a variety of software and hardware solutions that intersect the domain of human-computer interaction. Effective interactive design is often achieved by the creative application of sometimes disparate disciplines. Students should expect to incorporate their understanding of art theory, psychology, commercial business practice, and creative problem solving.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>IMS 257 (now 322)</b>: Intermediate Interaction Design and Development</li>
+						<span class="tooltiptext">Covers the basic coding patterns and practices present in all programming languages with an emphasis on those languages most common in web and mobile application platforms. It will take students through the fundamentals of algorithm design and then move on to expressing those designs in several popular languages. Because of the focus on web environments, this course will also explore the difference between presentation (such as with HTML) and interactivity (such as with JavaScript). The web and mobile focus will lead to rudimentary discussions on client/server architectures and what content delivery choices are available when a mobile device, such as a smartphone or a tablet, has such strong technical capabilities.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>IMS 315</b>: User Experience Research</li>
+						<span class="tooltiptext">Explore and discuss important concepts in human-computer interaction (HCI) theory and usability, and learn about cutting-edge technologies used to measure the effectiveness of digital media environment design. In so doing, we will pay particular attention to user expectations and how they drive user behavior. The major focus of the course assignments is designing and managing a usability study then reporting on the results of that study.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>IMS 461</b>: Virtual and Augmented Reality</li>
+						<span class="tooltiptext">Advanced course in Virtual Reality, 360-degree video, 3D simulations, motion tracking, and 3D data visualization. Provides background, theory, and practice in creating virtual reality simulations, games, training applications, and 3D visualizations.</span>
+					</div><br>
 				</ul>
 				<h3>Statistics Courses</h3>
 				<ul>
-					<a href="#sas"><li><b>STA 402</b>: Statistical Programming</li></a>
+						<div class="tooltip">
+							<li><b>STA 402</b>: Statistical Programming</li>
+						<span class="tooltiptext">Introduction to the use of computers to process and analyze data. Techniques and strategies for managing, manipulating, and analyzing data are discussed. Emphasis is on the use of the SAS system. Statistical computing topics, such as random number generation, randomization tests, and Monte Carlo simulation, will be used to illustrate these programming ideas.</span>
+					</div><br>
 				</ul>
-			</div>
-			
-			<!--  Header -->
-			<div class="contentgroup">
-				<div class="fancyheader">
-					<img src="img/projects_icon_large.png" alt="Code Icon">
-					<h2 id="webapps">Web Applications</h2>
-				</div>
+				<br><br><br>
 			</div>
 			
 			<!-- Appalogue -->
+<!--
 			<div class="contentgroup">
 				<h3>Appalogue - Ruby on Rails App Directory</h3>
 				<img src="img/appalogue.png">
@@ -282,8 +381,10 @@
 				<p>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
 				<hr>
 			</div>
+-->
 			
 			<!-- Food Tracker Application -->
+<!--
 			<div class="contentgroup">
 				<h3>PHP-Based Simple Food Tracker</h3>
 				<img src="img/foodtracker.png" style="max-width: 500px">
@@ -291,53 +392,76 @@
 				<p><b>Simple Food Tracker</b> is a PHP-based web application that allows users to track specific food items they've eaten. This project was the final project for <b>CSE 383: Web Application Programming</b>, which I did with another student. This project's goal was to create a RESTful web-based API using AJAX calls, which were then processed by a PHP backend.</p>
 				<hr>
 			</div>
+-->
 			
 			<!-- IMS 222: Virtual Education -->
+<!--
 			<div class="contentgroup">
 				<h3>Virtual Education - Mobile Website</h3>
 				<img src="img/virtualeducation.png" style="max-width: 500px">
 				<button type="button" class="viewbutton" onclick="window.location.href='websites/virtualeducation/index.html'">View Site</button>
 				<p>*TO EDIT*</p>
 			</div>
+-->
 
 			<!-- C++ OpenGL Graphics Header -->
+<!--
 			<div class="contentgroup">
 				<div class="fancyheader">
 					<img src="img/projects_icon_large.png" alt="Code Icon">
 					<h2 id="opengl">C++ OpenGL Graphics</h2>
 				</div>
 			</div>
-
-			<!-- Ray Tracer -->
+-->
+			
+			<!-- Game Engine -->
+<!--
 			<div class="contentgroup">
-				<h3>OpenGL Ray Tracer</h3>
-				<img src="img/raytracer.png" style="max-width: 700px">
-				<p><b>OpenGL Ray Tracer</b> (2019) is a graphics program that was created for <b>CSE 287: Introduction to Computer Graphics and Games</b>. For this project, our goal was to use the open-source C++ graphics library OpenGL to create a basic ray tracer for rendering 3D scenes. Some of the features in this ray-tracer include ambient, directional, positional, and spot lights, shadows created using "shadow feelers", inter-object reflections between objects, multiple camera angles, and anti-aliasing.</p>
+				<h3>OpenGL Game Engine</h3>
+				<img src="img/gameengine.png" style="max-width: 700px">
+				<p><b>OpenGL Game Engine</b> (2019) is a graphics and game engine that was created for <b>CSE 387: Advanced Graphics and Game Engine Design</b>. In this course, our objective was to create a real-time vertex-based renderer for </p>
 				<hr>
 			</div>
+-->
 
 			<!-- Vertex Graphics Engine -->
+<!--
 			<div class="contentgroup">
-				<h3>Vertex-Based Graphics Engine</h3>
-				<img src="img/vertexgraphics.png" style="max-width: 500px">
-				<p><b>Vertex-Based Graphics Engine</b>(2019) is a graphics program that was created for <b>CSE 287: Introduction to Computer Graphics and Games</b>. This project was meant to show off vertex-based graphics pipeline, which is used in most 3D game engines. Some of the features of this project include basic animaiton, per vertex / per fragment shading, perspective / orthographic projections, a free-moving camera, object clipping, and backface culling.</p>
+				<h3>Vertex-Based Graphics Demo</h3>
+				<img src="img/vertexgraphics.png" style="max-width: 500px" alt="CSE 287: Vertex Graphics">
+				<p><b>Vertex-Based Graphics Engine</b>(2019) is a graphics program that was created for <b>CSE 287: Introduction to Computer Graphics and Games</b>. This project was meant to show off vertex-based graphics pipeline, which is used in most 3D game engines. Some of the features of this project include low-level implementations of basic animaiton, per vertex / per fragment shading, perspective / orthographic projections, a free-moving camera, object clipping, and backface culling.</p>
+				<hr>
+
+			</div>-->
+			
+			<!-- Ray Tracer -->
+<!--
+			<div class="contentgroup">
+				<h3>OpenGL Ray Tracer</h3>
+				<img src="img/raytracer.png" style="max-width: 700px" alt="CSE 287: Ray Tracer">
+				<p><b>OpenGL Ray Tracer</b> (2019) is a graphics program that was created for <b>CSE 287: Introduction to Computer Graphics and Games</b>. For this project, our goal was to use the open-source C++ graphics library OpenGL to create a basic ray tracer for rendering 3D scenes. Some of the features in this ray-tracer include low-level implementations of ambient, directional, positional, and spot lights, shadows created using "shadow feelers", inter-object reflections between objects, multiple camera angles, and anti-aliasing.</p>
 			</div>
+-->
 
 			<!-- Java Header -->
+<!--
 			<div class="contentgroup">
 				<div class="fancyheader">
 					<img src="img/projects_icon_large.png" alt="Code Icon">
 					<h2 id="java">Java</h2>
 				</div>
 			</div>
+-->
 
 			<!-- Command-Line Tic-Tac-Toe -->
+<!--
 			<div class="contentgroup">
+				<p>At Miami University, introductory Computer Sciences courses (such as CSE 174, CSE 271, and CSE 274) are taught in Java. These courses are meant to build a foundation for general computer science topics, like object-oriented programming, data structures, </p>
 				<h3>Command-Line Tic-Tac-Toe</h3>
 				<img src="img/tictactoe.PNG" style="max-width: 300px">
-				<p><b>Command-Line Tic-Tac-Toe</b> (2018) is a project that was done for <b>CSE 274: Data Structures and Abstractions</b>. This is a game of Tic-Tac-Toe with a pseudo-AI that works by using a dictionary data structure. First, a list of all possible Tic-Tac-Toe boards are generated. Then, the boards are stored in a dictionary ADT, using the board configuration as the key and the next best move for that board as the value.</p>
 				<hr>
 			</div>
+-->
 
 		</section>
 

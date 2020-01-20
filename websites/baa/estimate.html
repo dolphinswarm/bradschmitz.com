@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	
+	<!-- Head -->
+	<head>
+		
+		<!-- Setup Info -->
+		<meta charset="UTF-8">
+		<title>Estimate - Business Assesment Association</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  	<link rel="stylesheet" href="css/style.css">
+	  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		
+		<!--Import Google Icon Font-->
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	  	<!--Import materialize.css-->
+	  	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		
+		<!-- JavaScript -->
+		<script>
+		var audio = new Audio('sound/kaching.mp3');
+		
+		// Function to calculate mpg
+		var calculatePrice = function() {
+			var investment = parseFloat(document.getElementById("investment").value);
+			if (investment < 0 || isNaN(investment)) {
+				alert("Please enter a valid investment.");
+			}
+				
+			var netWorth = parseFloat(document.getElementById("netWorth").value);
+			if (netWorth < 0 || isNaN(netWorth)) {
+				alert("Please enter a valid net worth.");
+			}
+				
+			var months = parseInt(document.getElementById("months").value);
+			if (months < 0 || isNaN(months)) {
+				alert("Please enter a valid number of months.");
+			}
+			
+			var favNum = parseFloat(document.getElementById("favNum").value);
+			if (isNaN(favNum)) {
+				alert("Please enter a valid favorite number.");
+			}
+				
+			var futureValue = investment;
+			if (!isNaN(futureValue)) {
+				for ( i = 1; i <= months; i++ ) {
+					futureValue = futureValue + (favNum * netWorth * Math.random());
+				}
+
+				if (!isNaN(futureValue)) {
+					document.getElementById("future_value").value = "$" + futureValue.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+					audio.play();
+				}
+
+			}
+		}
+		
+		window.onload = function() {
+			document.getElementById("calculate").onclick = calculatePrice;
+		}
+		</script>
+		
+		<!-- Internal CSS -->
+		<style>
+        	.container img {
+				width: 30%;
+			}
+			
+			.button {
+				display: block;
+				margin: auto;
+				height: 40px;
+				font-size: 20px;
+  				font-weight: 900;
+  				color: #ef3c39 /*Business Red*/;
+  				text-transform: uppercase;
+  				text-align: center;
+			}
+			
+			
+			.input label {
+				float: left;
+    			width: 50%;
+    			text-align: right;
+				font-weight: 900;
+				font-size: 20px;
+				padding-top: 10px;
+			}
+			
+			.input input {
+				margin-left: 1em;
+    			margin-bottom: .5em;
+				width: 25%;
+				font-size: 20px;
+				padding: 2px;
+			}
+			
+			#future_value_label {
+  				text-align: center;
+				display: block;
+				margin: auto;
+				font-size: 30px;
+				color: #ef3c39 /*Business Red*/;
+  				text-transform: uppercase;
+				font-weight: 900;
+			}
+			
+			#future_value {
+  				text-align: center;
+				display: block;
+				margin: auto;
+				font-size: 20px;
+			}
+			
+    	</style>
+		
+		
+
+	</head>
+	
+    <body>
+		
+		<!-- Header -->
+		<header>
+
+			<!-- Page Image Header -->
+			<div class = "banner">
+				<img class = "header_image" src = "images/baa_header_image.png">
+	  		</div>
+
+			<!-- Navigation Bar -->
+			<nav>
+				<ul class = "menu">
+					<li class = "tab tab_style"><a href="index.html">Home</a></li>
+					<li class = "tab tab_style"><a href="info.html">Info</a></li>
+					<li class = "tab active"><a href="estimate.html">Estimate</a></li>
+					<li class = "tab tab_style"><a href="faq.html">Faq</a></li>
+					<li class = "tab tab_style"><a href="bios.html">Bios</a></li>
+					<li class = "tab tab_style"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Contact Us Section -->
+		<br><br><br>
+		<div class="text">
+			<section>
+				<h2>Get an Estimate!</h2>
+
+				<div class="input">
+					<label for="investment">Investment Amount:</label>
+					<input type="text" id="investment"><br>
+				</div>
+				
+				<div class="input">
+					<label for="netWorth">Net Worth of Business:</label>
+					<input type="text" id="netWorth"><br>
+				</div>
+				
+				<div class="input">
+					<label for="months">Time of Investment (months):</label>
+					<input type="text" id="months">
+				</div>
+				
+				<div class="input">
+					<label for="favNum">Favorite Number:</label>
+					<input type="text" id="favNum">
+				</div>
+
+				<label>&nbsp;</label>
+				<input type="button" class="button" id="calculate" value="Calculate"><br>
+			
+				<label for="future_value" id="future_value_label">Future Value:</label>
+				<input type="text" id="future_value" disabled="disabled">
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer class = "footer">
+
+			<!-- Footer Logo -->
+			<div class = "footer_image_container">
+				<img class = "footer_image" src = "images/baa_footer_image.png">
+			</div>
+
+			<!-- Footer Contact Info -->
+			<div class = "footer_text_container">
+
+				<!-- Email -->
+				<div>
+					<span class = "footer_text_info1">Email:</span>
+					<span class = "footer_text_info2">business@baa.com</span>
+				</div>
+
+				<!-- phone -->
+				<div>
+					<span class = "footer_text_info1">Phone:</span>
+					<span class = "footer_text_info2">287-463-7722</span>
+				</div>
+
+				<!-- Address -->
+				<div>
+					<span class = "footer_text_info1">Address:</span>
+					<span class = "footer_text_info2">Business Drive, Sacramento, CA</span>
+				</div>
+
+				<!-- Footer Text Blurb -->
+				<p class = "footer_text_caption">
+					  "Here at The Business Assessment Association, we believe in family values and a strong national backbone. With child labor making up a tenth of our workforce, we’re bringing communities together in ways you wouldn’t believe possible."
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

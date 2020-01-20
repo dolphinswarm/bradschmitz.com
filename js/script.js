@@ -125,12 +125,7 @@ $(document).ready(function(){
 
 	// =============================== Score view button handling
 	$(".viewbutton").on("click", function() {
-		// if ($(this).text() == "View Score") {
-		// 	$(this).text("Close Score");
-		// } else {
-		// 	$(this).text("View Score");
-		// }
-
+		// Landward Ho! button
 		if ($(this).is("#landwardhoviewbutton")) {
 			$("#landwardhoview").toggleClass("hide");
 			if ($("#landwardhoviewbutton").text() == "View Score") {
@@ -140,6 +135,7 @@ $(document).ready(function(){
 			}
 		}
 
+		// Devoid button
 		else if ($(this).is("#devoidviewbutton")) {
 			$("#devoidview").toggleClass("hide");
 			if ($("#devoidviewbutton").text() == "View Score") {
@@ -149,6 +145,7 @@ $(document).ready(function(){
 			}
 		}
 		
+		// MuseScore UI / UX report button
 		else if ($(this).is("#reportviewbutton")) {
 			$("#reportview").toggleClass("hide");
 			if ($("#reportviewbutton").text() == "View Report") {
@@ -178,4 +175,38 @@ $(document).ready(function(){
 	// 	});
 	// 	alert("MEOW");
 	// });
+	
+	// =============================== Modal dynamic content filling
+	$(".modalopener").on("click", function(){
+		
+		// Retrieve src and alt of child image and set it in the modal
+		var src = $(this).find("img").attr("src");
+		var alt = $(this).find("img").attr("alt");
+		$("#modalimg").attr({src: src, alt: alt});
+		
+		// Retrieve the title and set it in the modal
+		var title = $(this).find("h4").text();
+		$("#modaltitle").text(title);
+		
+		// Retrieve the modal text
+		var text = $(this).find("p").html();
+		$("#modaltext").html(text);
+	});
+	
+	// ============================== Modal opening and closing
+	$(window).on("click", function(event) {
+		
+		// Debugging - print target
+		// alert(event.target.className);
+		
+		// If clicking on a modal opener, open the modal
+		if (event.target.className.includes("modalopener")) {
+			$("#modal").css("display", "block");
+		}
+		
+		// If clicking on the background, hide the modal
+		if (event.target.id == "modal") {
+			$("#modal").css("display", "none");
+		}
+	});
 });
