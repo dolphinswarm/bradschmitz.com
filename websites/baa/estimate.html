@@ -52,6 +52,8 @@
 
 				if (!isNaN(futureValue)) {
 					document.getElementById("future_value").value = "$" + futureValue.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+					audio.pause();
+					audio.currentTime = 0;
 					audio.play();
 				}
 
