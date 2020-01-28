@@ -232,13 +232,14 @@
 			<div class="contentgroup">
 				<div class="fancyheader">
 					<img src="img/projects_icon_large.png" alt="Code Icon">
-					<h2 id="webapps">Course Projects</h2>
+					<h2 id="course-projects">Course Projects</h2>
 				</div>
 			</div>
 			
 			<!-- Gallery -->
 			<div class="contentgroup">
 				<div class="gallery">
+					<!-- Appalogue -->
 					<div class="subcontentgroup-onethird modalopener" id="appalogue">
 						<img src="img/appalogue.PNG" alt="Appalogue Icon" class="modalopener">
 						<h4 class="modalopener">Appalogue - Ruby on Rails App Directory</h4>
@@ -246,6 +247,8 @@
 						<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/Appalogue/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
 						<p class="hide"><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use.<br><br>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.<br><br>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
 					</div>
+					
+					<!-- Virtual Education -->
 					<div class="subcontentgroup-onethird modalopener" id="virtualeducation">
 						<div class="padding modalopener"></div>
 						<img src="img/virtualeducation.PNG" alt="Virtual Education Icon" class="modalopener">
@@ -253,6 +256,8 @@
 						<button type="button" class="viewbutton" onclick="window.open('http://bradschmitz.com/websites/virtualeducation/index.html','_blank')">View Site</button><br>
 						<p class="hide"><b>Virtual Education</b> is a simple website that was made for <b>IMS 222: Introduction to Interaction Design and Development</b>. The focus of this class was on designing and creating effective web interfaces with HTML, CSS, and JavaScript for various devices; this project was for mobile phones. While designing the website, I incorporated many mobile-friendly design elements, including a button to immediately return to the top of a scrolled page and placing the navbar at the bottom of the screen.<br><br>For theis assignment, the website's content was supposed to be about creating a business for "an industry which needed disrupting". Thus, I chose to create a website for a educational VR company, which provided "serious games" (educational and training games) to companies and schools.</p>
 					</div>
+					
+					<!-- Food Tracker -->
 					<div class="subcontentgroup-onethird modalopener" id="foodtracker">
 						<div class="padding modalopener"></div>
 						<img src="img/foodtracker.PNG" alt="Food Tracker Icon" class="modalopener">
@@ -260,6 +265,8 @@
 						<button type="button" class="viewbutton" onclick="window.open('http://ceclnx01.cec.miamioh.edu/~schmitb3/cse383/cse-383-final-project/','_blank')">View Site</button>
 						<p class="hide"><b>PHP Food Tracker</b> is a simple web application that was made for <b>CSE 383: Web Application Programming</b>. This class focused a lot on creating back-ends for websites, such as RESTful APIs and SQL server storage / handling. This project is no exception; for this project, we first used Bootstrap to create a web interface. Then, we used jQuery and PHP to design a RESTful API to handle various button inputs and requests. A user can log into the web application, then is able to select items that they've consumed in the past and add them to the tracker. The tracker support total counts for each food item, as well as history of the last 30 items.<br><br>To log in and view the page, use the username "test" and password "test".</p>
 					</div>
+					
+					<!-- BAA -->
 					<div class="subcontentgroup-onethird modalopener" id="baa">
 						<div class="padding modalopener"></div>
 						<img src="img/baa.PNG" alt="Bussiness Assessment Association Icon" class="modalopener">
@@ -267,6 +274,8 @@
 						<button type="button" class="viewbutton" onclick="window.open('http://bradschmitz.com/websites/baa/index.html','_blank')">View Site</button><br>
 						<p class="hide">The <b>Business Assessment Association</b> is a satirical website that was made as part of a group project for <b>IMS 257: Web Interaction Programming (now IMS 322: Intermediate Interaction Design and Development</b>. This class was a continuation of IMS 222, diving deeper into techniques for creating HTML, CSS, and JavaScript interfaces for websites.This assignment revolved around creating a business website that could conceivably be used in the professional world. One of our group members suggested we go over-the-top and just make the whole thing full of generic business buzzwords, and the rest is history.<br><br>Each group member was in charge of creating a webpage for the site - my page is the "Estimates" page, which uses four number inputs to generate a random number (and a "Kaching!" sound). I also was in charge of assembling the overall website, meaning that I had to combine each person's pages into a coherent website.</p>
 					</div>
+					
+					<!-- Game Engine -->
 					<div class="subcontentgroup-onethird modalopener" id="gameengine">
 						<div class="padding modalopener"></div>
 						<div class="padding modalopener"></div>
@@ -274,6 +283,8 @@
 						<h4 class="modalopener">OpenGL Game Engine</h4>
 						<p class="hide"><b>OpenGL Game Engine</b> is vertex-based rendering and game engine created during <b>CSE 387: Game Engine Design</b>. This class was a continuation of CSE 287 (now 386), and discussed the techniques and algorithms behind 3D graphics generation in real-time engines, such as those used in games. The first part of the class revolved around learning how OpenGL worked and how to effectively use it in graphics applications (such as buffers, shaders, uniform blocks, etc.), while the second half used that information to construct a basic game engine. Included in this game engine were texture mapping, model loading (using ASSIMP), cameras, game objects, components, scene graphs and scene graph transformation, sound (using FMOD), physics (using Bullet), and Quaternions.<br><br>Our final for this class was using the game engine we created to create a rudimentary game. I chose to make a pretty basic Rocket League clone, with various objects for score and a primitive AI tank enemy.</p>
 					</div>
+					
+					<!-- Ray Tracer -->
 					<div class="subcontentgroup-onethird modalopener" id="raytracer">
 						<div class="padding modalopener"></div>
 						<img src="img/raytracer.PNG" alt="OpenGL Ray Tracer" class="modalopener">
@@ -281,14 +292,17 @@
 						<button type="button" class="viewbutton" onclick="window.open('http://bradschmitz.com/projects/Ray Tracer.zip','_blank')">Download Demo</button><br>
 						<p class="hide"><b>OpenGL Ray Tracer</b> is a graphics program that was created for <b>CSE 287: Introduction to Computer Graphics and Games</b>. For this project, our goal was to use the open-source C++ graphics library OpenGL to create a basic ray tracer for rendering 3D scenes. Some of the features in this ray-tracer include low-level implementations of ambient, directional, positional, and spot lights, shadows created using "shadow feelers", inter-object reflections between objects, multiple camera angles, and anti-aliasing. This course was more concerned with the implementations instead of the execution of said features; thus, the program runs on the CPU instead of the GPU and is slower than usual.<br><br><b>Controls:</b><br>• <b>B</b>: Toggle fullscreen<br>• <b>Esc</b>: Quit application<br>• <b>1-4</b>: Set Recursion Depth<br>• <b>A</b>: Toggle ambient light<br>• <b>D</b>: Toggle directional light<br>• <b>P</b>: Toggle positional light<br>• <b>S</b>: Toggle spot light<br>• <b>F-H</b>: Change camera position<br>• <b>Z</b>: Toggle antialiasing<br></p>
 					</div>
+					
+					<!-- OpenGL Vertex Graphics Engine -->
 					<div class="subcontentgroup-onethird modalopener" id="vertexgrahics">
-						<div class="padding modalopener"></div>
 						<div class="padding modalopener"></div>
 						<img src="img/vertexgraphics.png" alt="OpenGL Vertex Graphics Engine" class="modalopener">
 						<h4 class="modalopener">OpenGL Vertex Graphics Engine</h4>
 						<button type="button" class="viewbutton" onclick="window.open('http://bradschmitz.com/projects/Vertex Engine.zip','_blank')">Download Demo</button><br>
 						<p class="hide"><b>Vertex-Based Graphics Engine</b> is a graphics program that was created for <b>CSE 287: Introduction to Computer Graphics and Games (now CSE 386)</b>. This project was meant to show off vertex-based graphics pipeline, which is used in most 3D game engines. Some of the features of this project include low-level implementations of basic animaiton, per vertex / per fragment shading, perspective / orthographic projections, a free-moving camera, object clipping, and backface culling. This course was more concerned with the implementations instead of the execution of said features; thus, the program runs on the CPU instead of the GPU and is slower than usual.<br><br>The application is controlled through a right-click window.</p>
 					</div>
+					
+					<!-- Coins and Boxes -->
 					<div class="subcontentgroup-onethird modalopener" id="coinsandboxes">
 						<div class="padding modalopener"></div>
 						<img src="img/coinsandboxes.png" alt="Coins and Boxes" class="modalopener">
@@ -296,6 +310,8 @@
 						<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/Coins-and-Boxes/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
 						<p class="hide"><b>Coins and Boxes</b> is a game that was made during <b>CSE 271: Object-Oriented Programming</b>. This game was made in Java using various libraries, like JFrame and Java Swing, to create a pretty simple arcade-style game. Coins and boxes are falling from the ceiling, and the player must dodge the boxes to collect coins. However, the player falls as well, and must constantly jump to avoid an instant game over. The game is over once the player crashes into five boxes, or falls into the void below.</p>
 					</div>
+					
+					<!-- Rowan Hall Scavenger Hunt -->
 					<div class="subcontentgroup-onethird modalopener" id="rowanhall">
 						<div class="padding modalopener"></div>
 						<img src="img/rowanhall.png" alt="Rowan Hall Scavenger Hunt" class="modalopener">
@@ -381,7 +397,7 @@
 				</ul>
 				<h3>Statistics Courses</h3>
 				<ul>
-						<div class="tooltip">
+					<div class="tooltip">
 							<li><b>STA 402</b>: Statistical Programming</li>
 						<span class="tooltiptext">Introduction to the use of computers to process and analyze data. Techniques and strategies for managing, manipulating, and analyzing data are discussed. Emphasis is on the use of the SAS system. Statistical computing topics, such as random number generation, randomization tests, and Monte Carlo simulation, will be used to illustrate these programming ideas.</span>
 					</div><br>
@@ -394,7 +410,7 @@
 		<footer>
 			<div id="greybar"></div>
 			<!-- Info -->
-			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2019</h3>
+			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2020</h3>
 		</footer>
 	</body>
 </html>

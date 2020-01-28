@@ -123,38 +123,38 @@ $(document).ready(function(){
 		});
 	});
 
-	// =============================== Score view button handling
-	$(".viewbutton").on("click", function() {
-		// Landward Ho! button
-		if ($(this).is("#landwardhoviewbutton")) {
-			$("#landwardhoview").toggleClass("hide");
-			if ($("#landwardhoviewbutton").text() == "View Score") {
-				$("#landwardhoviewbutton").text("Close Score");
-			} else {
-				$("#landwardhoviewbutton").text("View Score");
-			}
-		}
-
-		// Devoid button
-		else if ($(this).is("#devoidviewbutton")) {
-			$("#devoidview").toggleClass("hide");
-			if ($("#devoidviewbutton").text() == "View Score") {
-				$("#devoidviewbutton").text("Close Score");
-			} else {
-				$("#devoidviewbutton").text("View Score");
-			}
-		}
-		
-		// MuseScore UI / UX report button
-		else if ($(this).is("#reportviewbutton")) {
-			$("#reportview").toggleClass("hide");
-			if ($("#reportviewbutton").text() == "View Report") {
-				$("#reportviewbutton").text("Close Report");
-			} else {
-				$("#reportviewbutton").text("View Report");
-			}
-		}
-	});
+	// =============================== Score view button handling - MADE REDUNDANT BY COLLAPSIBLES
+//	$(".viewbutton").on("click", function() {
+//		// Landward Ho! button
+//		if ($(this).is("#landwardhoviewbutton")) {
+//			$("#landwardhoview").toggleClass("hide");
+//			if ($("#landwardhoviewbutton").text() == "View Score") {
+//				$("#landwardhoviewbutton").text("Close Score");
+//			} else {
+//				$("#landwardhoviewbutton").text("View Score");
+//			}
+//		}
+//
+//		// Devoid button
+//		if ($(this).is("#devoidviewbutton")) {
+//			$("#devoidview").toggleClass("hide");
+//			if ($("#devoidviewbutton").text() == "View Score") {
+//				$("#devoidviewbutton").text("Close Score");
+//			} else {
+//				$("#devoidviewbutton").text("View Score");
+//			}
+//		}
+//		
+//		// MuseScore UI / UX report button
+//		else if ($(this).is("#reportviewbutton")) {
+//			$("#reportview").toggleClass("hide");
+//			if ($("#reportviewbutton").text() == "View Report") {
+//				$("#reportviewbutton").text("Close Report");
+//			} else {
+//				$("#reportviewbutton").text("View Report");
+//			}
+//		}
+//	});
 
 	// =============================== handle form submission
 	// $("#contactform").on("submit", function(event) {
@@ -207,6 +207,22 @@ $(document).ready(function(){
 		// If clicking on the background, hide the modal
 		if (event.target.id == "modal") {
 			$("#modal").css("display", "none");
+		}
+	});
+	
+	// ============================== Collapsable Opening / Closing
+	$(".collapsible").on("click", function() {
+		
+		// Get current max height
+		var height = $(this).next().css("max-height");
+		
+		// If open, close
+		if (height != "0px") {
+			$(this).next().css("max-height", 0);
+			
+		// Else, open
+		} else {
+			$(this).next().css("max-height", $(this).next().prop("scrollHeight"));
 		}
 	});
 });

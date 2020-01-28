@@ -228,36 +228,53 @@
 			<!-- Main Title -->
 			<h1 id="title">My Code</h1>
 			
-			<!-- This Website Header -->
+			<!-- Personal Projects Header -->
 			<div class="contentgroup">
 				<div class="fancyheader">
 					<img src="img/projects_icon_large.png" alt="Code Icon">
-					<h2 id="thiswebsite">bradschmitz.com</h2>
+					<h2 id="personal-projects">Personal Projects</h2>
 				</div>
 			</div>
-
-			<!-- This Website -->
+			
+			<!-- Gallery -->
 			<div class="contentgroup">
-				<img src="img/thiswebsite.png">
-				<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/bradschmitz.com','_blank')"><img src="img/github_logo_transparent.png">View GitHub Repository</button>
-				<p>TO EDIT</p>
-			</div>
-
-			<!-- VR Header -->
-			<div class="contentgroup">
-				<div class="fancyheader">
-					<img src="img/projects_icon_large.png" alt="Code Icon">
-					<h2 id="vrar">Virtual and Augmented Reality</h2>
+				<div class="gallery">
+					<!-- This Website -->
+					<div class="subcontentgroup-onethird modalopener" id="thiswebsite">
+						<div class="padding modalopener"></div>
+						<img src="img/thiswebsite.PNG" alt="This Website" class="modalopener">
+						<h4 class="modalopener">This Website</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/bradschmitz.com/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>bradschmitz.com</b> is the website you are currently viewing! This website is my portfolio website to show all my creations, and was constructed from-the-ground-up using HTML, CSS, and JavaScript / JQuery for the frontend, and PHP for the backend.</p>
+					</div>
+					
+					<!-- VRchery -->
+					<div class="subcontentgroup-onethird modalopener" id="vrchery">
+						<div class="padding modalopener"></div>
+						<img src="img/vrchery.png" alt="This Website" class="modalopener">
+						<h4 class="modalopener">VRchery</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/VRchery.com/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>bradschmitz.com</b> is the website you are currently viewing! This.</p>
+					</div>
+					
+					<!-- AR Looper -->
+					<div class="subcontentgroup-onethird modalopener" id="arlooper">
+						<div class="padding modalopener"></div>
+						<img src="img/arlooper.png" alt="This Website" class="modalopener">
+						<h4 class="modalopener">AR Looper</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/AR-Looper/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>bradschmitz.com</b> is the website you are currently viewing! This.</p>
+					</div>
 				</div>
 			</div>
-
-			<!-- VRChery -->
-			<div class="contentgroup">
-				<h3>VRchery</h3>
-				<img src="img/thiswebsite.png">
-				<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/vrchery','_blank')"><img src="img/github_logo_transparent.png">View GitHub Repository</button>
-				<p>TO EDIT</p>
-				<hr>
+			
+			<!-- Modal -->
+			<div id="modal">
+				<div id="modalcontent">
+					<h1 id="modaltitle"></h1>
+					<img src="img/brad_casual_professional.jpg" id="modalimg" alt="Placeholder">
+					<p id="modaltext"></p>
+				</div>
 			</div>
 			
 			<!-- Scratch Header 
@@ -282,7 +299,7 @@
 		<footer>
 			<div id="greybar"></div>
 			<!-- Info -->
-			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2019</h3>
+			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2020</h3>
 		</footer>
 	</body>
 </html>

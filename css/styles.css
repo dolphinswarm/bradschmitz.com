@@ -845,6 +845,11 @@ hr {
 	height: 50px;
 }
 
+.collapsible-content {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 
 /* ============ Media Queries ============ */
 @media screen and (min-width: 1280px) {
