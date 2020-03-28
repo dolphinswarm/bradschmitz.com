@@ -193,6 +193,23 @@ $(document).ready(function(){
 		$("#modaltext").html(text);
 	});
 	
+	// =============================== Modal video dynamic content filling
+	$(".videomodalopener").on("click", function(){
+		
+		// Retrieve src and alt of child image and set it in the modal
+		var src = $(this).find("img").attr("alt");
+		var url = "https://www.youtube.com/embed/" + src;
+		$("#modalvideo").attr("src", url);
+		
+		// Retrieve the title and set it in the modal
+		var title = $(this).find("h4").text();
+		$("#modaltitle").text(title);
+		
+		// Retrieve the modal text
+		var text = $(this).find("p").html();
+		$("#modaltext").html(text);
+	});
+	
 	// ============================== Modal opening and closing
 	$(window).on("click", function(event) {
 		
