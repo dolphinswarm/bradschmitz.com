@@ -8,16 +8,11 @@
 	$organization = htmlspecialchars($_POST['organization']);
 
 	// Make sure no items are blank (shouldn't be due to jQuery form handling)
-	//if (!isset($email) || !isset($fname) || !isset($lname) || !isset($subject) || !isset($content))
 	if (empty($email) || empty($fname) || empty($lname) || empty($subject) || empty($content))
 	{
 		http_response_code(500);
 		echo "One or more parameters are invalid or empty!"; // <- xhr.responseText
 		exit;
-//		print json_encode(array("first name" => $fname, "last name" => $lname));
-//		echo '<script>alert(' . $fname . ');</script>';
-//		echo "<script>console.log(Email:" . $email . ", First Name: " . $fname . ", Last Name: " . $lname . ", Subject " . $subject . ", Content: " . $content . "' );</script>";
-//		exit();
 	}
 
 
@@ -32,9 +27,9 @@
 
 	
 	// Create email content
-	$msg = "<html><body>";
-	$msg .= $content;
-	$msg .= "<img src='http://bradschmitz.com/img/fav/apple-touch-icon-152x152.png'>";
+	$msg = "<html><body style='font-family: Verdana, Geneva, sans-serif'>";
+	$msg .= $content .  PHP_EOL;
+	$msg .= "--" . PHP_EOL . "<img src='http://bradschmitz.com/img/logo.png'>" . PHP_EOL . "<p>This email was sent via the Contact form on bradschmitz.com.";
 	$msg .= "</body></html>";
 
 	
@@ -51,27 +46,4 @@
 		http_response_code(200);
 		exit;
 	}
-
-  // if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  //   // Read in data from form
-  //   $data = json_decode(file_get_contents('php://input'));
-  //
-  //   // Check to make sure data exists and is valid
-  //   if ($data == null) {
-  //     header("HTTP/1.1 500 Invalid data");
-  //     exit();
-  //   }
-  //   // if (empty($data["email"]) || empty($data["fname"]) || empty($data["lname"]) || empty($data["subject"]) || empty($data["content"])) {
-  //   //   header("HTTP/1.1 500 invalid data");
-  //   //   exit();
-  //   // }
-  //
-  //   // Create message
-  //   $msg = "From " . $data["fname"] . " " . $data["lname"] . " (" . $data["email"] . "): \n" + $data["content"];
-  //   mail("schmitb3@miamioh.edu", $data["subject"], $msg);
-  //
-  // } else {
-  //   header("HTTP/1.1 500 Invalid request format");
-  //   exit();
-  // }
 ?>
