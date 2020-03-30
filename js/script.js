@@ -242,4 +242,40 @@ $(document).ready(function(){
 			$(this).next().css("max-height", $(this).next().prop("scrollHeight"));
 		}
 	});
+	
+	// ============================== Form Handling via AJAX
+	$("#contactform").on("submit", function(event){
+		// Prevent default form handling
+		event.preventDefault();
+		
+		// Serialize the form data
+		var formdata = $(this).serialize();
+		
+		// Send an AJAX post to the mail form
+		$.ajax({
+			type: "POST",
+			url: "php/mail.php",
+			data: formdata,
+			// On success
+			success: function(data, status, xhr) {
+				// Check to make sure status is ok
+				if (xhr.status == 200) {
+					// Hide the contact form
+					$("#contactform").empty();
+					
+					// Append 
+					$("#contactform").append("<h1 style='size: 50px; text-align: center;'>Thank you for your submission!<h1><p style='text-align: center;'>I should hopefully respond soon!</p>");
+					
+				} else {
+					alert("ERROR: " + xhr.responseText);
+				}
+			},
+			// On failute
+			error: function(xhr) {
+				//alert(xhr.status + " " + xhr.statusText + " " + xhr.responseText);
+				alert("ERROR: " + xhr.responseText);
+			}
+		});
+			
+	});
 });
