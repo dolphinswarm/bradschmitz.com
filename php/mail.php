@@ -28,9 +28,9 @@
 	
 	// Create email content
 	$msg = "<html><body style='font-family: Verdana, Geneva, sans-serif'>";
-	$msg .= $content .  PHP_EOL;
-	$msg .= "--" . PHP_EOL . "<img src='http://bradschmitz.com/img/logo.png'>" . PHP_EOL . "<p>This email was sent via the Contact form on bradschmitz.com.";
-	$msg .= "</body></html>";
+	$msg .= $content;
+	$msg .= "<br><div style='color: #7F7F7F'>--<br><img src='http://bradschmitz.com/img/logo.png' style='width: 100px;'><br><p>This email was sent via the Contact form on bradschmitz.com.";
+	$msg .= "</div></body></html>";
 
 	
   	// Send mail
