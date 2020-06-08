@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+	<!-- Heading -->
+	<head>
+		<!-- Settings -->
+		<meta charset="utf-8">
+		<title>Virtual Education - Home</title>
+		<link rel="stylesheet" type = "text/css" href="css/main.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Internal CSS -->
+		<style>
+			b {
+				color: #F7931E;
+			}
+
+			.content img {
+				display: block;
+				margin: 10px auto;
+			}
+
+			.form {
+				border: 1px black;
+				background-color: #BFBFBF;
+				color: black;
+				width: 90vw;
+				margin: 0px auto;
+			}
+
+			.form h1 {
+				color: black;
+				margin-bottom: 7vw;
+			}
+
+			.form p {
+				color: black;
+				margin-bottom: 8vw;
+				text-align: left;
+				margin-left: 2vw;
+			}
+
+			.form input[type=text] {
+				margin-top: 2vw;
+				width: 30vw;
+			}
+
+			.game {
+				padding: 2vw;
+				height: 10vw;
+				margin: 0px 2vw;
+			}
+
+			.game input[type=text]{
+				width: 7vw;
+				color: black;
+			}
+
+			.game img {
+				margin: 1vw 0px 0px 0px;
+			}
+
+			.game p {
+				width: 20vw;
+				font-size: 3vw;
+				text-align: right;
+				float: right;
+				margin-top: 0vw;
+				font-weight: bold;
+			}
+
+			.content button {
+				background-color: #F7931E;
+				border: none;
+				color: white;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font: 10vw Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+				padding: 10px;
+				font-weight: bold;
+				width: 40vw;
+				display: block;
+				margin: 3px auto;
+				border-radius: 4px;
+			}
+
+		</style>
+
+	</head>
+
+	<!-- Body -->
+	<body>
+
+		<div class="page">
+
+		<!-- Header -->
+		<header class="header" id="myHeader">
+			<!-- Logo -->
+			<a href="index.html"><img src="img/VE_Logo-Orange.png" id="logo"></a>
+
+			<!-- Search -->
+			<div class="searchbar">
+				<input type="text" placeholder="Search..." >
+				<button type="submit" onclick="alert('No results found. Try a different search!')" style="height: 32px;"><img src="img/searchicon.png"></button>
+			</div>
+		</header>
+
+		<!-- Body content -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">/\</button>
+
+		<div class="content">
+		  <div class="form">
+				<h1>Order Form</h1>
+				<p>First name: <input type="text" name="firstname" id="firstname"></p>
+				<p>Last name: <input type="text" name="lastname" id="lastname"></p>
+			<p>Organization Name: <input type="text" name="ZIP" id="ZIP"></p>
+			<p>Address (Line 1): <input type="text" name="address" id="address"></p>
+			<p>Address (Line 2): <input type="text" name="address" id="address"></p>
+			<p>City: <input type="text" name="city" id="city"></p>
+			<p>State: <input type="text" name="state" id="state"</p>
+			<p>ZIP: <input type="text" name="ZIP" id="ZIP"></p>
+				<hr>
+			<p style="font-size: 4vw; margin: 0px auto; text-align: center; width: 80vw; display: block; ">Select the quantity of games you wish to purchase.</p>
+				<br>
+
+			  	<!-- Panel 1: Oregon Trail VR -->
+				<div class ="game" style="background-color: skyblue;">
+					<img src="img/oregon_trail_vr_logo.png" style="width: 55vw; float: left;">
+					<p>Qty. <input type="text" name="oregon_trail_vr_quantity" id="oregon_trail_vr_quantity" placeholder="0"></p>
+				</div>
+			  	<br>
+
+			  	<!-- Panel 2: Around the World VR -->
+				<div class ="game" style="background-color: royalblue;">
+					<img src="img/around_the_world_vr_logo.png" style="width: 55vw; float: left;">
+					<p>Qty. <input type="text" name="around_the_world_vr_quantity" id="around_the_world_vr_quantity" placeholder="0"></p>
+			  	</div>
+			  	<br>
+
+				<!-- Panel 3: VRMath -->
+				<div class ="game" style="background-color: darkorange;">
+					<img src="img/vrmath_logo.png" style="width: 25vw; float: left;">
+					<p>Qty. <input type="text" name="vrmath_quantity" id="vrmath_quantity" placeholder="0"></p>
+			  	</div>
+				<br>
+
+			  	<!-- Panel 4: Across the Universe VR -->
+				<div class ="game" style="background-color: black;">
+					<img src="img/across_the_universe_vr_logo.png" style="width: 55vw; float: left;">
+					<p style="color: white;">Qty. <input type="text" name="across_the_universe_vr_quantity" id="across_the_universe_vr_quantity" placeholder="0" style="color: black;"></p>
+			  	</div>
+			  	<br>
+
+			  	<!-- Panel 5: Across the Universe VR -->
+				<div class ="game" style="background-color: dimgrey;">
+					<img src="img/bomb_disarming_vr_logo.png" style="width: 55vw; float: left;">
+					<p>Qty. <input type="text" name="bomb_disarming_vr_quantity" id="bomb_disarming_vr_quantity" placeholder="0"></p>
+			  	</div>
+			  	<br>
+
+			  	<!-- Panel 6: Flight Simulator VR -->
+				<div class ="game" style="background-color: skyblue;">
+					<img src="img/flight_simulator_vr_logo.png" style="width: 55vw; float: left;">
+					<p>Qty. <input type="text" name="flight_simulator_vr_quantity" id="flight_simulator_vr_quantity" placeholder="0"></p>
+			  	</div>
+			  	<br>
+
+			  	<button type="button" onclick="alert('Thank you for your purchase!')">Submit</button>
+			  <br>
+
+		  </div>
+		</div>
+
+
+		<!-- Footer -->
+		<footer class="footer" id="myFooter">
+			<ul>
+				<a href="index.html"><li><img src="img/house-icon.png"></li></a>
+				<a href="games.html"><li><img src="img/game-icon.png"></li></a>
+				<a href="goals.html"><li><img src="img/globe-icon.png"></li></a>
+				<a href="buy.html"><li id="activeIcon"><img src="img/money-icon.png"></li></a>
+			</ul>
+		</footer>
+
+		</div>
+
+		<div class="message">
+			<h2>You must be on a mobile device to view this page!</h2>
+			<p>Either go to a mobile device or shrink your browser's viewport!<p>
+		</div>
+	</body>
+
+	<!-- JavaScript -->
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</html>

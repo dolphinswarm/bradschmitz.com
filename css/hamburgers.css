@@ -37,9 +37,9 @@
   position: relative; }
 
 .hamburger-inner {
-  display: block;
-  top: 162px;
-	margin-left: 5px;
+  	display: block;
+	margin-top: 12px;
+	margin-left: 2.5px;
 }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 35px;
