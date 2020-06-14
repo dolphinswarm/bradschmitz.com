@@ -88,22 +88,27 @@ body
 	
 	/* Backup backup - standard color */
 	background-color: #111111;
+	margin-bottom: -20px;
 }
 
-header, nav
+header, nav, footer
 {
+	/* Prevent selection */
 	user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
+	
+	/* Font */
+	font-family: 'Century Gothic';
+	color: #FFFFFF;
 }
 
 header h1
 {
 	font-family: 'DepredationPixie';
-	color: #FFFFFF;
 	text-align: center;
 	font-size: 36px;
 	margin: 5px 0px 0px 0px;
@@ -113,19 +118,44 @@ header h2
 {
 	margin: 0px 0px 10px 0px;
 	text-align: center;
-	font-family: 'Century Gothic';
-	color: #FFFFFF;
 	font-size: 22px;
 }
 
-header a
+footer h1
 {
-	text-decoration: none;
+	text-align: left;
+	font-size: calc(14px + 1vw);
+	margin: 5px;
+}
+
+footer h2 
+{
+	text-align: left;
+	font-size: 16px;
+	margin: 5px 5px 5px 0px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 main
 {
-	min-height: 700px;
+	min-height: 66vh;
+}
+
+header a, nav a, footer a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+footer
+{
+	padding-bottom: 10px;
+}
+
+body hr 
+{
+	border: 5px solid #3A3F42;
 }
 
 /* ============ IDs ============ */
@@ -216,7 +246,12 @@ main
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 5px;
-	background-color: #7F7F7F;
+	background-color: #23272A;
+}
+
+#playback-button:hover
+{
+	color: #F7941E;
 }
 
 /* ============ Classes ============ */
@@ -243,7 +278,8 @@ main
 	/* Properties */
 	min-width: 250px;
 	wdith: 100%;
-	height: 70px;
+	min-height: 70px;
+	overflow: auto;
 	cursor: pointer;
 	/*border: 1px black solid;*/
 	
@@ -273,7 +309,7 @@ main
  	transition: transform .25s ease-in-out;
 }
 
-.tab h2 
+#regular-navbar .tab h2 
 {
 	/* Box */
 	display: inline-block;
@@ -283,6 +319,18 @@ main
 	
 	/* Font */
 	font-size: calc(14px + 1vw);
+}
+
+#side-navbar .tab h2 
+{
+	/* Box */
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0px;
+	
+	/* Font */
+	font-size: calc(20px + 1vw);
 }
 
 .tab i 
@@ -335,9 +383,15 @@ main
 /*	transition: height .25s ease-in;*/
 }
 
-.subtab h3 {
+#regular-navbar .subtab h3 {
 	/* Font */
 	font-size: calc(14px + 1vw);
+	margin: 0px;
+}
+
+#side-navbar .subtab h3 {
+	/* Font */
+	font-size: calc(20px + 1vw);
 	margin: 0px;
 }
 
@@ -347,6 +401,27 @@ main
 	background-color: #F7941E;
 }
 
+.icon-footer
+{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	vertical-align: middle;
+}
+
+.footer-column
+{
+	width: 40%;
+	display: inline-block;
+}
+
+footer i
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px 3px 5px 10px;
+}
 /* ============ Special Classes ============ */
 .rotate-arrow 
 {
@@ -360,8 +435,14 @@ main
  	transition-transform: rotate(30deg);
 }
 
-.hide {
+.hide 
+{
   display: none;
+}
+
+.open
+{
+	width: 75%;
 }
 
 /* ============ Media Queries ============ */
@@ -396,6 +477,12 @@ main
 		width: 90%;
 		border-left: 0.75vw solid #F7941E;
 		border-right: 0.75vw solid #F7941E;
+	}
+	
+	/* ============ Classes ============ */
+	.footer-column
+	{
+		width: 100%;
 	}
 }
 

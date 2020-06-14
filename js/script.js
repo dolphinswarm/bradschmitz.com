@@ -2,8 +2,38 @@
 $(document).ready(function() 
 {
 	// =============================== GLOBAL VARIABLES
-	var previousTab;
-	var currentTab;
+	var previousTab = new Object();
+	var currentTab = new Object();
+	var storage = window.localStorage;
+	
+	// ===========
+	// On page load, set the pause status of the background.
+	// ===========
+	// If nothing in local storage, add it
+	if (storage.length == 0)
+		storage.setItem("Playback", "Pause");
+	
+	// Set the icon and value based on localstorage
+	if (storage.getItem("Playback") == "Play")
+	{
+		// Update the visuals
+		$("#playback-button").find("i").addClass("fa-pause");
+		$("#playback-button").find("i").removeClass("fa-play");
+		$("#playback-button").find("h2").text("Pause Background");
+		
+		// Play the background
+		$("#background").find("video").trigger('play');
+	}
+	else
+	{
+		// Update the visuals
+		$("#playback-button").find("i").removeClass("fa-pause");
+		$("#playback-button").find("i").addClass("fa-play");
+		$("#playback-button").find("h2").text("Play Background");
+		
+		// Play the background
+		$("#background").find("video").trigger('pause');
+	}
 	
 	// ===========
 	// Function for closing and opening tabs based on window size.
@@ -15,7 +45,8 @@ $(document).ready(function()
 			if ($("#hamburger-border").hasClass("is-active")) {
 				$("#hamburger-border").removeClass("is-active");
 			}
-			$("#side-navbar").css("width", "0%");
+			$("#side-navbar").css({"width": "0%", "vertical-align": "middle",  "border-right": "0px solid #F7941E"});
+			$("#cover").css({"width": "0%", "height": "0%", "background-color": "rgba(0,0,0,0.0)"});
 		}
 	})
 	
@@ -26,34 +57,34 @@ $(document).ready(function()
 	{
 		// Get previous and current tabs
 		previousTab = currentTab;
-		currentTab = $(this).index();
+		currentTab = $(this);
 		
 		// Toggle the rotate classes
-		$(".tab img").eq(currentTab).toggleClass("rotate-img");
-		$(".tab i").eq(currentTab).toggleClass("rotate-arrow");
+		$(currentTab).find("img").toggleClass("rotate-img");
+		$(currentTab).find("i").toggleClass("rotate-arrow");
 		
 		// If the previous tab is different from the current tab...
-		if (previousTab !== currentTab)
+		if ($(currentTab).index() !== $(previousTab).index())
 		{
 			// Toggle the rotate classes
-			if ($(".tab img").eq(previousTab).hasClass("rotate-img")) 
+			if ($(previousTab).find("img").hasClass("rotate-img")) 
 			{
-				$(".tab img").eq(previousTab).toggleClass("rotate-img");
-				$(".tab i").eq(previousTab).toggleClass("rotate-arrow");			
+				$(previousTab).find("img").toggleClass("rotate-img");
+				$(previousTab).find("i").toggleClass("rotate-arrow");			
 			}
 
 			// Show the current subtabs and hide previous subtabs
-			$(".tab").eq(currentTab).find(".subtab").css("height", "60px");
-			$(".tab").eq(previousTab).find(".subtab").css("height", "0px");
+			$(currentTab).find(".subtab").css("height", "60px");
+			$(previousTab).find(".subtab").css("height", "0px");
 		}
 		// Else
 		else
 		{
 			// Show / hide the subtabs conditionally
-			if ($(".tab img").eq(currentTab).hasClass("rotate-img")) 
-				$(".tab").eq(currentTab).find(".subtab").css("height", "60px");	
+			if ($(currentTab).find("img").hasClass("rotate-img")) 
+				$(currentTab).find(".subtab").css("height", "60px");	
 			else
-				$(".tab").eq(currentTab).find(".subtab").css("height", "0px");
+				$(currentTab).find(".subtab").css("height", "0px");
 		}
 	})
 
@@ -66,10 +97,10 @@ $(document).ready(function()
 		$("#hamburger-border").toggleClass("is-active");
 		
 		// Change the width of the sidebar
-		if ($("#side-navbar").css("width") == "0px")
-			$("#side-navbar").css("width", "75%");
+		if ($("#side-navbar").css("vertical-align") == "middle")
+			$("#side-navbar").css({"width": "75%", "vertical-align": "sub", "border-right": "5px solid #F7941E"});
 		else
-			$("#side-navbar").css("width", "0%");
+			$("#side-navbar").css({"width": "0%", "vertical-align": "middle",  "border-right": "0px solid #F7941E"});
 		
 		// Change the width of the background cover
 		if ($("#cover").css("width") == "0px")
@@ -77,4 +108,49 @@ $(document).ready(function()
 		else
 			$("#cover").css({"width": "0%", "height": "0%", "background-color": "rgba(0,0,0,0.0)"});
 	})
+	
+	// ===========
+	// Function for autopausing audio / video if another starts playing
+	// ===========
+	$("audio").on("play", function() {
+		$("audio").not(this).each(function(index, audio) {
+			audio.pause();
+		});
+	});
+
+//	$("video").on("play", function() {
+//		$("video").not(this).each(function(index, video) {
+//			video.pause();
+//		});
+//	});
+	
+	// ===========
+	// Function for pausing and playing the background
+	// ===========
+	$("#playback-button").on("click", function() {
+		// If currently pause, set to play
+		if (storage.getItem("Playback") == "Play")
+		{
+			// Update the visuals
+			$("#playback-button").find("i").removeClass("fa-pause");
+			$("#playback-button").find("i").addClass("fa-play");
+			$("#playback-button").find("h2").text("Play Background");
+			storage.setItem("Playback", "Pause");
+			
+			// Play the background
+			$("#background").find("video").trigger('pause');
+		}
+		// Else, set to pause
+		else
+		{
+			$("#playback-button").find("i").addClass("fa-pause");
+			$("#playback-button").find("i").removeClass("fa-play");
+			$("#playback-button").find("h2").text("Pause Background");
+			storage.setItem("Playback", "Play");
+			
+			// Pause the background
+			$("#background").find("video").trigger('play');
+		}
+	});
+	
 });
