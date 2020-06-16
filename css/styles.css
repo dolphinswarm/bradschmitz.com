@@ -89,6 +89,10 @@ body
 	/* Backup backup - standard color */
 	background-color: #111111;
 	margin-bottom: -20px;
+	
+	/* Font */
+	font-family: 'Century Gothic';
+	color: #FFFFFF;
 }
 
 header, nav, footer
@@ -100,10 +104,6 @@ header, nav, footer
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	
-	/* Font */
-	font-family: 'Century Gothic';
-	color: #FFFFFF;
 }
 
 header h1
@@ -125,6 +125,13 @@ footer h1
 {
 	text-align: left;
 	font-size: calc(14px + 1vw);
+	margin: 5px;
+}
+
+main h1
+{
+	text-align: center;
+	font-size: calc(44px + 2vw);
 	margin: 5px;
 }
 
@@ -321,6 +328,12 @@ body hr
 	font-size: calc(14px + 1vw);
 }
 
+#regular-navbar .tab .subtab-group
+{
+	position: relative;
+	z-index: 1;
+}
+
 #side-navbar .tab h2 
 {
 	/* Box */
@@ -343,14 +356,14 @@ body hr
  	transition: transform .25s ease-in-out;
 }
 
-.tabgroup
+.tab-group
 {
 	/* Transition */
 	-webkit-transition:.25s ease-in-out;
  	transition: .25s ease-in-out;
 }
 
-.tabgroup:hover 
+.tab-group:hover 
 {	
 	background-color: #F7941E;
 }
