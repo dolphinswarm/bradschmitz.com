@@ -131,7 +131,14 @@ footer h1
 main h1
 {
 	text-align: center;
-	font-size: calc(44px + 2vw);
+	font-size: calc(30px + 2vw);
+	margin: 5px;
+}
+
+main h3
+{
+	text-align: center;
+	font-size: calc(20px + 1vw);
 	margin: 5px;
 }
 
@@ -160,9 +167,9 @@ footer
 	padding-bottom: 10px;
 }
 
-body hr 
+button, audio
 {
-	border: 5px solid #3A3F42;
+	outline: none;
 }
 
 /* ============ IDs ============ */
@@ -259,6 +266,11 @@ body hr
 #playback-button:hover
 {
 	color: #F7941E;
+}
+
+#bottom-hr
+{
+	border: 5px solid #3A3F42;
 }
 
 /* ============ Classes ============ */
@@ -386,7 +398,7 @@ body hr
 /*	outline: 0px solid #D1D1D1;*/
 	
 	/* Transition */
-	-webkit-transition:.25s ease-in-out;
+	-webkit-transition: .25s ease-in-out;
  	transition: .25s ease-in-out;
 /*
 	-webkit-transition: height .25s ease-in;
@@ -435,6 +447,185 @@ footer i
 	vertical-align: middle;
 	margin: 5px 3px 5px 10px;
 }
+
+.content-header 
+{
+  	width: 95%;
+  	background-color: #F7941E;
+  	border: 2px solid #D1D1D1;
+  	color: #000000;
+  	text-align: left;
+  	margin: 10px auto;
+  	min-height: 50px;
+	height: auto;
+  	line-height: 25px;
+  	padding: 5px;
+}
+
+.content-header h2 
+{
+	width: 75%;
+  	margin: 0px;
+  	font-family: 'DepredationPixie';
+  	font-size: calc(20px + 0.75vw);
+  	display: inline-block;
+  	vertical-align: middle;
+}
+
+.content-header img 
+{
+  	margin: 0px;
+  	display: inline-block;
+  	width: 50px;
+  	padding-left: 1vw;
+  	vertical-align: middle;
+}
+
+.content-group
+{
+	width: 90%;
+	text-align: center;
+	margin: 0px auto;
+	overflow-y: auto;
+}
+
+.content-group embed
+{
+	min-width: 300px;
+	width: 90%;
+	height: 100vh;
+}
+
+.content-group p
+{
+  	text-align: left;
+  	width: 80%;
+  	margin: 10px auto 20px auto;
+  	line-height: 28px;
+    font-size: 19px;
+}
+
+.content-group a
+{
+	text-decoration: none;
+	color: #F7941E;
+	font-weight: bold;
+}
+
+.subcontent-group-onethird 
+{
+	vertical-align: middle;
+	width: 30%;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.subcontent-group-twothirds 
+{
+	vertical-align: middle;
+	width: 60%;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.subcontent-group-half {
+	vertical-align: top;
+	width: 45%;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.view-button {
+	background-color: #F7941E;
+	border: 2px solid #D1D1D1;
+	color: #000000;
+	text-align: center;
+	display: block;
+	margin: 10px auto 10px auto;
+	width: 150px;
+	height: 50px;
+	font-size: 22px;
+	font-family: 'DepredationPixie';
+	text-decoration: none;
+	-webkit-transition: .25s ease-in-out;
+ 	transition: .25s ease-in-out;
+}
+
+.view-button:hover {
+	background-color: #FFB03D;
+	cursor: pointer;
+}
+
+.github-button {
+	background-color: #000000;
+	border: 2px solid #D1D1D1;
+	color: #FFFFFF;
+	text-align: center;
+	display: block;
+	margin: 10px auto 20px auto;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	font-family: 'DepredationPixie';
+	text-decoration: none;
+	-webkit-transition: .25s ease-in-out;
+ 	transition: .25s ease-in-out;
+}
+
+.github-button:hover {
+	background-color: #222222;
+	cursor: pointer;
+}
+
+.collapsible-content {
+	max-height: 0px;
+	overflow: hidden;
+	-webkit-transition: .25s ease-in-out;
+ 	transition: .25s ease-in-out;
+}
+
+.content-group p b
+{
+  	color:  #F7941E;
+}
+
+.content-group .centered
+{
+	text-align: center;
+}
+
+.content-group .social-media-logo 
+{
+	width: 75px;
+	border: none;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	transition: 0.3s;
+}
+
+.content-group .social-media-name 
+{
+	font-size: calc(16px + 1vw);
+	font-weight: bold;
+	transition: color 0.3s;
+	width: 100%;
+}
+
+.content-group .social-media-name:hover 
+{
+	color: #F7941E;
+	cursor: pointer;
+}
+
+.content-group .social-media-name:hover .social-media-logo 
+{
+	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 4px #F7941E);
+	overflow: auto;
+}
+
 /* ============ Special Classes ============ */
 .rotate-arrow 
 {
@@ -456,6 +647,11 @@ footer i
 .open
 {
 	width: 75%;
+}
+
+.hide-hr
+{
+	display: none;
 }
 
 /* ============ Media Queries ============ */
@@ -496,6 +692,29 @@ footer i
 	.footer-column
 	{
 		width: 100%;
+	}
+	
+	.content-group .social-media-name 
+	{
+		font-size: calc(8px + 5vw);
+	}
+	
+	.content-group .social-media-logo 
+	{
+		padding-left: 20px;
+		width: 10vw;
+	}
+	
+	.subcontent-group-half, .subcontent-group-twothirds, .subcontent-group-half
+	{
+		width: 100%;
+		display: block;
+		overflow: hidden;
+	}
+	
+	.hide-hr
+	{
+		display: block;
 	}
 }
 

@@ -152,5 +152,23 @@ $(document).ready(function()
 			$("#background").find("video").trigger('play');
 		}
 	});
+
+	// ===========
+	// Function for opening and closing a collapsible
+	// ===========
+	$(".collapsible").on("click", function() {
+		
+		// Get current max height
+		var height = $(this).next().css("max-height");
+		
+		// If open, close
+		if (height != "0px") {
+			$(this).next().css("max-height", 0);
+			
+		// Else, open
+		} else {
+			$(this).next().css("max-height", $(this).next().prop("scrollHeight"));
+		}
+	});
 	
 });
