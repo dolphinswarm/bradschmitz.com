@@ -104,7 +104,7 @@ $(document).ready(function()
 		
 		// Change the width of the background cover
 		if ($("#cover").css("width") == "0px")
-			$("#cover").css({"width": "100%", "height": "100%", "background-color": "rgba(0,0,0,0.5)"});
+			$("#cover").css({"width": "100%", "height": "100%", "background-color": "rgba(0,0,0,0.6)"});
 		else
 			$("#cover").css({"width": "0%", "height": "0%", "background-color": "rgba(0,0,0,0.0)"});
 	})
@@ -168,6 +168,63 @@ $(document).ready(function()
 		// Else, open
 		} else {
 			$(this).next().css("max-height", $(this).next().prop("scrollHeight"));
+		}
+	});
+
+	// ===========
+	// Function for dynamically populating a modal
+	// ===========
+	$(".modal-opener").on("click", function(){
+		
+		// Retrieve src and alt of child image and set it in the modal
+		var src = $(this).find("img").attr("src");
+		var alt = $(this).find("img").attr("alt");
+		$("#modal-img").attr({src: src, alt: alt});
+		
+		// Retrieve the title and set it in the modal
+		var title = $(this).find("h4").text();
+		$("#modal-title").text(title);
+		
+		// Retrieve the modal text
+		var text = $(this).find("p").html();
+		$("#modal-text").html(text);
+	});
+
+	// ===========
+	// Function for dynamically populating a video modal
+	// ===========
+	$(".video-modal-opener").on("click", function(){
+		
+		// Retrieve src and alt of child image and set it in the modal
+		var src = $(this).find("img").attr("alt");
+		var url = "https://www.youtube.com/embed/" + src;
+		$("#modal-video").attr("src", url);
+		
+		// Retrieve the title and set it in the modal
+		var title = $(this).find("h4").text();
+		$("#modal-title").text(title);
+		
+		// Retrieve the modal text
+		var text = $(this).find("p").html();
+		$("#modal-text").html(text);
+	});
+
+	// ===========
+	// Function for opening / closing a modal
+	// ===========
+	$(window).on("click", function(event) {
+		
+		// Debugging - print target
+		// alert(event.target.className);
+		
+		// If clicking on a modal opener, open the modal
+		if (event.target.className.includes("modal-opener")) {
+			$("#modal").css("display", "block");
+		}
+		
+		// If clicking on the background, hide the modal
+		if (event.target.id == "modal") {
+			$("#modal").css("display", "none");
 		}
 	});
 	

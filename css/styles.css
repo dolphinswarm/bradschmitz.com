@@ -222,7 +222,8 @@ button, audio
 */
 }
 
-#hamburger-border {
+#hamburger-border 
+{
 	/* Properties */
 	height: 45px;
 	width: 45px;
@@ -238,7 +239,8 @@ button, audio
 	outline: none;
 }
 
-#cover {
+#cover
+{
 	background-color: rgba(0,0,0,0.0);
 	height: 0%;
   	width: 0%;
@@ -271,6 +273,57 @@ button, audio
 #bottom-hr
 {
 	border: 5px solid #3A3F42;
+}
+
+#modal 
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 25px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.6);
+	cursor: pointer;
+	text-align: center;
+}
+
+#modal-content 
+{
+	background-color: #23272A;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #D1D1D1;
+	width: 80%;
+	cursor: default;
+}
+
+#modal-img
+{
+	height: 400px;
+	max-width: 80%;
+	border: 2px solid #D1D1D1;
+}
+
+#modal-title 
+{
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0px 0px 10px 0px;
+}
+
+#modal-text 
+{
+	text-align: left;
+}
+
+#modal-text b 
+{
+	color: #F7941E;
 }
 
 /* ============ Classes ============ */
@@ -512,6 +565,20 @@ footer i
 	font-weight: bold;
 }
 
+.content-group > img {
+	max-width: 60%;
+	width: 60%;
+	border: 2px solid #D1D1D1;
+}
+
+.subcontent-group-onefourth 
+{
+	vertical-align: middle;
+	width: 22.5%;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
 .subcontent-group-onethird 
 {
 	vertical-align: middle;
@@ -626,6 +693,93 @@ footer i
 	overflow: auto;
 }
 
+.content-group ul, .content-group ol
+{
+	list-style: none;
+	text-align: left;
+	font-size: calc(16px + 0.25vw);
+}
+
+.content-group ul li:before
+{
+	content: "\2022";
+	color: #F7941E;
+	font-size: 24px;
+	font-weight: bolder;
+	margin-left: -20px;
+	margin-right: 5px;
+}
+
+.gallery img {
+	width: 200px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.gallery h4 
+{
+	font-size: 25px;
+	width: 80%;
+	display: block;
+	margin: 0px auto;
+}
+
+.gallery .subcontent-group-onethird 
+{
+	vertical-align: top;
+	width: 28%;
+	height: 400px;
+	display: inline-block;
+	padding: 10px 0px 20px 0px;
+	transition: 0.3s;
+	border-radius: 5px;
+	border: 1px solid #F7941E;
+	background-color: #3A3F42;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.gallery .subcontent-group-onethird:hover 
+{
+	background-color: #7F7F7F;
+	cursor: pointer;
+	transform: scale(1.03);
+}
+
+.github-button 
+{
+	background-color: #000000;
+	border: 2px solid #D1D1D1;
+	color: #FFFFFF;
+	text-align: center;
+	display: block;
+	margin: 10px auto 20px auto;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	font-family: 'DepredationPixie';
+	text-decoration: none;
+}
+
+.github-button:hover {
+	background-color: #222222;
+	cursor: pointer;
+}
+
+.github-button img 
+{
+	margin-top: 5px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	float: left;
+}
+
+.padding
+{
+	height: 50px;
+}
+
 /* ============ Special Classes ============ */
 .rotate-arrow 
 {
@@ -654,7 +808,33 @@ footer i
 	display: none;
 }
 
+.tech-icon
+{
+	width: 70%;
+	transition: 0.3s;
+}
+.tech-icon:hover
+{
+	transform: scale(1.1);
+	width: 70%;
+	filter: drop-shadow(0px 0px 4px #F7941E);
+}
+
 /* ============ Media Queries ============ */
+/* Move Programming Icons */
+@media screen and (max-width: 1000px)
+{	
+	/* ============ Classes ============ */
+	.subcontent-group-onefourth 
+	{
+		vertical-align: middle;
+		width: 30%;
+		display: inline-block;
+		padding-bottom: 10px;
+	}
+
+}
+
 /* Hide Icons */
 @media screen and (max-width: 880px)
 {	
@@ -716,6 +896,15 @@ footer i
 	{
 		display: block;
 	}
+	
+	.subcontent-group-onefourth 
+	{
+		vertical-align: middle;
+		width: 22.5%;
+		display: inline-block;
+		padding-bottom: 10px;
+	}
+
 }
 
 /* Mobile Phones */
