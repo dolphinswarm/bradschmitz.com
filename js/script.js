@@ -225,6 +225,9 @@ $(document).ready(function()
 		// If clicking on the background, hide the modal
 		if (event.target.id == "modal") {
 			$("#modal").css("display", "none");
+			
+			// If a video, remove the source
+//			if (event.target.className.includes("modal-opener")) 
 		}
 	});
 	

@@ -397,6 +397,15 @@ button, audio
 {
 	position: relative;
 	z-index: 1;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+/*
+	border: 1px #D1D1D1 solid;
+	border-top: none;
+*/
+	
+	/* Transition */
+	-webkit-transition:.25s ease-in-out;
+ 	transition: .25s ease-in-out;
 }
 
 #side-navbar .tab h2 
@@ -541,6 +550,15 @@ footer i
 	margin: 0px auto;
 	overflow-y: auto;
 }
+
+/*
+.content-group img 
+{
+	max-width: 60%;
+	width: 60%;
+	border: 2px solid #D1D1D1;
+}
+*/
 
 .content-group embed
 {
