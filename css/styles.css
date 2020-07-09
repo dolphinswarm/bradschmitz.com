@@ -551,14 +551,12 @@ footer i
 	overflow-y: auto;
 }
 
-/*
-.content-group img 
+.content-group .content-image
 {
-	max-width: 60%;
-	width: 60%;
+	width: 90%;
+	max-width: 90%;
 	border: 2px solid #D1D1D1;
 }
-*/
 
 .content-group embed
 {
