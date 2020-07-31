@@ -198,7 +198,7 @@ $(document).ready(function()
 		// Retrieve src and alt of child image and set it in the modal
 		var src = $(this).find("img").attr("alt");
 		var url = "https://www.youtube.com/embed/" + src;
-		$("#modal-video").attr("src", url);
+		$("#youtube-video").attr("src", url);
 		
 		// Retrieve the title and set it in the modal
 		var title = $(this).find("h4").text();
@@ -207,6 +207,17 @@ $(document).ready(function()
 		// Retrieve the modal text
 		var text = $(this).find("p").html();
 		$("#modal-text").html(text);
+	});
+	
+	// ===========
+	// Function for dynamically populating a picture modal
+	// ===========
+	$(".picture-modal-opener").on("click", function(){
+		
+		// Retrieve src and alt of child image and set it in the modal
+		var src = $(this).find("img").attr("src");
+		var alt = $(this).find("img").attr("alt");
+		$("#modal-img-fullscreen").attr({src: src, alt: alt});
 	});
 
 	// ===========
@@ -227,7 +238,8 @@ $(document).ready(function()
 			$("#modal").css("display", "none");
 			
 			// If a video, remove the source
-//			if (event.target.className.includes("modal-opener")) 
+			if ($("#modal").find("iframe") === 1);
+				$("#modal").find("iframe").attr("src", "https://www.youtube.com/embed/");
 		}
 	});
 	
