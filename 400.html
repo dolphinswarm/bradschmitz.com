@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+	<!-- Head -->
+	<head>
+		<!-- Meta Information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brad Schmitz">
+		<meta name="description" content="Brad Schmitz: Programmer, Designer, Musician">
+		<title>400 Error</title>
+		
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+		<link rel="manifest" href="fav/site.webmanifest">
+		<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#f7941e">
+		<link rel="shortcut icon" href="fav/favicon.ico">
+		<meta name="msapplication-TileColor" content="#23272a">
+		<meta name="msapplication-config" content="fav/browserconfig.xml">
+		<meta name="theme-color" content="#23272A">
+		
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+
+	</head>
+
+	<!-- Body -->
+	<body>
+		
+		<!-- Background -->
+		<div id="background">
+			<!-- Video -->
+			<video muted loop id="backgroundVideo">
+				<source src="media/background.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<!-- Content -->
+		<div id="content">
+			<!-- Header -->
+			<header>
+				<!-- LogoBlock-->
+				<div id="logoblock"><a href="index.html">
+					<!-- Header Image -->
+					<img src="img/logo.png" draggable="false" id="logo" alt="Logo">
+
+					<!-- Header Text -->
+					<h1>Brad Schmitz</h1>
+					<h2>Digital Media Creator</h2>
+				</a></div>
+			</header>
+
+			<!-- Navbar (regular) -->
+			<nav id="regular-navbar">
+				<!-- About -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon" id="about-icon">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="bio.html">
+						<div class="subtab">
+							<h3>Bio</h3>
+						</div>
+						</a>
+						<a href="professional.html">
+						<div class="subtab">
+							<h3>Professional</h3>
+						</div>
+						</a>
+						<a href="blog.html">
+						<div class="subtab">
+							<h3>Blog</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Code -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon" id="code-icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="software.html">
+						<div class="subtab">
+							<h3>Software</h3>
+						</div>
+						</a>
+						<a href="web.html">
+						<div class="subtab">
+							<h3>Websites</h3>
+						</div>
+						</a>						
+						<a href="games.html">
+						<div class="subtab">
+							<h3>Games</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Design -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon" id="design-icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="video.html">
+						<div class="subtab">
+							<h3>Video</h3>
+						</div>
+						</a>
+						<a href="graphic.html">
+						<div class="subtab">
+							<h3>Graphic</h3>
+						</div>
+						</a>
+						<a href="uiux.html">
+						<div class="subtab">
+							<h3>UI / UX</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Music -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon" id="music-icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="compositions.html">
+						<div class="subtab">
+							<h3>Compositions</h3>
+						</div>
+						</a>
+						<a href="performance.html">
+						<div class="subtab">
+							<h3>Performance</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Navbar (hamburger) -->
+			<nav id="hamburger-navbar">
+				<!-- Hamburger Box -->
+				<button id="hamburger-border" class="hamburger--squeeze" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+				</button>
+			</nav>
+			
+			<!-- Cover -->
+			<div id="cover"></div>
+			
+			<!-- Navbar (side) -->
+			<nav id="side-navbar" style="vertical-align: middle;">
+				<!-- About -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+					<!-- Sub Tabs -->
+					<a href="bio.html">
+					<div class="subtab">
+						<h3>Bio</h3>
+					</div>
+					</a>
+					<a href="professional.html">
+					<div class="subtab">
+						<h3>Professional</h3>
+					</div>
+					</a>
+					<a href="blog.html">
+					<div class="subtab">
+						<h3>Blog</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Code -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="software.html">
+					<div class="subtab">
+						<h3>Software</h3>
+					</div>
+					</a>
+					<a href="web.html">
+					<div class="subtab">
+						<h3>Websites</h3>
+					</div>
+					</a>						
+					<a href="games.html">
+					<div class="subtab">
+						<h3>Games</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Design -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="video.html">
+					<div class="subtab">
+						<h3>Video</h3>
+					</div>
+					</a>
+					<a href="graphic.html">
+					<div class="subtab">
+						<h3>Graphic</h3>
+					</div>
+					</a>
+					<a href="uiux.html">
+					<div class="subtab">
+						<h3>UI / UX</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Music -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="compositions.html">
+					<div class="subtab">
+						<h3>Compositions</h3>
+					</div>
+					</a>
+					<a href="performance.html">
+					<div class="subtab">
+						<h3>Performance</h3>
+					</div>
+					</a>
+				</div>
+			</nav>
+
+			<!-- Main Content -->
+			<main>
+				<!-- Title -->
+				<h1>400 Error</h1>
+				
+				<!-- Visualization -->
+				<div class="content-group">
+					<h3>Bad Request - oof!</h3>
+				</div>
+
+			</main>
+
+			<!-- Footer -->
+			<hr id="bottom-hr">
+			<footer>
+				<!-- Copyright Label -->
+				<h1>Created by Brad Schmitz, ©2020. All rights reserved.</h1>
+				
+				<!-- Email area-->
+				<div class="footer-column">
+				<a href="MAILTO:schmitb3@miamioh.edu">
+					<img src="img/mail-icon.png" class="icon-footer" alt="Mail Icon">
+					<h2>schmitb3@miamioh.edu</h2>
+				</a>
+				</div>
+				
+				<!-- Background Pause Button -->
+				<div class="footer-column">
+				<div id="playback-button">
+					<i class="fa fa-play"></i>
+					<h2>Play</h2>
+				</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
