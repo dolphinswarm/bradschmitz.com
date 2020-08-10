@@ -63,7 +63,7 @@
 				<div class="tab">
 					<!-- Main Tab -->
 					<div class="tab-group">
-						<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon" id="about-icon">
 						<h2>About</h2>
 						<i class="fas fa-angle-right"></i>
 					</div>
@@ -92,7 +92,7 @@
 				<div class="tab">
 					<!-- Main Tab -->
 					<div class="tab-group">
-						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon" id="code-icon">
 						<h2>Code</h2>
 						<i class="fas fa-angle-right"></i>
 					</div>
@@ -121,7 +121,7 @@
 				<div class="tab">
 					<!-- Main Tab -->
 					<div class="tab-group">
-						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon" id="design-icon">
 						<h2>Design</h2>
 						<i class="fas fa-angle-right"></i>
 					</div>
@@ -150,7 +150,7 @@
 				<div class="tab">
 					<!-- Main Tab -->
 					<div class="tab-group">
-						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon" id="music-icon">
 						<h2>Music</h2>
 						<i class="fas fa-angle-right"></i>
 					</div>
@@ -293,7 +293,19 @@
 			<!-- Main Content -->
 			<main>
 				<!-- Title -->
-				<h1>Title</h1>
+				<h1>Welcome!</h1>
+				
+				<!-- Visualization -->
+				<div class="content-group" style="text-align: center; overflow: hidden;">
+					<canvas id="title-canvas" width="1024" height="720">
+						
+					</canvas>
+					<img src="img/brad_title_1.png" style="display: none;" alt="" id="title-1">
+					<img src="img/brad_title_2.png" style="display: none;" alt="" id="title-2">
+					<img src="img/brad_title_3.png" style="display: none;" alt="" id="title-3">
+					<img src="img/brad_title_4.png" style="display: none;" alt="" id="title-4">
+				</div>
+
 			</main>
 
 			<!-- Footer -->
@@ -320,5 +332,83 @@
 			</footer>
 		</div>
 		
+		<!-- The script controlling the canvas -->
+		<script>
+			// Get the canvas and context
+			var canvas = $("#title-canvas").get(0);
+			var context = canvas.getContext("2d");
+			context.imageSmoothingEnabled = false;
+			var scale = window.devicePixelRatio;
+			
+			// Get the images and set their properties
+			var img = Math.floor((Math.random() * 4) + 1);
+			var me;
+			if (img === 1) me = $("#title-1").get(0);
+			if (img === 2) me = $("#title-2").get(0);
+			if (img === 3) me = $("#title-3").get(0);
+			if (img === 4) me = $("#title-4").get(0);
+			
+			var about = $("#about-icon");
+			about.x = 0;
+			var code = $("#code-icon");
+			code.x = 0;
+			var design = $("#design-icon");
+			design.x = 0;
+			var music = $("#music-icon");
+			music.x = 0;
+			
+			// Create a new array
+			var pictures = []
+			
+			// Function for starting the game
+			function startGame() { draw(); }
+			
+			// Function for drawing a frame
+			function draw()
+			{
+				// Clear the frame
+				window.requestAnimationFrame(draw)
+				context.clearRect(0, 0, canvas.width, canvas.height);
+				
+				// Generate a random new icon
+				var num = Math.floor((Math.random() * 200) + 1);
+				if (num <= 4)
+				{
+					// Make a new icon
+					var icon;
+					if (num === 4) icon = Object.create(about);
+					if (num === 3) icon = Object.create(code);
+					if (num === 2) icon = Object.create(design);
+					if (num === 1) icon = Object.create(music);
+					
+					// Add it to the picture
+					icon.size = Math.floor((Math.random() * 75) + 75);
+					icon.x = -icon.size;
+					icon.y = Math.random() * canvas.height;
+					icon.speed = Math.random() * 3 + 0.3;
+					pictures.push(icon); 
+				}
+				
+				// Draw me!
+				context.drawImage(me, window.innerWidth/2- 720, 0, 720, 720);
+				
+				// Loop through each picture
+				for (var i = 0; i < pictures.length; i++)
+				{
+					// Move the picture
+					var image = pictures[i];
+					context.drawImage(image.get(0), image.x, image.y, image.size, image.size);
+					image.x += image.speed;
+					
+					// If it's offscreen, delete it
+					if (image.x > canvas.width) {
+						delete image;
+					}
+				}
+
+			}
+			
+			startGame();
+		</script>
 	</body>
 </html>
