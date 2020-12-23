@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+	<!-- Head -->
+	<head>
+		<!-- Meta Information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brad Schmitz">
+		<meta name="description" content="Brad Schmitz: Programmer, Designer, Musician">
+		<title>UI / UX - Brad Schmitz</title>
+		
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+		<link rel="manifest" href="fav/site.webmanifest">
+		<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#f7941e">
+		<link rel="shortcut icon" href="fav/favicon.ico">
+		<meta name="msapplication-TileColor" content="#23272a">
+		<meta name="msapplication-config" content="fav/browserconfig.xml">
+		<meta name="theme-color" content="#23272A">
+		
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+
+	</head>
+
+	<!-- Body -->
+	<body>
+		
+		<!-- Background -->
+		<div id="background">
+			<!-- Video -->
+			<video muted loop id="backgroundVideo">
+				<source src="media/background.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<!-- Content -->
+		<div id="content">
+			<!-- Header -->
+			<header>
+				<!-- LogoBlock-->
+				<div id="logoblock"><a href="index.html">
+					<!-- Header Image -->
+					<img src="img/logo.png" draggable="false" id="logo" alt="Logo">
+
+					<!-- Header Text -->
+					<h1>Brad Schmitz</h1>
+					<h2>Digital Media Creator</h2>
+				</a></div>
+			</header>
+
+			<!-- Navbar (regular) -->
+			<nav id="regular-navbar">
+				<!-- About -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="bio.html">
+						<div class="subtab">
+							<h3>Bio</h3>
+						</div>
+						</a>
+						<a href="professional.html">
+						<div class="subtab">
+							<h3>Professional</h3>
+						</div>
+						</a>
+						<a href="blog.html">
+						<div class="subtab">
+							<h3>Blog</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Code -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="software.html">
+						<div class="subtab">
+							<h3>Software</h3>
+						</div>
+						</a>
+						<a href="web.html">
+						<div class="subtab">
+							<h3>Websites</h3>
+						</div>
+						</a>						
+						<a href="games.html">
+						<div class="subtab">
+							<h3>Games</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Design -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="video.html">
+						<div class="subtab">
+							<h3>Video</h3>
+						</div>
+						</a>
+						<a href="graphic.html">
+						<div class="subtab">
+							<h3>Graphic</h3>
+						</div>
+						</a>
+						<a href="uiux.html">
+						<div class="subtab">
+							<h3>UI / UX</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Music -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="compositions.html">
+						<div class="subtab">
+							<h3>Compositions</h3>
+						</div>
+						</a>
+						<a href="performance.html">
+						<div class="subtab">
+							<h3>Performance</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Navbar (hamburger) -->
+			<nav id="hamburger-navbar">
+				<!-- Hamburger Box -->
+				<button id="hamburger-border" class="hamburger--squeeze" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+				</button>
+			</nav>
+			
+			<!-- Cover -->
+			<div id="cover"></div>
+			
+			<!-- Navbar (side) -->
+			<nav id="side-navbar" style="vertical-align: middle;">
+				<!-- About -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+					<!-- Sub Tabs -->
+					<a href="bio.html">
+					<div class="subtab">
+						<h3>Bio</h3>
+					</div>
+					</a>
+					<a href="professional.html">
+					<div class="subtab">
+						<h3>Professional</h3>
+					</div>
+					</a>
+					<a href="blog.html">
+					<div class="subtab">
+						<h3>Blog</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Code -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="software.html">
+					<div class="subtab">
+						<h3>Software</h3>
+					</div>
+					</a>
+					<a href="web.html">
+					<div class="subtab">
+						<h3>Websites</h3>
+					</div>
+					</a>						
+					<a href="games.html">
+					<div class="subtab">
+						<h3>Games</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Design -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="video.html">
+					<div class="subtab">
+						<h3>Video</h3>
+					</div>
+					</a>
+					<a href="graphic.html">
+					<div class="subtab">
+						<h3>Graphic</h3>
+					</div>
+					</a>
+					<a href="uiux.html">
+					<div class="subtab">
+						<h3>UI / UX</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Music -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="compositions.html">
+					<div class="subtab">
+						<h3>Compositions</h3>
+					</div>
+					</a>
+					<a href="performance.html">
+					<div class="subtab">
+						<h3>Performance</h3>
+					</div>
+					</a>
+				</div>
+			</nav>
+
+			<!-- Main Content -->
+			<main>
+				<!-- Title -->
+				<h1>UI/UX</h1>
+				
+				<!-- Web Application UI's -->
+				<div class="content-header">
+					<img src="img/design_icon_large.png" alt="Design Icon">
+					<h2 id="htmlcss">HTML / CSS User Interfaces</h2>
+				</div>
+				
+			<div class="content-group">
+				<div class="gallery">
+					<!-- Appalogue -->
+					<div class="subcontent-group-onethird modal-opener" id="appalogue">
+						<div class="padding modal-opener"></div>
+						<img src="img/appalogue.PNG" alt="Appalogue Icon" class="modal-opener">
+						<h4 class="modal-opener">Appalogue - Ruby on Rails App Directory</h4>
+						<button type="button" class="view-button" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Site</button>
+						<button type="button" class="github-button" onclick="window.open('https://github.com/schmitb3/Appalogue/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use.<br><br>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.<br><br>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
+					</div>
+					
+					<!-- This Website -->
+					<div class="subcontent-group-onethird modal-opener" id="thiswebsite">
+						<div class="padding modal-opener"></div>
+						<img src="img/thiswebsite.PNG" alt="This Website" class="modal-opener">
+						<h4 class="modal-opener">This Website</h4>
+						<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/bradschmitz.com/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>bradschmitz.com</b> is the website you are currently viewing! This website is my portfolio website to show all my creations, and was constructed from-the-ground-up using HTML, CSS, and JavaScript / JQuery for the frontend, as well as some small libraries (mainly LocalStorage) to emulate backend functions. Many of the assets of this website are also custom-made, such as the pixel art icons and my personal logo.<br><br>Some of the assets I used for this website include:<br><a href="https://jonsuh.com/hamburgers/" style="color: white">• <b>Hamburgers</b> by Jon Suh</a> (for hamburger menu styles and animations)<br><a href="https://konpa.github.io/devicon/" style="color: white">• <b>Devicon</b> by Konpda</a> (for tech icons)<br>• <b>DepredationPixie</b> (font) by unknown<br>• <b>Free Pixel</b> (font) by levelb<br>• <b>PixelMix</b> (font) by Andrew Tyler<br>• <b>Century Gothic</b> (font) by Monotype Imaging<br></p>
+					</div>
+
+					<!-- Virtual Education -->
+					<div class="subcontent-group-onethird modal-opener" id="virtualeducation">
+						<div class="padding modal-opener"></div>
+						<img src="img/virtualeducation.PNG" alt="Virtual Education Icon" class="modal-opener">
+						<h4 class="modal-opener">Virtual Education - Mobile Website</h4>
+						<button type="button" class="view-button" onclick="window.open('http://bradschmitz.com/websites/virtualeducation/index.html','_blank')">View Site</button><br>
+						<p class="hide"><b>Virtual Education</b> is a simple website that was made for <b>IMS 222: Introduction to Interaction Design and Development</b>. The focus of this class was on designing and creating effective web interfaces with HTML, CSS, and JavaScript for various devices; this project was for mobile phones. While designing the website, I incorporated many mobile-friendly design elements, including a button to immediately return to the top of a scrolled page and placing the navbar at the bottom of the screen.<br><br>For theis assignment, the website's content was supposed to be about creating a business for "an industry which needed disrupting". Thus, I chose to create a website for a educational VR company, which provided "serious games" (educational and training games) to companies and schools.</p>
+					</div>
+
+					<!-- BAA -->
+					<div class="subcontent-group-onethird modal-opener" id="baa">
+						<div class="padding modal-opener"></div>
+						<img src="img/baa.PNG" alt="Bussiness Assessment Association Icon" class="modal-opener">
+						<h4 class="modal-opener">Business Assessment Association</h4>
+						<button type="button" class="view-button" onclick="window.open('http://bradschmitz.com/websites/baa/index.html','_blank')">View Site</button><br>
+						<p class="hide">The <b>Business Assessment Association</b> is a satirical website that was made as part of a group project for <b>IMS 257: Web Interaction Programming (now IMS 322: Intermediate Interaction Design and Development</b>. This class was a continuation of IMS 222, diving deeper into techniques for creating HTML, CSS, and JavaScript interfaces for websites.This assignment revolved around creating a business website that could conceivably be used in the professional world. One of our group members suggested we go over-the-top and just make the whole thing full of generic business buzzwords, and the rest is history.<br><br>Each group member was in charge of creating a webpage for the site - my page is the "Estimates" page, which uses four number inputs to generate a random number (and a "Kaching!" sound). I also was in charge of assembling the overall website, meaning that I had to combine each person's pages into a coherent website.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Modal -->
+			<div id="modal">
+				<div id="modal-content">
+					<h1 id="modal-title"></h1>
+					<img src="img/brad_casual_professional.jpg" id="modal-img" alt="Placeholder">
+					<p id="modal-text"></p>
+				</div>
+			</div>
+
+			<!-- MuseScore Header -->
+			<div class="content-header">
+				<img src="img/design_icon_large.png" alt="Design Icon">
+				<h2 id="musescore">MuseScore 3.0 Interface Evaluation and Redesign</h2>
+			</div>
+
+			<!-- MuseScore -->
+			<div class="content-group">
+				<img src="img/musescore_layout_1.png" style="max-width: 700px" alt="MuseScore Re-Design Layout 1">
+				<img src="img/musescore_layout_2.png" style="max-width: 700px" alt="MuseScore Re-Design Layout 2">
+				<button type="button" class="view-button collapsible" id="">More Info</button>
+				<div class="collapsible-content">
+					<p>In <b>IMS 315: User Experience Research</b>, we were tasked with a semester-long interface evaluation and re-design for a website / software of our choosing. I chose to evaulate <a href="https://musescore.org/en"><b>MuseScore</b></a>, which is open-source music notation software that I frequently use.</p>
+					<p>To start, I first drafted a usability test for evaluating the effectiveness of MuseScore's UI and UX. I then ran this test on five sepearate participants, selected as people who are part of MuseScore's intended audience. Using these results, I drafted a usability report, which can be viewed below. Additionally, I did some card sort test to figure out the best names / groupings for the menu in MuseScore.</p>
+					<p>I then used the results from the report to create wireframes and mockups (shown above), which reflect the findings in the report and illustrate potential ways to improve MuseScore's user interface and experience.</p>
+				</div>
+				<button type="button" class="view-button collapsible" id="reportviewbutton">View Report</button>
+				<div class="collapsible-content">
+					<embed alt="MuseScore Usability Report" src="docs/musescoreusabilityreport.pdf" id="reportview">
+				</div>
+				<p class="centered">If the embed doesn't display, you can view the report <a href="docs/musescoreusabilityreport.pdf"><b>here</b></a>!</p>
+			</div>
+			
+			<!-- HSAB Header -->
+			<div class="content-header">
+				<img src="img/design_icon_large.png" alt="Design Icon">
+				<h2 id="hsab">HSAB Website Redesign</h2>
+			</div>
+
+			<!-- HSAB -->
+			<div class="content-group">
+				<h3>Honors Student Advisory Board - New Website</h3>
+				<img src="img/hsab.PNG" alt="HSAB Website">
+				<button type="button" class="view-button" onclick="window.open('https://miamihsab.wixsite.com/hsab','_blank')">View Site</button>
+				<button type="button" class="view-button collapsible" id="">More Info</button>
+				<div class="collapsible-content">
+					<p>During my term as Director of Public Relations for the <b>Honors Student Advisory Board</b>, I created a new and improved website for our organization. To make it easier for future Directors of Public Relations, I made the website using Wix.com, which features easy drag-and-drop website design. While not the most technically-impressive portfolio piece, I was able to have more creative liberties with the website due to Wix's simplicity. The website's structure was constructed entirely by me, while other various HSAB members provided information and proofread the contnent.</p>
+				</div>
+			</div>
+			</main>
+
+			<!-- Footer -->
+			<hr id="bottom-hr">
+			<footer>
+				<!-- Copyright Label -->
+				<h1>Created by Brad Schmitz, ©2020. All rights reserved.</h1>
+				
+				<!-- Email area-->
+				<div class="footer-column">
+				<a href="MAILTO:schmitb3@miamioh.edu">
+					<img src="img/mail-icon.png" class="icon-footer" alt="Mail Icon">
+					<h2>schmitb3@miamioh.edu</h2>
+				</a>
+				</div>
+				
+				<!-- Background Pause Button -->
+				<div class="footer-column">
+				<div id="playback-button">
+					<i class="fa fa-play"></i>
+					<h2>Play</h2>
+				</div>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+</html>

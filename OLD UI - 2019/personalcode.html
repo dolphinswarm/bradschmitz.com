@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+	<!-- HEADER -->
+	<head>
+		<!-- Meta Information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brad Schmitz">
+		<meta name="description" content="The personal website of Miami University student Brad Schmitz!">
+		<title>My Code - Brad Schmitz</title>
+
+		<!-- CSS: External and Internal (includes FontAwesome for icons, and Hamburgers by Jon Suh for fancy hamburger menu) -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/fav/favicon.ico">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link href="css/hamburgers.css" rel="stylesheet">
+
+		<!-- JavaScript: External and Internal -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+
+	</head>
+
+	<!-- BODY -->
+	<body>
+		<!-- HEADER AND NAVIGATION -->
+		<header>
+
+			<!-- Personal Logo -->
+			<div id="logoblock">
+				<a href="index.html">
+					<img src="img/logo.png" draggable="false" alt="Logo">
+					<h1>Brad Schmitz</h1>
+				</a>
+			</div>
+
+			<!-- Navigation Links -->
+			<nav id="navblock">
+				<!-- About Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab" id="noleftborder">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon" style="margin-right: -10px">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="bio.html">
+							<div class="submenutab"><h3>Biography</h3></div>
+						</a>
+						<a href="resume.html">
+							<div class="submenutab"><h3>Resume</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Code Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="classcode.html">
+							<div class="submenutab"><h3>Class Code</h3></div>
+						</a>
+						<a href="personalcode.html">
+							<div class="submenutab"><h3>My Code</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Music Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="compositions.html">
+							<div class="submenutab"><h3>Compositions</h3></div>
+						</a>
+						<a href="saxophone.html">
+							<div class="submenutab"><h3>Saxophone</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Design Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="videos.html">
+							<div class="submenutab"><h3>Videos</h3></div>
+						</a>
+						<a href="graphics.html">
+							<div class="submenutab"><h3>Graphics</h3></div>
+						</a>
+						<a href="uiux.html">
+							<div class="submenutab"><h3>UI / UX</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Connect Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab" id="norightborder">
+						<img src="img/social_icon_large.png" draggable="false" alt="Connect Icon">
+						<h2>Connect</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="socialmedia.html">
+							<div class="submenutab"><h3>Social Media</h3></div>
+						</a>
+						<a href="contact.html">
+							<div class="submenutab"><h3>Contact Me</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- TAB TEMPLATE -->
+				<!-- <a href="">
+					<div class="headertab">
+						<img src="" alt="Icon">
+						<h2>Header</h2>
+					</div>
+				</a>  -->
+
+			</nav>
+
+			<!-- Hamburger Menu -->
+			<nav id="hamblock">
+				<div id="bars" class="hamburger hamburger--squeeze">
+					<span class="hamburger-inner"></span>
+				</div>
+			</nav>
+
+			<!-- Side Menu -->
+			<div id="sidenav" class="sidenav">
+				<!-- About Tab and Subtabs -->
+				<div class="sidenavgroup" id="topborderside">
+					<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+					<h2>About</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="bio.html">
+							<div class="submenutab"><h3>Biography</h3></div>
+						</a>
+						<a href="resume.html">
+							<div class="submenutab"><h3>Resume</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Code Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+					<h2>Code</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="classcode.html">
+							<div class="submenutab"><h3>Class Code</h3></div>
+						</a>
+						<a href="personalcode.html">
+							<div class="submenutab"><h3>My Code</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Music Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+					<h2>Music</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="compositions.html">
+							<div class="submenutab"><h3>Compositions</h3></div>
+						</a>
+						<a href="saxophone.html">
+							<div class="submenutab"><h3>Saxophone</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Media Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+					<h2>Design</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="videos.html">
+							<div class="submenutab"><h3>Videos</h3></div>
+						</a>
+						<a href="graphics.html">
+							<div class="submenutab"><h3>Graphics</h3></div>
+						</a>
+						<a href="uiux.html">
+							<div class="submenutab"><h3>UI / UX</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Connect Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/social_icon_large.png" draggable="false" alt="Connect Icon">
+					<h2>Connect</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="socialmedia.html">
+							<div class="submenutab"><h3>Social Media</h3></div>
+						</a>
+						<a href="contact.html">
+							<div class="submenutab"><h3>Contact Me</h3></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- MAIN CONTENT -->
+		<section id="main">
+			<!-- Main Title -->
+			<h1 id="title">My Code</h1>
+			
+			<!-- Personal Projects Header -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/projects_icon_large.png" alt="Code Icon">
+					<h2 id="personal-projects">Personal Projects</h2>
+				</div>
+			</div>
+			
+			<!-- Gallery -->
+			<div class="contentgroup">
+				<div class="gallery">
+					<!-- This Website -->
+					<div class="subcontentgroup-onethird modalopener" id="thiswebsite">
+						<div class="padding modalopener"></div>
+						<img src="img/thiswebsite.PNG" alt="This Website" class="modalopener">
+						<h4 class="modalopener">This Website</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/bradschmitz.com/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>bradschmitz.com</b> is the website you are currently viewing! This website is my portfolio website to show all my creations, and was constructed from-the-ground-up using HTML, CSS, and JavaScript / JQuery for the frontend, and PHP for the backend. Many of the assets of this website are also custom-made, such as the pixel art icons and my personal logo.<br><br>Some of the assets I used for this website include:<br><a href="https://jonsuh.com/hamburgers/" style="color: white">• <b>Hamburgers</b> by Jon Suh</a> (for hamburger menu styles and animations)<br>• <b>DepredationPixie</b> (font) by unknown<br>• <b>Free Pixel</b> (font) by levelb<br>• <b>PixelMix</b> (font) by Andrew Tyler<br>• <b>Century Gothic</b> (font) by Monotype Imaging<br></p>
+					</div>
+					
+					<!-- VRchery -->
+					<div class="subcontentgroup-onethird modalopener" id="vrchery">
+						<div class="padding modalopener"></div>
+						<img src="img/vrchery.png" alt="VRchery" class="modalopener">
+						<h4 class="modalopener">VRchery</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/VRchery/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>VRchery</b> is a simple virtual reality archery game, developed using OculusVR and Unity. This was my first virtual reality project, and because of this, it's pretty demo-like. The player starts the game in a medieval-esque town, with a target roughly 25 meters away. The player then has 10 arrows,  which should be fired at the target in attempt to score as mnay points as possible.<br><br>Some features incorporated in this project include a realistic-looking scene, virtual reality UI, realistic bow-and-arrow pullback and firing (using the Oculus controllers), scoring (based on the arrow's distance from the center), heptic feedback, and more.</p>
+					</div>
+					
+					<!-- AR Looper -->
+					<div class="subcontentgroup-onethird modalopener" id="arlooper">
+						<div class="padding modalopener"></div>
+						<img src="img/arlooper.png" alt="AR Looper" class="modalopener">
+						<h4 class="modalopener">AR Looper</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/AR-Looper/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>AR Looper</b> is an augmented reality application, developed using Unity and Vuforia. This application allows people to point their phone at a printed-out piece of paper and make their own simple music loops. Users can select from five instrument sets, with five instruments per set (25 instruments total). Users can also add a lowpass, highpass, and reverb filters to their remix.<br><br>You may be asking to yourself, "why do you need AR for this?" Initially, this project was conceived to be a mobile launchpad / keyboard for on-the-go music composition and arrangement, but we felt that AR technology wasn't good enough to achieve our desired effect. We found that Vuforia's buttons were a lot less responsive than initially planned, so we had to scale our project down to be a loop machine. Maybe AR technology will be good enough one day to allow for a cheap and mobile AR launchpad?</p>
+					</div>
+					
+					<!-- Armada Cleanup Crew -->
+					<div class="subcontentgroup-onethird modalopener" id="armadacleanupcrew">
+						<div class="padding modalopener"></div>
+						<img src="img/armadacleanupcrew.png" alt= "Armada Cleanup Crew" class="modalopener">
+						<h4 class="modalopener">Armada Cleanup Crew</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/Armada-Cleanup-Crew/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>Armada Cleanup Crew</b> is a Katamari-esque game developed using Unity. In this game, you control a sphere, which is in charge of cleaning space junk off the space armada's mothership. However, for your promotion, you have to defeat the other sphere(s) who want to also get promoted. You have 90 seconds to clean off as much junk as you can.<br><br>See the readme file in the repository for all credits about the sounds, songs, 3D models, and other assets.</p>
+					</div>
+					
+					<!-- Armada Cleanup Crew -->
+					<div class="subcontentgroup-onethird modalopener" id="pixeljet">
+						<div class="padding modalopener"></div>
+						<img src="img/pixeljet.png" alt= "Pixel Jet" class="modalopener">
+						<h4 class="modalopener">Pixel Jet</h4>
+						<button type="button" class="viewbutton" onclick="window.open('https://scratch.mit.edu/projects/3285650/','_blank')">Play Game</button>
+						<p class="hide"><b>Pixel Jet</b> is a simple sidescrolling shooter game made in Scratch. Since Scratch isn't really a programming language, I hesistate to place it on this list; however, I placed it here for two reasons...<br><b>1.</b> This game was my first large-scale programming project.<br><b>2.</b> This game won a national award! It was selected as the best Scratch game submitted to the National STEM Video Game Challenge back in 2012. I received $2000 and a new game development laptop as a prize, plus an all-expenses-paid trip to New York City to receive the award - super cool.<br><br>The game itself is relatively simple, and has three modes: Arcade Mode (a regular high-score-based shooter), Math War (solve as many math problems as you can in 60 seconds), and Endless Boss Battle (a mode where you have to score as many points on a large boss as you can before you die).</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Modal -->
+			<div id="modal">
+				<div id="modalcontent">
+					<h1 id="modaltitle"></h1>
+					<img src="img/brad_casual_professional.jpg" id="modalimg" alt="Placeholder">
+					<p id="modaltext"></p>
+				</div>
+			</div>
+			
+			<!-- Scratch Header 
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/projects_icon_large.png" alt="Code Icon">
+					<h2 id="scratch">Scratch</h2>
+				</div>
+			</div>
+
+			<!-- Pixel Jet 
+			<div class="contentgroup" id="pixeljet">
+				<h3>Pixel Jet</h3>
+				<img src="img/pixeljet.png" style="max-width: 600px">
+				<button type="button" class="viewbutton" onclick="window.open('https://scratch.mit.edu/projects/3285650/','_blank')">Play Game</button>
+				<p><b>Pixel Jet</b> (2013) is a video game I made for the <a href="https://stemchallenge.org/"><b>Nation STEM Video Game Challenge</b>, which is an annual competition where middle and high school students create educational video games</a></p>
+				<hr>
+			</div> -->
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div id="greybar"></div>
+			<!-- Info -->
+			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2020</h3>
+		</footer>
+	</body>
+</html>

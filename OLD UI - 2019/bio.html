@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+	<!-- HEADER -->
+	<head>
+		<!-- Meta Information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brad Schmitz">
+		<meta name="description" content="The personal website of Miami University student Brad Schmitz!">
+		<title>About Me - Brad Schmitz</title>
+
+		<!-- CSS: External and Internal (includes FontAwesome for icons, and Hamburgers by Jon Suh for fancy hamburger menu) -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/fav/favicon.ico">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link href="css/hamburgers.css" rel="stylesheet">
+
+		<!-- JavaScript: External and Internal -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+
+	</head>
+
+	<!-- BODY -->
+	<body>
+		<!-- HEADER AND NAVIGATION -->
+		<header>
+
+			<!-- Personal Logo -->
+			<div id="logoblock">
+				<a href="index.html">
+					<img src="img/logo.png" draggable="false" alt="Logo">
+					<h1>Brad Schmitz</h1>
+				</a>
+			</div>
+
+			<!-- Navigation Links -->
+			<nav id="navblock">
+				<!-- About Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab" id="noleftborder">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon" style="margin-right: -10px">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="bio.html">
+							<div class="submenutab"><h3>Biography</h3></div>
+						</a>
+						<a href="resume.html">
+							<div class="submenutab"><h3>Resume</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Code Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="classcode.html">
+							<div class="submenutab"><h3>Class Code</h3></div>
+						</a>
+						<a href="personalcode.html">
+							<div class="submenutab"><h3>My Code</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Music Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="compositions.html">
+							<div class="submenutab"><h3>Compositions</h3></div>
+						</a>
+						<a href="saxophone.html">
+							<div class="submenutab"><h3>Saxophone</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Design Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="videos.html">
+							<div class="submenutab"><h3>Videos</h3></div>
+						</a>
+						<a href="graphics.html">
+							<div class="submenutab"><h3>Graphics</h3></div>
+						</a>
+						<a href="uiux.html">
+							<div class="submenutab"><h3>UI / UX</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Connect Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab" id="norightborder">
+						<img src="img/social_icon_large.png" draggable="false" alt="Connect Icon">
+						<h2>Connect</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="socialmedia.html">
+							<div class="submenutab"><h3>Social Media</h3></div>
+						</a>
+						<a href="contact.html">
+							<div class="submenutab"><h3>Contact Me</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- TAB TEMPLATE -->
+				<!-- <a href="">
+					<div class="headertab">
+						<img src="" alt="Icon">
+						<h2>Header</h2>
+					</div>
+				</a>  -->
+
+			</nav>
+
+			<!-- Hamburger Menu -->
+			<nav id="hamblock">
+				<div id="bars" class="hamburger hamburger--squeeze">
+					<span class="hamburger-inner"></span>
+				</div>
+			</nav>
+
+			<!-- Side Menu -->
+			<div id="sidenav" class="sidenav">
+				<!-- About Tab and Subtabs -->
+				<div class="sidenavgroup" id="topborderside">
+					<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+					<h2>About</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="bio.html">
+							<div class="submenutab"><h3>Biography</h3></div>
+						</a>
+						<a href="resume.html">
+							<div class="submenutab"><h3>Resume</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Code Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+					<h2>Code</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="classcode.html">
+							<div class="submenutab"><h3>Class Code</h3></div>
+						</a>
+						<a href="personalcode.html">
+							<div class="submenutab"><h3>My Code</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Music Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+					<h2>Music</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="compositions.html">
+							<div class="submenutab"><h3>Compositions</h3></div>
+						</a>
+						<a href="saxophone.html">
+							<div class="submenutab"><h3>Saxophone</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Media Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+					<h2>Design</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="videos.html">
+							<div class="submenutab"><h3>Videos</h3></div>
+						</a>
+						<a href="graphics.html">
+							<div class="submenutab"><h3>Graphics</h3></div>
+						</a>
+						<a href="uiux.html">
+							<div class="submenutab"><h3>UI / UX</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Connect Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/social_icon_large.png" draggable="false" alt="Connect Icon">
+					<h2>Connect</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="socialmedia.html">
+							<div class="submenutab"><h3>Social Media</h3></div>
+						</a>
+						<a href="contact.html">
+							<div class="submenutab"><h3>Contact Me</h3></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- MAIN CONTENT -->
+		<section id="main">
+			<!-- Main Title -->
+			<h1 id="title">About Me</h1>
+
+			<!-- Biography -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/about_icon_large.png" alt="About Icon">
+					<h2 id="biography">Biography</h2>
+				</div>
+			</div>
+			<div class="contentgroup">
+				<div class="subcontentgroup-onethird">
+					<img src="img/brad_casual_professional.jpg" alt="Brad" class="bio-img">
+				</div>
+				<div class="subcontentgroup-twothirds">
+				<p>Hi there! I'm <b>Brad Schmitz</b>. I'm currently a student at Miami University of Ohio, double majoring in Computer Science and Interactive Media Studies, and double minoring in Music Composition and Music Performance. I like to think of myself as a lot of things: a programmer, designer, musician, composer, etc. Most importantly, however, I like to think of myself as a <b>creator</b>. I love the process of starting from scratch and refining new things from it.</p>
+				<p>You may be looking at my majors and minors and be thinking to youself, "That's an interesting combination". The reason for this is that I'm a person who loves variety. I have a super wide range of interests (including <b>virtual / augmented reality</b>, <b>computer vision and graphics</b>, <b>music and sound interaction</b>, <b>web / game / software design and development</b>, <b>UI / UX design</b>, <b>motion and entertainment design</b>, <b>video production</b>, etc.) and love having new experiences.</p>
+				</div>
+			<div class="contentgroup">
+				<p>As a creator, the main goal I have is to make interactive technologies that are as immersive and engaging as possible. This is also why I have this major / minor combination - super engaging technology combines many different facets, including interface layout, visual style, audio design, and more.</p>
+				<p>Outside of schoolwork, I'm an avid musican, gamer, and reader. I play numerous instruments, including saxophone, piano, guitar (bass, electric, and acoustic), melodica, and a little bit of trumpet. I also collect novelty pens!</p>
+			</div>
+			</div>
+			<div class="contentgroup">
+				
+			</div>
+
+			<!-- Skills -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/about_icon_large.png" alt="About Icon">
+					<h2 id="skills">Skills</h2>
+				</div>
+			</div>
+			<div class="contentgroup">
+				<h3>Programming / Software Development</h3>
+				<p>I currently have four years of programming experience. The languages I am comfortable programming in include, in order of skill...</p>
+				<ol>
+					<li><b>C#</b></li>
+					<li><b>C++</b></li>
+					<li><b>Java</b></li>
+					<li><b>JavaScript</b></li>
+					<li><b>PHP</b></li>
+					<li><b>SAS</b></li>
+					<li><b>Ruby / Ruby on Rails</b></li>
+					<li><b>R</b></li>
+				</ol>
+				<p>My software development experiences include...</p>
+				<ul>
+					<li><b>Game and simulation development using Unity, GameMaker Studio 2, and Unreal Engine</b></li>
+					<li><b>Developing and testing software using Agile methodology</b></li>
+					<li><b>Version control with GitHub, GitLab, and Perforce</b></li>
+					<li><b>Using the terminal for navigating, modifying, and executing programs</b></li>
+					<li><b>Writing code for web servers and multi-threaded programs</b></li>
+					<li><b>Web development using the MVC pattern</b></li>
+				</ul>
+			<hr class="mobilebar">
+				<h3>Graphic and UI / UX Design</h3>
+				<p>My skills in the area of UI / UX Design include...</p>
+				<ul>
+					<li><b>Creating engaging, responsive, and informative interfaces</b></li>
+					<li><b>Making web interfaces using HTML / CSS</b></li>
+					<li><b>Developing prototype interfaces using Axure RP</b></li>
+					<li><b>Conducting usability studies, including interface evaluations, card sorting, and tree testing</b></li>
+					<li><b>Writing usability reports</b></li>
+				</ul>
+				<p>My skills in the area of graphic design include...</p>
+				<ul>
+					<li><b>Constructing posters, infographics, and other print media using Adobe InDesign</b></li>
+					<li><b>Creating and manipulating vector / raster graphics using Adobe Illustrator and Photoshop</b></li>
+					<li><b>Making simple pixel art</b></li>
+					<!-- <li><b>Creating 3D models using Blender</b></li> -->
+				</ul>
+			<hr class="mobilebar">
+				<h3>Music / Sound</h3>
+				<p>I have been writing music for video games for over ten years, and have been writing concert music for four years. My composition skills include...</p>
+				<ul>
+					<li><b>Writing for various instrumentations and settings, including orchestra, solo instrument, and chiptune</b></li>
+					<li><b>Notating music using Finale and MuseScore</b></li>
+					<li><b>Composing music using FL Studio and Ableton Live</b></li>
+					<li><b>Manipulating digital audio using Audacity</b></li>
+				</ul>
+			<hr class="mobilebar">
+				<h3>Video Production</h3>
+				<p>I have been making ametuer videos for eight years. My video production skills include...</p>
+				<ul>
+					<li><b>Scripting, filming, and editing for a wide variety of video styles, including interviews, event advertisements, and short skits</b></li>
+					<li><b>Applying video effects with Adobe AfterEffects</b></li>
+					<li><b>Editing videos with Adobe Premiere</b></li>
+					<li><b>Uploading and advertising videos on social media</b></li>
+				</ul>
+				<hr class="mobilebar">
+			</div>
+
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div id="greybar"></div>
+			<!-- Info -->
+			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2020</h3>
+		</footer>
+	</body>
+</html>

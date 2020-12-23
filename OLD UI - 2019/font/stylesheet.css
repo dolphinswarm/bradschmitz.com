@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'DepredationPixie';
+    src: url('DepredationPixie.eot');
+    src: url('DepredationPixie.eot?#iefix') format('embedded-opentype'),
+        url('DepredationPixie.woff2') format('woff2'),
+        url('DepredationPixie.woff') format('woff'),
+        url('DepredationPixie.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

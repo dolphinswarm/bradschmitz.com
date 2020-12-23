@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Virtual Rave";
+    src: url("./font/VirtualRave.eot?") format("embedded-opentype"),
+         url("./font/VirtualRave.ttf") format("truetype"),
+	 url("./font/VirtualRave.woff") format("woff"),
+	 url("./font/VirtualRave.svg#svgFontName") format("svg");
+}
+
+
+h1 {
+	font-family: "Virtual Rave";
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 12vw;
+	margin-top: 9vw;
+}
+
+p {
+	margin-top: -8vw;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: white;
+	font-size: 5vw;
+	text-align: center;
+}
+
+#logo {
+	width: 10%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.header {
+	margin: -8px;
+  	background: #33373B;
+	padding: 5px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.searchbar {
+	float: right;
+	margin-top: 4vw;
+	margin-right: 0px;
+}
+
+.searchbar input[type=text] {
+	padding: 6px;
+	font-size: 17px;
+	border: none;
+	height: 20px;
+	width: 35vw;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.searchbar button {
+  	float: right;
+  	padding: 2px;
+	margin-right: 16px;
+ 	background: #BFBFBF;
+  	border: none;
+  	cursor: pointer;
+	width: 30px;
+
+}
+
+.searchbar img {
+	width: 14px;
+}
+
+.content {
+	margin-top: 17vw;
+	margin-bottom: 12vw;
+}
+
+video {
+	margin-top: -5vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75vw;
+	height: 50vw;
+}
+
+footer {
+	margin: -8px;
+	padding: 0px;
+  	background: #33373B;
+	position: fixed;
+	bottom: 4px;
+	width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+footer ul li {
+	float: left;
+	width: 25%;
+	display: inline-block;
+	height: 35px;
+	padding-top: 8px;
+}
+
+#activeIcon {
+	background-color: #F7931E;
+}
+
+footer ul li img {
+	width: 5vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: center;
+}
+
+#myBtn {
+  	display: none;
+  	position: fixed;
+  	bottom: 45px;
+  	right: 8px;
+  	z-index: 1;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color: #F7931E;
+  	color: white;
+  	padding: 15px;
+	padding-top: 10px;
+  	border-radius: 100px;
+	height: 40px;
+	opacity: 0.75;
+	visibility: visible;
+}
+
+.message h2 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: black;
+	text-align: center;
+	font-size: 30px;
+}
+
+.message p {
+  margin: 0px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		background-color: #23272A;
+	}
+
+  .page {
+    display: block;
+  }
+
+  .message {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 501px) {
+	html {
+		background-color: #F7931E;
+	}
+
+	.page {
+		display: none;
+	}
+
+  .message {
+    display: block;
+  }
+}

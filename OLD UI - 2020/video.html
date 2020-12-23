@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+	<!-- Head -->
+	<head>
+		<!-- Meta Information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brad Schmitz">
+		<meta name="description" content="Brad Schmitz: Programmer, Designer, Musician">
+		<title>Video - Brad Schmitz</title>
+		
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+		<link rel="manifest" href="fav/site.webmanifest">
+		<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#f7941e">
+		<link rel="shortcut icon" href="fav/favicon.ico">
+		<meta name="msapplication-TileColor" content="#23272a">
+		<meta name="msapplication-config" content="fav/browserconfig.xml">
+		<meta name="theme-color" content="#23272A">
+		
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+
+	</head>
+
+	<!-- Body -->
+	<body>
+		
+		<!-- Background -->
+		<div id="background">
+			<!-- Video -->
+			<video muted loop id="backgroundVideo">
+				<source src="media/background.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<!-- Content -->
+		<div id="content">
+			<!-- Header -->
+			<header>
+				<!-- LogoBlock-->
+				<div id="logoblock"><a href="index.html">
+					<!-- Header Image -->
+					<img src="img/logo.png" draggable="false" id="logo" alt="Logo">
+
+					<!-- Header Text -->
+					<h1>Brad Schmitz</h1>
+					<h2>Digital Media Creator</h2>
+				</a></div>
+			</header>
+
+			<!-- Navbar (regular) -->
+			<nav id="regular-navbar">
+				<!-- About -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="bio.html">
+						<div class="subtab">
+							<h3>Bio</h3>
+						</div>
+						</a>
+						<a href="professional.html">
+						<div class="subtab">
+							<h3>Professional</h3>
+						</div>
+						</a>
+						<a href="blog.html">
+						<div class="subtab">
+							<h3>Blog</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Code -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="software.html">
+						<div class="subtab">
+							<h3>Software</h3>
+						</div>
+						</a>
+						<a href="web.html">
+						<div class="subtab">
+							<h3>Websites</h3>
+						</div>
+						</a>						
+						<a href="games.html">
+						<div class="subtab">
+							<h3>Games</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Design -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="video.html">
+						<div class="subtab">
+							<h3>Video</h3>
+						</div>
+						</a>
+						<a href="graphic.html">
+						<div class="subtab">
+							<h3>Graphic</h3>
+						</div>
+						</a>
+						<a href="uiux.html">
+						<div class="subtab">
+							<h3>UI / UX</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Music -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<div class="subtab-group">
+						<a href="compositions.html">
+						<div class="subtab">
+							<h3>Compositions</h3>
+						</div>
+						</a>
+						<a href="performance.html">
+						<div class="subtab">
+							<h3>Performance</h3>
+						</div>
+						</a>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Navbar (hamburger) -->
+			<nav id="hamburger-navbar">
+				<!-- Hamburger Box -->
+				<button id="hamburger-border" class="hamburger--squeeze" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+				</button>
+			</nav>
+			
+			<!-- Cover -->
+			<div id="cover"></div>
+			
+			<!-- Navbar (side) -->
+			<nav id="side-navbar" style="vertical-align: middle;">
+				<!-- About -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+					<!-- Sub Tabs -->
+					<a href="bio.html">
+					<div class="subtab">
+						<h3>Bio</h3>
+					</div>
+					</a>
+					<a href="professional.html">
+					<div class="subtab">
+						<h3>Professional</h3>
+					</div>
+					</a>
+					<a href="blog.html">
+					<div class="subtab">
+						<h3>Blog</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Code -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="software.html">
+					<div class="subtab">
+						<h3>Software</h3>
+					</div>
+					</a>
+					<a href="web.html">
+					<div class="subtab">
+						<h3>Websites</h3>
+					</div>
+					</a>						
+					<a href="games.html">
+					<div class="subtab">
+						<h3>Games</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Design -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="video.html">
+					<div class="subtab">
+						<h3>Video</h3>
+					</div>
+					</a>
+					<a href="graphic.html">
+					<div class="subtab">
+						<h3>Graphic</h3>
+					</div>
+					</a>
+					<a href="uiux.html">
+					<div class="subtab">
+						<h3>UI / UX</h3>
+					</div>
+					</a>
+				</div>
+				
+				<!-- Music -->
+				<div class="tab">
+					<!-- Main Tab -->
+					<div class="tab-group">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					
+					<!-- Sub Tabs -->
+					<a href="compositions.html">
+					<div class="subtab">
+						<h3>Compositions</h3>
+					</div>
+					</a>
+					<a href="performance.html">
+					<div class="subtab">
+						<h3>Performance</h3>
+					</div>
+					</a>
+				</div>
+			</nav>
+
+			<!-- Main Content -->
+			<main>
+				<!-- Title -->
+				<h1>Video</h1>
+				
+				<!-- Motion Graphics -->
+				<div class="content-header">
+					<img src="img/design_icon_large.png" alt="Design Icon">
+					<h2 id="motiondesign">Motion Design and Graphics</h2>
+				</div>
+
+			<!-- Motion Graphics Gallery -->
+			<div class="content-group">
+				<div class="gallery">
+					<!-- NYC Dragon Attack -->
+					<div class="subcontent-group-onethird video-modal-opener" id="nyc-dragon-attack">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/nyc_dragon_attack.PNG" alt="_aEiTFVhMkM" class="video-modal-opener">
+						<h4 class="video-modal-opener">NYC Dragon Attack</h4>
+						<p class="hide"><b>NYC Dragon Attack</b> is a short motion video demo made in Adobe AfterEffects as part of <b>IMS 228 (now 430): Motion Design Toolkit</b>. This specific demo demonstrates some specific parts of AfterEffects, including layering, effects, lighting, keying, compositions (such as pre-compositions), inclusion of video and sound, and moving images.</p>
+					</div>
+					
+					<!-- HEYYYEAYEAYEAYEA Cube-->
+					<div class="subcontent-group-onethird video-modal-opener" id="hey-cube">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/he-man.jpg" alt="YkBotupwVss" class="video-modal-opener">
+						<h4 class="video-modal-opener">The He-Man Cube</h4>
+						<p class="hide"><b>The He-Man Cube</b> is a short motion video demo made in Notch builder as part of <b>IMS 228 (now 430): Motion Design Toolkit</b>. This specific demo uses many of Notch Builder's most important concepts, including multiple camera types, fog, lighting, particles, distortions, and modifiers (audio and beat, specifically). The video used is a classic internet meme of He-Man singing "What's Up?" by the 4 Non Blondes.</p>
+					</div>
+					
+					<!-- BORK -->
+					<div class="subcontent-group-onethird video-modal-opener" id="bork">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/bork.jpg" alt="GbwmB1jPr5Y" class="video-modal-opener">
+						<h4 class="video-modal-opener">BORK</h4>
+						<p class="hide"><b>BORK</b> is a short motion video demo made in Adobe AfterEffects as part of <b>IMS 228 (now 430): Motion Design Toolkit</b>. This specific demo dives further into the concepts of layering, lighting, and effects, but also includes new concepts, such as movement in 3D space, scene lights, particles, and more in-depth effects.</p>
+					</div>
+					
+					<!-- Glitch Planet -->
+					<div class="subcontent-group-onethird video-modal-opener" id="glitch-planet">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/glitch_planet.jpg" alt="vU2ol_aY0zE" class="video-modal-opener">
+						<h4 class="video-modal-opener">Glitch Planet</h4>
+						<p class="hide"><b>Glitch Planet</b> is a short motion video demo made in TouchDesigner as part of <b>IMS 228 (now 430): Motion Design Toolkit</b>. This specific demo highlights the 3D capabilities of Notch Builder, such as basic CHOPS and TOPS, particles, textures, cameras, 3D primitives, and more.</p>
+					</div>
+					
+					<!-- Dancing Dots -->
+					<div class="subcontent-group-onethird video-modal-opener" id="dancing-dots">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/backup-background.png" alt="47cpPWjWwWg" class="video-modal-opener">
+						<h4 class="video-modal-opener">Dancing Dots</h4>
+						<p class="hide"><b>Dancing Dots</b> is a short motion video demo made in TouchDesigner for this website's background. It's meant to be a colorful, yet non-distracting addition to the website's overall feel and stylization. This demo also illustrates some other features of TouchDesigner, such as feedback loops, instancing, noise generation, post-processing effects, and more.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Freelance Projects Header -->
+			<div class="content-header">
+				<img src="img/design_icon_large.png" alt="Design Icon">
+				<h2 id="freelance">Freelance Projects</h2>
+			</div>
+			
+			<!-- Freelance Projects Gallery -->
+			<div class="content-group">
+				<div class="gallery">
+					<!-- Growth Mindset in the Age of Digital Transformation -->
+					<div class="subcontent-group-onethird video-modal-opener" id="growth-mindset">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/growth_mindset.jpg" alt="kwE4Sp9-pWg" class="video-modal-opener">
+						<h4 class="video-modal-opener">Growth Mindset Video</h4>
+						<p class="hide"><b>Growth Mindset in the Age of Digital Transformation</b> (2019) is a video that was made as part of the <b>Lockheed Martin Leadership Institute</b>'s digital transformation social media campaign. This video was created to be more of an informational and serious video, showung viewers what it means to have a growth mindset in today's digital age. For this project, I was in charge of filming and editing. I wanted to convey through video the stark contrast between a positive mindset and a stagnant one; thus, I used a black-and-white filter on the fixed perspective scenes. I also tried to make the two mindsets appear to be "mirror opposites" by filming and editing the scenes to face in different directions.</p>
+					</div>
+					
+					<!-- JEDI 2016 - Teaser Video -->
+					<div class="subcontent-group-onethird video-modal-opener" id="jedi2016-teaser">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/jedi2016_teaser.jpg" alt="-9ocRVk3kb0" class="video-modal-opener">
+						<h4 class="video-modal-opener">JEDI 2016 - Teaser Video</h4>
+						<p class="hide">From 2014 - 2016, I worked with the non-profit group <b>PARTY</b> (Putnam Adolescent Response Team for Youth) as the Media and Technology Coordinator. PARTY's main goal is to promote healthy life decisions for teens and pre-teens in the Northwest Ohio area through events and campaigns. Our main event was a yearly retreat called <b>JEDI</b> (Juvenile Educational Development Institute). For each JEDI, my job was to create three videos: a <b>teaser video</b>, a <b>rules video</b>, and a <b>closing video</b>.<br><br>In general, the <b>JEDI teaser videos</b> (like this one) were probably my favorite to make. When creating them, we had only four stipulations: say what, when, where, and what theme JEDI is that year. Besideds that, we had complete creative liberty to make the teasers entertaining. Of the three teasers I did, this one by far my favorite. To me, it's the funniest of the three, and it also has the most experimental special effects, including the mock Pokémon battle (from Ruby / Sapphire / Emerald), the first (and only) use of a large greenscreen in the JEDI videos, and my first attempt at musically scoring a video (in the beginning).</p>
+					</div>
+					
+					<!-- JEDI 2016 - Rules Video -->
+					<div class="subcontent-group-onethird video-modal-opener" id="jedi2016-rules">
+						<div class="padding video-modal-opener"></div>
+						<div class="padding video-modal-opener"></div>
+						<img src="img/jedi2016_rules.jpg" alt="K0hfu8vmaLM" class="video-modal-opener">
+						<h4 class="video-modal-opener">JEDI 2016 - Rules Video</h4>
+						<p class="hide">From 2014 - 2016, I worked with the non-profit group <b>PARTY</b> (Putnam Adolescent Response Team for Youth) as the Media and Technology Coordinator. PARTY's main goal is to promote healthy life decisions for teens and pre-teens in the Northwest Ohio area through events and campaigns. Our main event was a yearly retreat called <b>JEDI</b> (Juvenile Educational Development Institute). For each JEDI, my job was to create three videos: a <b>teaser video</b>, a <b>rules video</b>, and a <b>closing video</b>.<br><br>The <b>JEDI rules videos</b> (like this one) were shown to participants at the beginning of JEDI to establish the basic ground rules. When making these videos, we usually either had two choices of what to do: either make a continuous story with rules in between, or have short skits for each rules. I preferred to make one with a continuous story, which is why this one is my favorite of the three I made. Additionally, like the teaser video, we had lots of creative liberties with this video.</p>
+					</div>
+				
+				</div>
+			</div>
+			
+			<!-- Modal -->
+			<div id="modal">
+				<div id="modal-content">
+					<h1 id="modal-title"></h1>
+					<iframe id="youtube-video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p id="modal-text"></p>
+				</div>
+			</div>
+			</main>
+
+			<!-- Footer -->
+			<hr id="bottom-hr">
+			<footer>
+				<!-- Copyright Label -->
+				<h1>Created by Brad Schmitz, ©2020. All rights reserved.</h1>
+				
+				<!-- Email area-->
+				<div class="footer-column">
+				<a href="MAILTO:schmitb3@miamioh.edu">
+					<img src="img/mail-icon.png" class="icon-footer" alt="Mail Icon">
+					<h2>schmitb3@miamioh.edu</h2>
+				</a>
+				</div>
+				
+				<!-- Background Pause Button -->
+				<div class="footer-column">
+				<div id="playback-button">
+					<i class="fa fa-play"></i>
+					<h2>Play</h2>
+				</div>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+</html>

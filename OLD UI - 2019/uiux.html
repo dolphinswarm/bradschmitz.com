@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+	<!-- HEADER -->
+	<head>
+		<!-- Meta Information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brad Schmitz">
+		<meta name="description" content="The personal website of Miami University student Brad Schmitz!">
+		<title>UI / UX - Brad Schmitz</title>
+
+		<!-- CSS: External and Internal (includes FontAwesome for icons, and Hamburgers by Jon Suh for fancy hamburger menu) -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/fav/favicon.ico">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link href="css/hamburgers.css" rel="stylesheet">
+
+		<!-- JavaScript: External and Internal -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+
+	</head>
+
+	<!-- BODY -->
+	<body>
+		<!-- HEADER AND NAVIGATION -->
+		<header>
+
+			<!-- Personal Logo -->
+			<div id="logoblock">
+				<a href="index.html">
+					<img src="img/logo.png" draggable="false" alt="Logo">
+					<h1>Brad Schmitz</h1>
+				</a>
+			</div>
+
+			<!-- Navigation Links -->
+			<nav id="navblock">
+				<!-- About Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab" id="noleftborder">
+						<img src="img/about_icon_large.png" draggable="false" alt="About Icon" style="margin-right: -10px">
+						<h2>About</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="bio.html">
+							<div class="submenutab"><h3>Biography</h3></div>
+						</a>
+						<a href="resume.html">
+							<div class="submenutab"><h3>Resume</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Code Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+						<h2>Code</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="classcode.html">
+							<div class="submenutab"><h3>Class Code</h3></div>
+						</a>
+						<a href="personalcode.html">
+							<div class="submenutab"><h3>My Code</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Music Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+						<h2>Music</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="compositions.html">
+							<div class="submenutab"><h3>Compositions</h3></div>
+						</a>
+						<a href="saxophone.html">
+							<div class="submenutab"><h3>Saxophone</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Design Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab">
+						<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+						<h2>Design</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="videos.html">
+							<div class="submenutab"><h3>Videos</h3></div>
+						</a>
+						<a href="graphics.html">
+							<div class="submenutab"><h3>Graphics</h3></div>
+						</a>
+						<a href="uiux.html">
+							<div class="submenutab"><h3>UI / UX</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Connect Tab and Subtabs -->
+				<div class="headergroup">
+					<div class="headertab" id="norightborder">
+						<img src="img/social_icon_large.png" draggable="false" alt="Connect Icon">
+						<h2>Connect</h2>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="submenu">
+						<a href="socialmedia.html">
+							<div class="submenutab"><h3>Social Media</h3></div>
+						</a>
+						<a href="contact.html">
+							<div class="submenutab"><h3>Contact Me</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- TAB TEMPLATE -->
+				<!-- <a href="">
+					<div class="headertab">
+						<img src="" alt="Icon">
+						<h2>Header</h2>
+					</div>
+				</a>  -->
+
+			</nav>
+
+			<!-- Hamburger Menu -->
+			<nav id="hamblock">
+				<div id="bars" class="hamburger hamburger--squeeze">
+					<span class="hamburger-inner"></span>
+				</div>
+			</nav>
+
+			<!-- Side Menu -->
+			<div id="sidenav" class="sidenav">
+				<!-- About Tab and Subtabs -->
+				<div class="sidenavgroup" id="topborderside">
+					<img src="img/about_icon_large.png" draggable="false" alt="About Icon">
+					<h2>About</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="bio.html">
+							<div class="submenutab"><h3>Biography</h3></div>
+						</a>
+						<a href="resume.html">
+							<div class="submenutab"><h3>Resume</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Code Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/projects_icon_large.png" draggable="false" alt="Code Icon">
+					<h2>Code</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="classcode.html">
+							<div class="submenutab"><h3>Class Code</h3></div>
+						</a>
+						<a href="personalcode.html">
+							<div class="submenutab"><h3>My Code</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Music Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/music_icon_large.png" draggable="false" alt="Music Icon">
+					<h2>Music</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="compositions.html">
+							<div class="submenutab"><h3>Compositions</h3></div>
+						</a>
+						<a href="saxophone.html">
+							<div class="submenutab"><h3>Saxophone</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Media Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/design_icon_large.png" draggable="false" alt="Design Icon">
+					<h2>Design</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="videos.html">
+							<div class="submenutab"><h3>Videos</h3></div>
+						</a>
+						<a href="graphics.html">
+							<div class="submenutab"><h3>Graphics</h3></div>
+						</a>
+						<a href="uiux.html">
+							<div class="submenutab"><h3>UI / UX</h3></div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Connect Tab and Subtabs -->
+				<div class="sidenavgroup">
+					<img src="img/social_icon_large.png" draggable="false" alt="Connect Icon">
+					<h2>Connect</h2>
+					<i class="fas fa-angle-right"></i>
+					<div class="submenu">
+						<a href="socialmedia.html">
+							<div class="submenutab"><h3>Social Media</h3></div>
+						</a>
+						<a href="contact.html">
+							<div class="submenutab"><h3>Contact Me</h3></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- MAIN CONTENT -->
+		<section id="main">
+			<!-- Main Title -->
+			<h1 id="title">UI / UX Design</h1>
+			
+			<!-- Web Application UI's -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/design_icon_large.png" alt="Design Icon">
+					<h2 id="htmlcss">HTML / CSS User Interfaces</h2>
+				</div>
+			</div>
+			<div class="contentgroup">
+				<div class="gallery">
+					<!-- Appalogue -->
+					<div class="subcontentgroup-onethird modalopener" id="appalogue">
+						<img src="img/appalogue.PNG" alt="Appalogue Icon" class="modalopener">
+						<h4 class="modalopener">Appalogue - Ruby on Rails App Directory</h4>
+						<button type="button" class="viewbutton" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Site</button>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/schmitb3/Appalogue/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use.<br><br>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.<br><br>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
+					</div>
+					
+					<!-- Virtual Education -->
+					<div class="subcontentgroup-onethird modalopener" id="virtualeducation">
+						<div class="padding modalopener"></div>
+						<img src="img/virtualeducation.PNG" alt="Virtual Education Icon" class="modalopener">
+						<h4 class="modalopener">Virtual Education - Mobile Website</h4>
+						<button type="button" class="viewbutton" onclick="window.open('http://bradschmitz.com/websites/virtualeducation/index.html','_blank')">View Site</button><br>
+						<p class="hide"><b>Virtual Education</b> is a simple website that was made for <b>IMS 222: Introduction to Interaction Design and Development</b>. The focus of this class was on designing and creating effective web interfaces with HTML, CSS, and JavaScript for various devices; this project was for mobile phones. While designing the website, I incorporated many mobile-friendly design elements, including a button to immediately return to the top of a scrolled page and placing the navbar at the bottom of the screen.<br><br>For theis assignment, the website's content was supposed to be about creating a business for "an industry which needed disrupting". Thus, I chose to create a website for a educational VR company, which provided "serious games" (educational and training games) to companies and schools.</p>
+					</div>
+					
+					<!-- BAA -->
+					<div class="subcontentgroup-onethird modalopener" id="baa">
+						<div class="padding modalopener"></div>
+						<img src="img/baa.PNG" alt="Bussiness Assessment Association Icon" class="modalopener">
+						<h4 class="modalopener">Business Assessment Association</h4>
+						<button type="button" class="viewbutton" onclick="window.open('http://bradschmitz.com/websites/baa/index.html','_blank')">View Site</button><br>
+						<p class="hide">The <b>Business Assessment Association</b> is a satirical website that was made as part of a group project for <b>IMS 257: Web Interaction Programming (now IMS 322: Intermediate Interaction Design and Development</b>. This class was a continuation of IMS 222, diving deeper into techniques for creating HTML, CSS, and JavaScript interfaces for websites.This assignment revolved around creating a business website that could conceivably be used in the professional world. One of our group members suggested we go over-the-top and just make the whole thing full of generic business buzzwords, and the rest is history.<br><br>Each group member was in charge of creating a webpage for the site - my page is the "Estimates" page, which uses four number inputs to generate a random number (and a "Kaching!" sound). I also was in charge of assembling the overall website, meaning that I had to combine each person's pages into a coherent website.</p>
+					</div>
+					
+					<!-- This Website -->
+					<div class="subcontentgroup-onethird modalopener" id="thiswebsite">
+						<div class="padding modalopener"></div>
+						<img src="img/thiswebsite.PNG" alt="This Website" class="modalopener">
+						<h4 class="modalopener">This Website</h4>
+						<button type="button" class="githubbutton" onclick="window.open('https://github.com/dolphinswarm/bradschmitz.com/','_blank')"><img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository</button>
+						<p class="hide"><b>bradschmitz.com</b> is the website you are currently viewing! This website is my portfolio website to show all my creations, and was constructed from-the-ground-up using HTML, CSS, and JavaScript / JQuery for the frontend, and PHP for the backend. Many of the assets of this website are also custom-made, such as the pixel art icons and my personal logo.<br><br>Some of the assets I used for this website include:<br><a href="https://jonsuh.com/hamburgers/" style="color: white">• <b>Hamburgers</b> by Jon Suh</a> (for hamburger menu styles and animations)<br>• <b>DepredationPixie</b> (font) by unknown<br>• <b>Free Pixel</b> (font) by levelb<br>• <b>PixelMix</b> (font) by Andrew Tyler<br>• <b>Century Gothic</b> (font) by Monotype Imaging<br></p>
+					</div>
+				</div>
+			</div>
+			
+<!--
+			<div class="contentgroup">
+				<p>For more information about HTML / CSS interfaces I have worked on, you can view them on the <a href="classcode.html"><b>class code</b></a> or <a href="personalcode.html"><b>my code</b></a> pages!</p>
+			</div>
+-->
+
+			<!-- MuseScore Header -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/design_icon_large.png" alt="Design Icon">
+					<h2 id="musescore">MuseScore 3.0 Interface Evaluation and Redesign</h2>
+				</div>
+			</div>
+
+			<!-- MuseScore -->
+			<div class="contentgroup">
+				<img src="img/musescore_layout_1.png" style="max-width: 700px" alt="MuseScore Re-Design Layout 1">
+				<img src="img/musescore_layout_2.png" style="max-width: 700px" alt="MuseScore Re-Design Layout 2">
+				<button type="button" class="viewbutton collapsible" id="">More Info</button>
+				<div class="collapsible-content">
+					<p>In <b>IMS 315: User Experience Research</b>, we were tasked with a semester-long interface evaluation and re-design for a website / software of our choosing. I chose to evaulate <a href="https://musescore.org/en"><b>MuseScore</b></a>, which is open-source music notation software that I frequently use.</p>
+					<p>To start, I first drafted a usability test for evaluating the effectiveness of MuseScore's UI and UX. I then ran this test on five sepearate participants, selected as people who are part of MuseScore's intended audience. Using these results, I drafted a usability report, which can be viewed below. Additionally, I did some card sort test to figure out the best names / groupings for the menu in MuseScore.</p>
+					<p>I then used the results from the report to create wireframes and mockups (shown above), which reflect the findings in the report and illustrate potential ways to improve MuseScore's user interface and experience.</p>
+				</div>
+				<button type="button" class="viewbutton collapsible" id="reportviewbutton">View Report</button>
+				<div class="collapsible-content">
+					<embed alt="MuseScore Usability Report" src="files/documents/musescoreusabilityreport.pdf" id="reportview">
+				</div>
+				<p class="centered">If the embed doesn't display, you can view the report <a href="files/documents/musescoreusabilityreport.pdf"><b>here</b></a>!</p>
+			</div>
+			
+			<!-- HSAB Header -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/design_icon_large.png" alt="Design Icon">
+					<h2 id="hsab">HSAB Website Redesign</h2>
+				</div>
+			</div>
+
+			<!-- HSAB -->
+			<div class="contentgroup">
+				<h3>Honors Student Advisory Board - New Website</h3>
+				<img src="img/hsab.PNG" alt="HSAB Website">
+				<button type="button" class="viewbutton" onclick="window.open('https://miamihsab.wixsite.com/hsab','_blank')">View Site</button>
+				<button type="button" class="viewbutton collapsible" id="">More Info</button>
+				<div class="collapsible-content">
+					<p>During my term as Director of Public Relations for the <b>Honors Student Advisory Board</b>, I created a new and improved website for our organization. To make it easier for future Directors of Public Relations, I made the website using Wix.com, which features easy drag-and-drop website design. While not the most technically-impressive portfolio piece, I was able to have more creative liberties with the website due to Wix's simplicity. The website's structure was constructed entirely by me, while other various HSAB members provided information and proofread the contnent.</p>
+				</div>
+			</div>
+			
+			<!-- Courses Taken Header -->
+			<div class="contentgroup">
+				<div class="fancyheader">
+					<img src="img/projects_icon_large.png" alt="Code Icon">
+					<h2 id="courses">UI / UX Courses Taken</h2>
+				</div>
+			</div>
+			
+			<!-- Courses Taken -->
+			<div class="contentgroup courselist">
+				<h3>Computer Science Courses</h3>
+				<ul>
+					<div class="tooltip">
+						<li><b>CSE 201</b>: Introduction to Software Engineering</li>
+						<span class="tooltiptext">Principles of software engineering: Introduction to all phases of the software development life cycle and associated tools and engineering methods including the unified modeling language (UML).</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>CSE 383</b>: Web Application Programming</li>
+						<span class="tooltiptext">An introduction to the software, concepts and methodologies necessary to design and implement web applications. Students will design and construct web applications utilizing remote servers on multiple platforms. Projects will be used to enable the students to apply the principles and techniques presented in class.</span>
+					</div><br>
+				</ul>
+				<h3>Interactive Media Studies Courses</h3>
+				<ul>
+					<div class="tooltip">
+						<li><b>IMS 222</b>: Introduction to Interaction Design and Development</li>
+						<span class="tooltiptext">Investigate interactive design and front-end development as it relates to a variety media types. Using industry standard tools, students will learn to design, implement, and refine interactive media for specific audiences. For the purpose of this class, interactive media includes a variety of software and hardware solutions that intersect the domain of human-computer interaction. Effective interactive design is often achieved by the creative application of sometimes disparate disciplines. Students should expect to incorporate their understanding of art theory, psychology, commercial business practice, and creative problem solving.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>IMS 257 (now 322)</b>: Intermediate Interaction Design and Development</li>
+						<span class="tooltiptext">Covers the basic coding patterns and practices present in all programming languages with an emphasis on those languages most common in web and mobile application platforms. It will take students through the fundamentals of algorithm design and then move on to expressing those designs in several popular languages. Because of the focus on web environments, this course will also explore the difference between presentation (such as with HTML) and interactivity (such as with JavaScript). The web and mobile focus will lead to rudimentary discussions on client/server architectures and what content delivery choices are available when a mobile device, such as a smartphone or a tablet, has such strong technical capabilities.</span>
+					</div><br>
+					<div class="tooltip">
+						<li><b>IMS 315 (now 413)</b>: User Experience Research</li>
+						<span class="tooltiptext">Explore and discuss important concepts in human-computer interaction (HCI) theory and usability, and learn about cutting-edge technologies used to measure the effectiveness of digital media environment design. In so doing, we will pay particular attention to user expectations and how they drive user behavior. The major focus of the course assignments is designing and managing a usability study then reporting on the results of that study.</span>
+					</div><br>
+				</ul>
+				<br><br><br>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div id="greybar"></div>
+			<!-- Info -->
+			<h3 style="margin-left: 2vw">Created by Brad Schmitz, ©2020</h3>
+		</footer>
+	</body>
+</html>
