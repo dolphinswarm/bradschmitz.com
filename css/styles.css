@@ -95,6 +95,12 @@ header, nav, footer
 	-ms-user-select: none;
 }
 
+header a, nav a, footer a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 header
 {
 	font-family: 'DepredationPixie';
@@ -103,6 +109,19 @@ header
 	margin: -8px;
 	padding: 15px 10px 0px;
 	text-shadow: 1px 1px 10px black;
+}
+
+body
+{
+	/* Backup background image */
+/*
+	background-image: url("../img/backup-background.png");
+	background-repeat: no-repeat;
+  	background-size: auto;
+*/
+	
+	/* Backup backup - standard color */
+	background-color: #111111;
 }
 
 main
@@ -133,6 +152,15 @@ footer h1
 	font-size: 26px;
 }
 
+footer h2
+{
+    text-align: left;
+    font-size: 15px;
+    margin: 5px 5px 5px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 b
 {
 	color: #F7941E;
@@ -141,6 +169,13 @@ b
 audio
 {
 	margin: -10px 10px 20px;
+}
+
+footer i
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px 3px 5px 10px;
 }
 
 /*================
@@ -280,12 +315,6 @@ IDs
 	margin: 0px auto;
 }
 
-#copyright-label
-{
-	width: 50%;
-	float: left;
-}
-
 /*================
 Classes
 =================*/
@@ -357,7 +386,7 @@ Classes
 
 .content-section
 {
-	margin: 0px auto;
+	margin: 0px auto 20px;
 	width: 92%;
 	color: #FFFFFF;
 	font-family: "Century Gothic";
@@ -550,11 +579,15 @@ Classes
 .music-full
 {
 	width: 100%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .music-half
 {
-	width: 50%;
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .music-full, .music-half
@@ -563,6 +596,11 @@ Classes
     text-align: center;
 	font-size: 30px;
 	font-family: "Century Gothic";
+}
+
+.music-full, .music-half p
+{
+	font-size: 20px;
 }
 
 .music-full h3, .music-half h3
@@ -577,8 +615,40 @@ Classes
 	-webkit-transition: .3s ease-in-out;
  	transition: .3s ease-in-out;
 	width: 90%;
-	background-color: #FFFFFF;
 	margin: 0px auto;
+}
+
+.collapsible-content embed
+{
+	width: 80%;
+	height: 600px;
+}
+
+.icon-footer
+{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	vertical-align: middle;
+}
+
+.info-footer-container
+{
+	margin-top: -10px;
+	width: 50%;
+	float: left;
+}
+
+.half-divider
+{
+	margin-top: -10px;
+}
+
+.half-divider a, .half-divider div
+{
+	width: 50%;
+	float: left;
 }
 
 /*================
@@ -616,12 +686,17 @@ Media Queries
 		font-size: 5vw;
 	}
 	
-	#copyright-label
+	.info-footer-container
 	{
 		width: 100%;
 	}
 	
 	.social-media-footer-container
+	{
+		width: 100%;
+	}
+	
+	.music-half
 	{
 		width: 100%;
 	}
@@ -673,5 +748,24 @@ Media Queries
 		margin-bottom: 50px;
 	}
 	
+	.social-media-footer-container p
+	{
+		display: none;
+	}
 	
+	.social-media-footer-container svg
+	{
+		margin: 5px;
+	}
+	
+	.gallery-item
+	{
+		width: 250px;
+	}
+	
+	.half-divider a, .half-divider div
+	{
+		width: 100%;
+		float: left;
+	}
 }

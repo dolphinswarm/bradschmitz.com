@@ -1,6 +1,47 @@
 // On document ready, prepare jQuery
 $(document).ready(function() 
 {
+	// Set a local storage alias
+	let storage = window.localStorage;
+	
+	// ===========
+	// On page load, load a random background
+	// ===========
+	let backgroundNum = Math.floor(Math.random() * 6) + 1;
+	let file = "media/background-" + backgroundNum + ".mp4";
+	$("#background-video-source").attr("src", file);
+	$("#background-video").get(0).load();
+	
+	
+	// ===========
+	// On page load, set the pause status of the background.
+	// ===========
+	// If nothing in local storage, add it
+	if (storage.length == 0)
+		storage.setItem("Playback", "Pause");
+	
+	// Set the icon and value based on localstorage
+	if (storage.getItem("Playback") == "Play")
+	{
+		// Update the visuals
+		$("#playback-button").find("i").addClass("fa-pause");
+		$("#playback-button").find("i").removeClass("fa-play");
+		$("#playback-button").find("h2").text("Pause Background");
+		
+		// Play the background
+		$("#background").find("video").trigger('play');
+	}
+	else
+	{
+		// Update the visuals
+		$("#playback-button").find("i").removeClass("fa-pause");
+		$("#playback-button").find("i").addClass("fa-play");
+		$("#playback-button").find("h2").text("Play Background");
+		
+		// Play the background
+		$("#background").find("video").trigger('pause');
+	}
+	
 	// ===========
 	// On page load, replace the year
 	// ===========
@@ -60,7 +101,8 @@ $(document).ready(function()
 	$(".collapsible").on("click", function()
 	{
 		// Get the collapsible content
-		var content = $(this).next()
+		var content = $(this).next();
+		console.log(content);
 		
 		// Get current max height
 		var height = content.css("max-height");
@@ -71,8 +113,37 @@ $(document).ready(function()
 			
 		// Else, open
 		} else {
-			//content.css("max-height", content.prop("scrollHeight"));
 			content.css("max-height", content.prop("scrollHeight"));
+		}
+	});
+	
+	// ===========
+	// Function for pausing and playing the background
+	// ===========
+	$("#playback-button").on("click", function()
+	{
+		// If currently pause, set to play
+		if (storage.getItem("Playback") == "Play")
+		{
+			// Update the visuals
+			$("#playback-button").find("i").removeClass("fa-pause");
+			$("#playback-button").find("i").addClass("fa-play");
+			$("#playback-button").find("h2").text("Play Background");
+			storage.setItem("Playback", "Pause");
+			
+			// Play the background
+			$("#background").find("video").trigger('pause');
+		}
+		// Else, set to pause
+		else
+		{
+			$("#playback-button").find("i").addClass("fa-pause");
+			$("#playback-button").find("i").removeClass("fa-play");
+			$("#playback-button").find("h2").text("Pause Background");
+			storage.setItem("Playback", "Play");
+			
+			// Pause the background
+			$("#background").find("video").trigger('play');
 		}
 	});
 	
