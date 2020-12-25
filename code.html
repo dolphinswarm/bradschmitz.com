@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+<!-- HEAD -->
+<head>
+	<!-- Meta Information -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Brad Schmitz">
+	<meta name="description" content="Brad Schmitz: Digital Media Creator">
+	<title>Code - Brad Schmitz</title>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/site.webmanifest">
+	<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#f7941e">
+	<link rel="shortcut icon" href="fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#23272a">
+	<meta name="msapplication-config" content="fav/browserconfig.xml">
+	<meta name="theme-color" content="#23272A">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<!-- BODY -->
+<body>
+	<!-- BACKGROUND -->
+	<div id="background">
+		<!-- Video -->
+		<video muted loop id="background-video">
+			<source src="" type="video/mp4" id="background-video-source">
+		</video>
+	</div>
+	
+	<!-- HEADER -->
+	<header>
+		<!-- Logo Block -->
+		<div id="logo-block"><a href="index.html">
+			<!-- Logo Image -->
+			<img src="img/logo.png" id="header-logo" alt="Brad Schmitz's Logo">
+			<!-- Logo Text -->
+			<h1 id="logo-text">Brad Schmitz</h1>
+		</a></div>
+		
+		<!-- Main Navbar -->
+		<nav id="main-nav">
+			<!-- About Nav Item -->
+			<a href="about.html" class="nav-item">
+				<!-- Image -->
+				<img alt="About Icon" src="img/about_icon_large.png">
+
+				<!-- Label -->
+				<h1 class="nav-item">About Me</h1>
+			</a>
+			
+			<!-- Code Nav Item -->
+			<a href="code.html" class="nav-item">
+				<!-- Image -->
+				<img alt="Code Icon" src="img/projects_icon_large.png">
+
+				<!-- Label -->
+				<h1 class="nav-item">Code</h1>
+			</a>
+			
+			<!-- Graphics Nav Item -->
+			<a href="graphics.html" class="nav-item">
+				<!-- Image -->
+				<img alt="Graphics Icon" src="img/design_icon_large.png">
+
+				<!-- Label -->
+				<h1 class="nav-item">Graphics</h1>
+			</a>
+			
+			<!-- Music Nav Item -->
+			<a href="music.html" class="nav-item">
+				<!-- Image -->
+				<img alt="Music Icon" src="img/music_icon_large.png">
+
+				<!-- Label -->
+				<h1 class="nav-item">Music</h1>
+			</a>
+			
+			<!-- About -->
+			<!--<h1 class="nav-item"><a href="about.html">About</a></h1>-->
+			<!-- Code -->
+			<!--<h1 class="nav-item"><a href="code.html">Code</a></h1>-->
+			<!-- Graphics -->
+			<!--<h1 class="nav-item"><a href="graphics.html">Graphics</a></h1>-->
+			<!-- Music -->
+			<!--<h1 class="nav-item"><a href="music.html">Music</a></h1>-->
+		</nav>
+		
+		<!-- BOTTOM NAVBAR -->
+		<nav id="bottom-nav">
+			<!-- About Nav Item -->
+			<a href="about.html" class="nav-item">
+				<!-- Image -->
+				<img alt="About Icon" src="img/about_icon_large.png">
+			</a>
+			
+			<!-- Code Nav Item -->
+			<a href="code.html" class="nav-item">
+				<!-- Image -->
+				<img alt="Code Icon" src="img/projects_icon_large.png">
+			</a>
+			
+			<!-- Graphics Nav Item -->
+			<a href="graphics.html" class="nav-item">
+				<!-- Image -->
+				<img alt="Graphics Icon" src="img/design_icon_large.png">
+			</a>
+			
+			<!-- Music Nav Item -->
+			<a href="music.html" class="nav-item">
+				<!-- Image -->
+				<img alt="Music Icon" src="img/music_icon_large.png">
+			</a>
+			
+		</nav>
+	</header>
+	
+	<!-- MAIN CONTENT -->
+	<main id="main">
+		<!-- Main Text -->
+		<h1>CODE</h1>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="quick-links">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Quick Links</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<ul>
+				<li><a href="#vrar">Virtual / Augmented Reality</a></li>
+				<li><a href="#computer-graphics">Computer Graphics</a></li>
+				<li><a href="#games">Games</a></li>
+				<li><a href="#web">Websites and Web Apps</a></li>
+				<li><a href="#stats">Statistical</a></li>
+			</ul>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="vrar">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Virtual / Augmented Reality</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Gallery -->
+			<div class="gallery">
+				
+				<!-- VRchery -->
+				<div class="gallery-item modal-opener" id="vrchery">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">VRchery</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/vrchery.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<!-- <button type="button" class="gallery-button">Download Demo</button> -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/VRchery/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>VRchery</b> is a simple virtual reality archery game, developed using OculusVR and Unity. This was my first virtual reality project, and because of this, it's pretty demo-like. The player starts the game in a medieval-esque town, with a target roughly 25 meters away. The player then has 10 arrows,  which should be fired at the target in attempt to score as mnay points as possible.<br><br>Some features incorporated in this project include a realistic-looking scene, virtual reality UI, realistic bow-and-arrow pullback and firing (using the Oculus controllers), scoring (based on the arrow's distance from the center), heptic feedback, and more.</p>
+				</div>
+				
+				<!-- Rowan Hall Scavenger Hunt -->
+				<div class="gallery-item modal-opener" id="rowan-hall-scavenger-hunt">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Rowan Hall Scavenger Hunt</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/rowanhall.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Rowan-Hall-Project/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Rowan Hall Scavenger Hunt</b> is an augmented reality application developed using Unity and AR Foundation. It was made as a project for <b>IMS 461: Virtual and Augmented Reality</b>, and was part of a class effort to create a series of applications commemorating the 50th Anniversary of the <a href="https://en.wikipedia.org/wiki/Rowan_Hall#Student_occupation" style="text-decoration: none;"><b>Rowan Hall Protests</b></a> at Miami Univerity. Each group was assigned a certain subtopic, with ours being given BAM (Black Action Movement) and BSAA (Black Student Action Association).<br><br>This AR application is meant to be played in the Shade Family Room in the Armstrong Student Center at Miami University. Users first open up the app, then move to the center of the room. Once there, the player has to hunt for megaphones placed in various locations around the room. Once found, the megaphones read some information about BAM and BSAA. Also featured in the application are a table with newspaper clippings from the time and some protestors.</p>
+				</div>
+				
+				<!-- AR Looper -->
+				<div class="gallery-item modal-opener" id="ar-looper">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">AR Looper</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/arlooper.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/AR-Looper/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>AR Looper</b> is an augmented reality application, developed using Unity and Vuforia. This application allows people to point their phone at a printed-out piece of paper and make their own simple music loops. Users can select from five instrument sets, with five instruments per set (25 instruments total). Users can also add a lowpass, highpass, and reverb filters to their remix.<br><br>You may be asking to yourself, "why do you need AR for this?" Initially, this project was conceived to be a mobile launchpad / keyboard for on-the-go music composition and arrangement, but we felt that AR technology wasn't good enough to achieve our desired effect. We found that Vuforia's buttons were a lot less responsive than initially planned, so we had to scale our project down to be a loop machine. Maybe AR technology will be good enough one day to allow for a cheap and mobile AR launchpad?</p>
+				</div>
+				
+				<!-- X-Ray Locker Viewer -->
+				<div class="gallery-item modal-opener" id="xray-locker-viewer">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">X-Ray Locker Viewer</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/xray_locker_viewer.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="https://github.com/dolphinswarm/Locker-Xray-Viewer/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>X-Ray Locker Viewer</b> is a proof-of-concept joke augmented reality application, developed using Unity and AF Foundation. The application is simple - line up the crosshairs with a locker, then tap the screen to see what's in the locker! Total, there are 7 different lockers that a user can see, most being Halloween-themed (as the app was made around that time). The app also uses an occlusion shader to hide the locker from any angle that isn't the front, giving the appearance that the locker was "opened".</p>
+				</div>
+				
+				<!-- X-Ray Locker Viewer -->
+				<div class="gallery-item modal-opener" id="parkinsons-vr-training">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Parkinson's VR Training</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/parkinsons_vr.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+<!--
+					<button type="button" class="github-button" onclick="https://github.com/dolphinswarm/Locker-Xray-Viewer/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+-->
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Parkinson's VR Training</b> is a virtual reality training simulation that was developed as part of a research project. This project was a collaboration between myself, Dr. Eric Hogsdon, a 3D modeling / animation student, and a nursing professor. Through our combined talents, we developed a simulation that nursing students can use to mimic handling a Parkinson's patient. The nursing professor intends to use this program to conduct a study on the effectiveness of virtual reality on training in the medical field.<br><br>This project is powered through a scripting event system, and features many interactive events for user immersion - giving medicine through a syringe, performing auscultation, talking out loud to other characters, and more. With the help of this study, we will hopefully be able to determine the effectiveness of VR in training all kinds of professions.</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="computer-graphics">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Computer Graphics</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Gallery -->
+			<div class="gallery">
+				
+				<!-- VRchery -->
+				<div class="gallery-item modal-opener" id="vrchery">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">VRchery</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/vrchery.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<!-- <button type="button" class="gallery-button">Download Demo</button> -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/VRchery/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>VRchery</b> is a simple virtual reality archery game, developed using OculusVR and Unity. This was my first virtual reality project, and because of this, it's pretty demo-like. The player starts the game in a medieval-esque town, with a target roughly 25 meters away. The player then has 10 arrows,  which should be fired at the target in attempt to score as mnay points as possible.<br><br>Some features incorporated in this project include a realistic-looking scene, virtual reality UI, realistic bow-and-arrow pullback and firing (using the Oculus controllers), scoring (based on the arrow's distance from the center), heptic feedback, and more.</p>
+				</div>
+				
+				<!-- Rowan Hall Scavenger Hunt -->
+				<div class="gallery-item modal-opener" id="rowan-hall-scavenger-hunt">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Rowan Hall Scavenger Hunt</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/rowanhall.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Rowan-Hall-Project/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Rowan Hall Scavenger Hunt</b> is an augmented reality application developed using Unity and AR Foundation. It was made as a project for <b>IMS 461: Virtual and Augmented Reality</b>, and was part of a class effort to create a series of applications commemorating the 50th Anniversary of the <a href="https://en.wikipedia.org/wiki/Rowan_Hall#Student_occupation" style="text-decoration: none;"><b>Rowan Hall Protests</b></a> at Miami Univerity. Each group was assigned a certain subtopic, with ours being given BAM (Black Action Movement) and BSAA (Black Student Action Association).<br><br>This AR application is meant to be played in the Shade Family Room in the Armstrong Student Center at Miami University. Users first open up the app, then move to the center of the room. Once there, the player has to hunt for megaphones placed in various locations around the room. Once found, the megaphones read some information about BAM and BSAA. Also featured in the application are a table with newspaper clippings from the time and some protestors.</p>
+				</div>
+				
+				<!-- AR Looper -->
+				<div class="gallery-item modal-opener" id="ar-looper">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">AR Looper</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/arlooper.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/AR-Looper/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>AR Looper</b> is an augmented reality application, developed using Unity and Vuforia. This application allows people to point their phone at a printed-out piece of paper and make their own simple music loops. Users can select from five instrument sets, with five instruments per set (25 instruments total). Users can also add a lowpass, highpass, and reverb filters to their remix.<br><br>You may be asking to yourself, "why do you need AR for this?" Initially, this project was conceived to be a mobile launchpad / keyboard for on-the-go music composition and arrangement, but we felt that AR technology wasn't good enough to achieve our desired effect. We found that Vuforia's buttons were a lot less responsive than initially planned, so we had to scale our project down to be a loop machine. Maybe AR technology will be good enough one day to allow for a cheap and mobile AR launchpad?</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="games">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Games</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Gallery -->
+			<div class="gallery">
+				
+				<!-- Armada Cleanup Crew -->
+				<div class="gallery-item modal-opener" id="armada-cleanup-crew">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener" style="font-size: 29px;">Armada Cleanup Crew</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/armadacleanupcrew.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/projects/Armada Cleanup Crew.zip','_blank')">Play Game</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Armada-Cleanup-Crew/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Armada Cleanup Crew</b> is a Katamari-esque game developed using Unity. In this game, you control a sphere, which is in charge of cleaning space junk off the space armada's mothership. However, for your promotion, you have to defeat the other sphere(s) who want to also get promoted. You have 90 seconds to clean off as much junk as you can! Whoever has the most junk after this time is declared winner!<br><br>See the readme file in the repository for all credits about the sounds, songs, 3D models, and other assets.</p>
+				</div>
+				
+				<!-- Ninjas vs. Knights -->
+				<div class="gallery-item modal-opener" id="ninjas-vs-knights">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Ninjas vs. Knights</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/ninjasvsknights_2.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/projects/Ninjas vs. Knights.zip','_blank')">Play Game</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Ninjas-vs.-Knights/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Ninjas vs. Knights</b> is a third-person shooter capture-the-flag game developed using Unity. In this game, you and a team of AI-controlled ninjas must travel to the enemy castle and steal their flag. However, at the same time, a team of AI-controlled knights is trying to the steal the flag from your village! Show them who's boss by capturing their flag and brining it back to your base. You can pick up and fire a vareity of guns to help secure your chances of capturing the enemy's flag.<br><br>See the readme file in the repository for all credits about the sounds, songs, 3D models, and other assets.</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="web">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Websites and Web Apps</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Gallery -->
+			<div class="gallery">
+				
+				<!-- This Website -->
+				<div class="gallery-item modal-opener" id="this-website">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">This Website</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/thiswebsite.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons --> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/bradschmitz.com/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>bradschmitz.com</b> is the website you are currently viewing! This website is my portfolio website to show all my creations, and was constructed from-the-ground-up using HTML, CSS, and JavaScript / JQuery for the frontend, as well as some small libraries (mainly LocalStorage) to emulate backend functions. Many of the assets of this website are also custom-made, such as the pixel art icons and my personal logo.<br><br>Some of the assets I used for this website include:<br><a href="https://konpa.github.io/devicon/" style="color: white">• <b>Devicon</b> by Konpda</a> (for tech icons)<br>• <b>DepredationPixie</b> (font) by unknown<br>• <b>Free Pixel</b> (font) by levelb<br>• <b>PixelMix</b> (font) by Andrew Tyler<br>• <b>Century Gothic</b> (font) by Monotype Imaging<br></p>
+				</div>
+				
+				<!-- Virtual Education -->
+				<div class="gallery-item modal-opener" id="virtual-education">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Virtual Education</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/virtualeducation.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/websites/virtualeducation/index.html','_blank')">View Website</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Virtual Education</b> is a simple website that was made for <b>IMS 222: Introduction to Interaction Design and Development</b>. The focus of this class was on designing and creating effective web interfaces with HTML, CSS, and JavaScript for various devices; this project was for mobile phones. While designing the website, I incorporated many mobile-friendly design elements, including a button to immediately return to the top of a scrolled page and placing the navbar at the bottom of the screen.<br><br>For theis assignment, the website's content was supposed to be about creating a business for "an industry which needed disrupting". Thus, I chose to create a website for a educational VR company, which provided "serious games" (educational and training games) to companies and schools.</p>
+				</div>
+				
+				<!-- Business Assessment Association -->
+				<div class="gallery-item modal-opener" id="baa">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Business Assessment Association</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/baa.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/websites/baa/index.html','_blank')">View Website</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden">The <b>Business Assessment Association</b> is a satirical website that was made as part of a group project for <b>IMS 257: Web Interaction Programming (now IMS 322: Intermediate Interaction Design and Development</b>. This class was a continuation of IMS 222, diving deeper into techniques for creating HTML, CSS, and JavaScript interfaces for websites.This assignment revolved around creating a business website that could conceivably be used in the professional world. One of our group members suggested we go over-the-top and just make the whole thing full of generic business buzzwords, and the rest is history.<br><br>Each group member was in charge of creating a webpage for the site - my page is the "Estimates" page, which uses four number inputs to generate a random number (and a "Kaching!" sound). I also was in charge of assembling the overall website, meaning that I had to combine each person's pages into a coherent website.</p>
+				</div>
+				
+				<!-- Appalogue -->
+				<div class="gallery-item modal-opener" id="appalogue">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Appalogue</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/appalogue.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Website</button>
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Appalogue/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Appalogue</b> is a basic app catalogue web application created with Ruby on Rails as part of a group project for <b>CSE 201: Intro to Software Engineering</b>. The goal of this course was to learn about the Agile Software Development process by build a web application that people could conceivably use.<br><br>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.<br><br>For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).</p>
+				</div>
+			</div>
+		</div>
+			
+		<!-- Content Header 
+		<div class="content-header" id="stats">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Statistical</h2>
+		</div> -->
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Gallery -->
+			<div class="gallery">
+				
+				<!-- The Simpsons in Statistics -->
+				<div class="gallery-item modal-opener" id="simpsons-in-stats">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener" style="font-size: 27px;">The Simpsons in Statistics</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/simpsons_statistics.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://dolphinswarm.shinyapps.io/the-simpsons-statistics/','_blank')">View Dashboard</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/The-Simpsons-Statistics/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>The Simpsons in Statistics</b> is an R Shiny dashboard developed as part of <b>STA/IMS 404: Advanced Data Visualization</b>. This app uses information from TMDb and data.world to see how the popular American animated sitcom <i>The Simpsons</i> has changed in its 30+ year run. Included are analyzations and visualizations of ratings over time, number of guest stars, and popularity/frequency of guest stars, directors, and writers. Users can also select which seasons they would like to display to help compare seasons.<br><br>This app helps to visualize a lot of aspects of <i>The Simpsons</i>, including its rise and fall in ratings (particularly the "golden years"), how certain individuals contributed to the show (for example, which people were the most popular and/or frequent guest stars?), and how the show has generally changed over the years.</p>
+				</div>
+				
+				<!-- BRFSS Analysis -->
+				<div class="gallery-item modal-opener" id="brfss-analysis">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">BRFSS Analysis</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/sas_data.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/docs/brfssdietdata.pdf','_blank')">View Report</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/SAS-Diet-Data-Analysis/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<p class="hidden"><b>Health Data Analysis via SAS</b> is the final project for <b>STA 402: Statistical Programming</b>. In this project, we had to download a large dataset (over 1 GB!), convert it into a SAS format, perform data cleaning, then analyze the results using visualization tools in SAS. For my project, I downloaded information from the US CDC's Behavioral Risk Factor Surveillance System survey, which polls over 100,000 people about their health behaviors and risk factors. Using this, I checked to see if a person's diet (including fruit and veggie consumption, sodium consumption, etc.) would be a significant predictor of their physical and mental health. The results of my report and my code for cleaning and visualizing the data are included.</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Background -->
+		<div id="modal-background">
+			<!-- Modal -->
+			<div id="modal">
+				<h3 id="modal-title">Modal</h3>
+				<img src="img/image-not-found.jpg" alt="Modal Image" id="modal-img">
+				<video controls id="modal-video">
+					<source src="media/background-1.mp4">
+				</video>
+				<p id="modal-text">
+				TEXT
+				</p>
+			</div>
+		</div>
+		
+	</main>
+	
+	<!-- FOOTER -->
+	<footer>
+		<!-- Copyright Label -->
+		<div class="info-footer-container">
+			<!-- Copyright Label -->
+			<h1 id="copyright-label">Created by Brad Schmitz, © {year}. All rights reserved.</h1>
+			
+			<!-- Half-divider -->
+			<div class="half-divider">
+				<!-- Email -->
+				<a href="MAILTO:schmitb3@miamioh.edu" id="mail-label">
+					<img src="img/mail-icon.png" class="icon-footer" alt="Mail Icon">
+					<h2>schmitb3@miamioh.edu</h2>
+				</a>
+
+				<!-- Pause Background Button -->
+				<div id="playback-button">
+					<i class="fa fa-play"></i>
+					<h2>Play Background</h2>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Social Media Labels -->
+		<div class="social-media-footer-container">
+			
+			<!--GitHub -->
+			<a class="social-media-footer" id="github-footer" href="https://github.com/dolphinswarm/">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>GitHub</p>
+			</a>
+			
+			<!-- SoundCloud -->
+			<a class="social-media-footer" id="soundcloud-footer" href="https://soundcloud.com/dolphinswarm/">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>SoundCloud</p>
+			</a>
+			
+			<!-- LinkedIn -->
+			<a class="social-media-footer" id="linkedin-footer" href="https://www.linkedin.com/in/bradley-schmitz/">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>LinkedIn</p>
+			</a>
+			
+			<!-- Instagram -->
+			<a class="social-media-footer" id="instagram-footer" href="https://www.instagram.com/dolphinswarm/?hl=en">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>Instagram</p>
+			</a>
+
+			<!--Twitter -->
+			<a class="social-media-footer" id="twitter-footer" href="https://twitter.com/dolphinswarm?lang=en">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>Twitter</p>
+			</a>
+			
+			<!--YouTube -->
+			<a class="social-media-footer" id="youtube-footer" href="https://www.youtube.com/channel/UCE4OP0NJdNnDTuX6iUq4uXA/">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>YouTube</p>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
