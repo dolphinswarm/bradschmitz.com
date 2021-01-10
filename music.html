@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Brad Schmitz">
 	<meta name="description" content="Brad Schmitz: Digital Media Creator">
-	<title>Brad Schmitz Website (2020) - Template UI</title>
+	<title>Music - Brad Schmitz</title>
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
@@ -129,11 +129,11 @@
 	<!-- MAIN CONTENT -->
 	<main id="main">
 		<!-- Main Text -->
-		<h1>MAIN HEADER</h1>
+		<h1>MUSIC</h1>
 		
 		<!-- Content Header -->
 		<div class="content-header" id="quick-links">
-			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<img src="img/music_icon_large.png" alt="Music Icon">
 			<h2>Quick Links</h2>
 		</div>
 		
@@ -141,8 +141,8 @@
 		<div class="content-section">
 			<ul>
 				<!-- <li><a href="#my-music"></a></li> -->
+				<li><a href="#electronic">Electronic and Video Game Music</a></li>
 				<li><a href="#orchestral">Orchestral Music</a></li>
-				<li><a href="#electronic">Electronic Music</a></li>
 				<li><a href="#chamber">Chamber Music</a></li>
 				<li><a href="#saxophone">Saxophone Performance</a></li>
 				<!-- <li><a href="#guitar">Guitar Performance</a></li> -->
@@ -150,16 +150,102 @@
 		</div>
 		
 		<!-- Content Header -->
-		<div class="content-header" id="orchestral">
-			<img src="img/projects_icon_large.png" alt="Code Icon">
-			<h2>Orchestral</h2>
+		<div class="content-header" id="electronic">
+			<img src="img/music_icon_large.png" alt="Music Icon">
+			<h2>Electronic and Video Game Music</h2>
 		</div>
 		
 		<!-- Content Section -->
-		<div class="conent-section">
+		<div class="content-section">
+			
+			<!-- From The Ground Up -->
+			<div class="subgroup-half" id="from-the-ground-up">
+				<!-- Song Title -->
+				<h3>From The Ground Up</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/fromthegroundup.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="ground-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						*FROM THE GROUND UP TEXT*
+					</p>
+				</div>
+			</div><hr>
+			
+			<!-- Alien Soundscape -->
+			<div class="subgroup-half" id="alien-soundscape">
+				<!-- Song Title -->
+				<h3>Alien Soundscape</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/aliensoundscape.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="soundscape-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						*SOUNDSCAPE TEXT*
+					</p>
+				</div>
+			</div><hr>
+			
+			<!-- Pixel Jet: Title Theme -->
+			<div class="subgroup-half" id="pixel-jet-title">
+				<!-- Song Title -->
+				<h3>Pixel Jet: Title Theme</h3>
+			
+				<!-- Audio Player -->
+				<audio controls loop>
+					<source src="audio/pixeljet-titletheme.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="pixel-jet-title-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						*PIXEL JET TITLE TEXT*
+					</p>
+				</div>
+			</div><hr>
+			
+			<!-- Pixel Jet: Battle Theme -->
+			<div class="subgroup-half" id="pixel-jet-battle">
+				<!-- Song Title -->
+				<h3>Pixel Jet: Battle Theme</h3>
+			
+				<!-- Audio Player -->
+				<audio controls loop>
+					<source src="audio/pixeljet-bossbattle.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="pixel-jet-battle-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						*PIXEL JET BATTLE TEXT*
+					</p>
+				</div>
+			</div><hr>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="orchestral">
+			<img src="img/music_icon_large.png" alt="Music Icon">
+			<h2>Orchestral Music</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
 			
 			<!-- Forge -->
-			<div class="music-full" id="forge">
+			<div class="subgroup-full" id="forge">
 				<!-- Song Title -->
 				<h3>Forge</h3>
 			
@@ -179,10 +265,11 @@
 				<div class="collapsible-content">
 					<p><b>Forge</b> (2020) is a composition for symphony orchestra. This song is meant to convey the dark and metallic nature of an evil metal forge, which is accomplished through the heavy use of percussion (including an anvil) and lots of deep instruments and voices (including a male choir). I wanted this song to be very ominous and driving, so I started off with a slower section, which quickly builds into a repeated rhyrhtmic motif. However, during the bridge sections, I also wanted to convey a slight amount of heroism and melancholy to contrast the evil nature of the rest of the piece.</p>
 				</div>
-			</div><hr>
+			</div>
+			<hr>
 			
 			<!-- Landward Ho! -->
-			<div class="music-full" id="landward-ho">
+			<div class="subgroup-full" id="landward-ho">
 				<!-- Song Title -->
 				<h3>Landward Ho!</h3>
 			
@@ -192,56 +279,31 @@
 				</audio>
 				
 				<!-- View Score -->
-				<button type="button" class="view-button collapsible" id="landward-view-button">View Score</button>
+				<button type="button" class="view-button collapsible" id="landward-ho-view-button">View Score</button>
 				<div class="collapsible-content">
 					<embed alt="Landward Ho! Score" src="docs/landwardho.pdf">
 				</div>
 				
 				<!-- More Info -->
-				<button type="button" class="view-button collapsible" id="landward-info-view-button">More Info</button>
+				<button type="button" class="view-button collapsible" id="landward-ho-info-view-button">More Info</button>
 				<div class="collapsible-content">
 					<p><b>Landward Ho!</b> (2017) is a composition for symphony orchestra which was one of my first attempts at writing film score-esque music. When writing this piece, I wanted to capture the exhilirating thrill of adventure, as if the listener is setting sail to embark on a journey to discover new lands and opportunities. The piece is also written like something of a short story: it starts off with the listener leaving port and starting their journey. However, a short way into the jounrey (~1:05), the listener becomes a little homesick, but continues their adventure regardless (~1:30). The journey then quiets down a little (~2:14), until the listener sights new land and heads to begin a new adventury (~2:41); hence, "Landward Ho!".</p>
 				</div>
 			</div>
-
-			
 		</div>
 		
 		<!-- Content Header -->
-		<div class="content-header" id="orchestral">
-			<img src="img/projects_icon_large.png" alt="Code Icon">
-			<h2>Orchestral</h2>
+		<div class="content-header" id="chamber">
+			<img src="img/music_icon_large.png" alt="Music Icon">
+			<h2>Chamber Music</h2>
 		</div>
 		
 		<!-- Content Section -->
-		<div class="conent-section">
-			<!-- Music Section (Full) -->
-			<div class="music-full" id="forge">
+		<div class="content-section" style="text-align: center;">
+			<!-- Heist -->
+		  	<div class="subgroup-half" id="heist">
 				<!-- Song Title -->
-				<h3>Forge</h3>
-			
-				<!-- Audio Player -->
-				<audio controls>
-					<source src="audio/forge.mp3" type="audio/mpeg">
-				</audio>
-				
-				<!-- View Score -->
-				<button type="button" class="view-button collapsible" id="forge-view-button">View Score</button>
-				<div class="collapsible-content">
-					<embed alt="Forge Score" src="docs/forge.pdf">
-				</div>
-				
-				<!-- More Info -->
-				<button type="button" class="view-button collapsible" id="forge-info-view-button">More Info</button>
-				<div class="collapsible-content">
-					<p><b>Forge</b> (2020) is a composition for symphony orchestra. This song is meant to convey the dark and metallic nature of an evil metal forge, which is accomplished through the heavy use of percussion (including an anvil) and lots of deep instruments and voices (including a male choir). I wanted this song to be very ominous and driving, so I started off with a slower section, which quickly builds into a repeated rhyrhtmic motif. However, during the bridge sections, I also wanted to convey a slight amount of heroism and melancholy to contrast the evil nature of the rest of the piece.</p>
-				</div>
-			</div>
-
-			<!-- Music Section (Half) -->
-		  <div class="music-half">
-			<!-- Song Title -->
-				<h3>Heist</h3>
+				<h3>Heist (for string quartet)</h3>
 			
 				<!-- Audio Player -->
 				<audio controls>
@@ -252,43 +314,148 @@
 				<button type="button" class="view-button collapsible" id="heist-view-button">View Score<br>
 			  </button>
 				<div class="collapsible-content">text
-					<embed alt="Forge Score" src="docs/heist.pdf" id="heist">
+					<embed alt="Heist Score" src="docs/heist.pdf">
 			</div>
 				
 				<!-- More Info -->
 				<button type="button" class="view-button collapsible" id="heist-info-view-button">More Info</button>
 				<div class="collapsible-content">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse. Eget egestas purus viverra accumsan in. Adipiscing enim eu turpis egestas pretium. Nisi scelerisque eu ultrices vitae auctor eu augue. Elit eget gravida cum sociis natoque penatibus et. Turpis egestas pretium aenean pharetra magna ac placerat. Congue mauris rhoncus aenean vel. Leo integer malesuada nunc vel risus commodo viverra. Tristique senectus et netus et malesuada fames. Etiam erat velit scelerisque in. Sed libero enim sed faucibus turpis in eu. Quam quisque id diam vel quam. Ac feugiat sed lectus vestibulum mattis. Vitae tortor condimentum lacinia quis vel. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nec feugiat nisl pretium fusce id velit ut tortor. Justo eget magna fermentum iaculis eu non diam phasellus. Ut enim blandit volutpat maecenas. Velit dignissim sodales ut eu sem integer vitae justo. Gravida arcu ac tortor dignissim convallis aenean et. Ornare suspendisse sed nisi lacus sed. Turpis egestas maecenas pharetra convallis posuere morbi leo. Sodales ut etiam sit amet nisl purus in mollis nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Nunc mattis enim ut tellus elementum sagittis vitae. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Lacinia quis vel eros donec ac odio tempor orci dapibus. Dictum sit amet justo donec enim diam. Leo a diam sollicitudin tempor id. Nam at lectus urna duis convallis convallis tellus id. Ut morbi tincidunt augue interdum. Purus in mollis nunc sed id semper risus in hendrerit. Donec et odio pellentesque diam volutpat commodo. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque. Nisl suscipit adipiscing bibendum est ultricies integer quis. Amet volutpat consequat mauris nunc congue. Consectetur libero id faucibus nisl. Aliquet eget sit amet tellus cras. Mattis enim ut tellus elementum sagittis vitae et leo. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Massa id neque aliquam vestibulum morbi blandit. Blandit turpis cursus in hac habitasse. Cursus eget nunc scelerisque viverra. Aenean pharetra magna ac placerat vestibulum lectus mauris. Non blandit massa enim nec dui nunc mattis enim ut. Turpis nunc eget lorem dolor sed. Sodales ut eu sem integer vitae. Feugiat in fermentum posuere urna nec tincidunt praesent. Eu augue ut lectus arcu bibendum at varius vel. Cursus euismod quis viverra nibh cras. Tempus urna et pharetra pharetra massa massa ultricies mi. Lectus quam id leo in vitae turpis. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Fusce ut placerat orci nulla pellentesque dignissim enim. Habitant morbi tristique senectus et netus et malesuada. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non. Dolor purus non enim praesent elementum facilisis. Eu nisl nunc mi ipsum faucibus vitae aliquet. Vulputate enim nulla aliquet porttitor lacus luctus.
+					*HEIST TEXT*
 				</p>
 				</div>
 			</div>
 			
-			<!-- Music Section (Half) -->
-			<div class="music-half">
-			<!-- Song Title -->
-				<h3>Heist</h3>
+			<!-- Devoid -->
+			<div class="subgroup-half" id="devoid">
+				<!-- Song Title -->
+				<h3>Devoid (for piano)</h3>
 			
 				<!-- Audio Player -->
 				<audio controls>
-					<source src="audio/heist.mp3" type="audio/mpeg">
+					<source src="audio/devoid.mp3" type="audio/mpeg">
 				</audio>
 				
 				<!-- View Score -->
-				<button type="button" class="view-button collapsible" id="heist-view-button">View Score</button>
+				<button type="button" class="view-button collapsible" id="devoid-view-button">View Score</button>
 				<div class="collapsible-content">
-					<embed alt="Forge Score" src="docs/heist.pdf" id="heist">
+					<embed alt="Devoid Score" src="docs/devoid.pdf">
 				</div>
 				
 				<!-- More Info -->
-				<button type="button" class="view-button collapsible" id="heist-info-view-button">More Info</button>
+				<button type="button" class="view-button collapsible" id="devoid-info-view-button">More Info</button>
 				<div class="collapsible-content">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar neque laoreet suspendisse. Eget egestas purus viverra accumsan in. Adipiscing enim eu turpis egestas pretium. Nisi scelerisque eu ultrices vitae auctor eu augue. Elit eget gravida cum sociis natoque penatibus et. Turpis egestas pretium aenean pharetra magna ac placerat. Congue mauris rhoncus aenean vel. Leo integer malesuada nunc vel risus commodo viverra. Tristique senectus et netus et malesuada fames. Etiam erat velit scelerisque in. Sed libero enim sed faucibus turpis in eu. Quam quisque id diam vel quam. Ac feugiat sed lectus vestibulum mattis. Vitae tortor condimentum lacinia quis vel. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nec feugiat nisl pretium fusce id velit ut tortor. Justo eget magna fermentum iaculis eu non diam phasellus. Ut enim blandit volutpat maecenas. Velit dignissim sodales ut eu sem integer vitae justo. Gravida arcu ac tortor dignissim convallis aenean et. Ornare suspendisse sed nisi lacus sed. Turpis egestas maecenas pharetra convallis posuere morbi leo. Sodales ut etiam sit amet nisl purus in mollis nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Nunc mattis enim ut tellus elementum sagittis vitae. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Lacinia quis vel eros donec ac odio tempor orci dapibus. Dictum sit amet justo donec enim diam. Leo a diam sollicitudin tempor id. Nam at lectus urna duis convallis convallis tellus id. Ut morbi tincidunt augue interdum. Purus in mollis nunc sed id semper risus in hendrerit. Donec et odio pellentesque diam volutpat commodo. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque. Nisl suscipit adipiscing bibendum est ultricies integer quis. Amet volutpat consequat mauris nunc congue. Consectetur libero id faucibus nisl. Aliquet eget sit amet tellus cras. Mattis enim ut tellus elementum sagittis vitae et leo. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Massa id neque aliquam vestibulum morbi blandit. Blandit turpis cursus in hac habitasse. Cursus eget nunc scelerisque viverra. Aenean pharetra magna ac placerat vestibulum lectus mauris. Non blandit massa enim nec dui nunc mattis enim ut. Turpis nunc eget lorem dolor sed. Sodales ut eu sem integer vitae. Feugiat in fermentum posuere urna nec tincidunt praesent. Eu augue ut lectus arcu bibendum at varius vel. Cursus euismod quis viverra nibh cras. Tempus urna et pharetra pharetra massa massa ultricies mi. Lectus quam id leo in vitae turpis. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Fusce ut placerat orci nulla pellentesque dignissim enim. Habitant morbi tristique senectus et netus et malesuada. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non. Dolor purus non enim praesent elementum facilisis. Eu nisl nunc mi ipsum faucibus vitae aliquet. Vulputate enim nulla aliquet porttitor lacus luctus.
+					*DEVOID TEXT*
 				</p>
 				</div>
 			</div>
-		</div>	
+			
+			<!-- The House on The Hill -->
+			<div class="subgroup-half" id="house-on-the-hill">
+				<!-- Song Title -->
+				<h3>The House on The Hill (for piano)</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/houseonthehill.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- View Score -->
+				<button type="button" class="view-button collapsible" id="house-view-button">View Score</button>
+				<div class="collapsible-content">
+					<embed alt="The House on The Hill Score" src="docs/thehouseonthehill.pdf">
+				</div>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="house-info-view-button">More Info</button>
+				<div class="collapsible-content">
+				<p>
+					*HOUSE TEXT*
+				</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="saxophone">
+			<img src="img/music_icon_large.png" alt="Music Icon">
+			<h2>Saxophone Performance</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section" style="text-align: center;">
+			
+			<!-- Jazz Image -->
+			<img alt="Jazzy Me" src="img/jazztime.PNG">
+			
+			<!-- Fried Buzzard -->
+		  	<div class="subgroup-half" id="fried-buzzard">
+				<!-- Song Title -->
+				<h3>Fried Buzzard</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/friedbuzzard.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<!-- Blue Bossa -->
+		  	<div class="subgroup-half" id="blue-bossa">
+				<!-- Song Title -->
+				<h3>Blue Bossa</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/bluebossa.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<!-- Improvisation No. 1 -->
+		  	<div class="subgroup-half" id="improv-1">
+				<!-- Song Title -->
+				<h3>Improvisation No. 1 (Noda)</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/improvisation1.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<!-- Fantasia -->
+		  	<div class="subgroup-half" id="fantasia">
+				<!-- Song Title -->
+				<h3>Fantasia (Villa-Lobos), Mvts. 2 and 3</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/fantasia23.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<!-- Sonata for Alto Saxophone and Piano (Creston), Mvt. 1 -->
+		  	<div class="subgroup-half" id="creston-1">
+				<!-- Song Title -->
+				<h3>Sonata for Alto Saxophone and Piano (Creston), Mvt. 1</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/creston1.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<!-- Sonata for Alto Saxophone and Piano (Creston), Mvt. 2 -->
+		  	<div class="subgroup-half" id="creston-2">
+				<!-- Song Title -->
+				<h3>Sonata for Alto Saxophone and Piano (Creston), Mvt. 2</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/creston2.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+		</div>
 	</main>
 	
 	<!-- FOOTER -->

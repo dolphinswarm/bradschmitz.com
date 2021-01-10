@@ -3,7 +3,7 @@ $(document).ready(function()
 {
 	// Set a local storage alias
 	let storage = window.localStorage;
-	
+
 	// ===========
 	// On page load, load a random background
 	// ===========

@@ -137,7 +137,7 @@ main h1
 	text-align: center;
 	color: #FFFFFF;
 	font-family: "Century Gothic";
-	font-size: 50px;
+	font-size: 70px;
 	text-shadow: 1px 1px 10px black;
 }
 
@@ -176,6 +176,17 @@ footer i
 	display: inline-block;
 	vertical-align: middle;
 	margin: 5px 3px 5px 10px;
+}
+
+hr
+{
+	display: none;
+}
+
+embed
+{
+	width: 80%;
+	height: 600px;
 }
 
 /*================
@@ -237,7 +248,18 @@ IDs
 	bottom: 0;
 	min-width: 100%; 
 	min-height: 100%;
+	z-index: -2;
+}
+
+#background-cover
+{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
 	z-index: -1;
+	background-color: rgba(0,0,0,0.5)
 }
 
 #modal-background
@@ -296,7 +318,7 @@ IDs
 #modal-img
 {
 	width: 60%;
-    height: 250px;
+    height: 400px;
     object-fit: cover;
     border-radius: 5px;
     border: 2px solid #D1D1D1;
@@ -336,7 +358,9 @@ Classes
 	padding: 0px;
 	margin: -20px;
 	height: calc(30px + 2vw);
-	transition: transform 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition-property: transform drophadow;
 }
 
 .nav-item:hover h1
@@ -348,6 +372,7 @@ Classes
 .nav-item:hover img
 {
 	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 3px #F7941E);
 }
 
 .content-header
@@ -393,10 +418,17 @@ Classes
 	font-weight: bold;
 }
 
-.content-section p, .content-section ol, .content-section ul
+.content-section > p
 {
+	font-weight: normal;
 	color: #FFFFFF;
 	font-size: 24px;
+}
+
+.content-section ol, .content-section ul
+{
+	color: #FFFFFF;
+	font-size: 36px;
 	list-style: none;
 }
 
@@ -425,6 +457,16 @@ Classes
 .content-section ul a:hover
 {
 	color: #F7941E;
+}
+
+.content-section > img
+{
+	width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border: 6px solid #D1D1D1;
+	margin: 20px 0px 0px 0px;
+	box-shadow: 4px 4px 10px 2px #000000;
 }
 
 
@@ -462,7 +504,6 @@ Classes
 	font-size: 30px;
 	margin: 10px;
 }
-
 .gallery-item img
 {
 	width: 300px;
@@ -529,6 +570,7 @@ Classes
     border: none;
     float: left;
 	display: inline-block;
+	box-shadow: 0px 0px 0px 0px black;
 }
 
 .social-media-footer-container
@@ -576,21 +618,55 @@ Classes
 	display: none;
 }
 
-.music-full
+
+.subgroup-full
 {
 	width: 100%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.music-half
+.subgroup-half
 {
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.music-full, .music-half
+.subgroup-half > h3
+{
+	margin: 10px;
+}
+
+.subgroup-half > h4
+{
+	font-size: 22px;
+	margin: 10px;
+	color: #F7941E;
+}
+
+.subgroup-onethird
+{
+	width: 33%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.subgroup-twothirds
+{
+	width: 66%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.subgroup-onefourth
+{
+	width: 22%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.subgroup-full, .subgroup-half, .subgroup-onethird, .subgroup-twothirds
 {
 	color: #FFFFFF;
     text-align: center;
@@ -598,12 +674,23 @@ Classes
 	font-family: "Century Gothic";
 }
 
-.music-full, .music-half p
+.subgroup-full > p, .subgroup-half > p, .subgroup-onethird > p, .subgroup-twothirds > p
 {
-	font-size: 20px;
+	font-weight: normal;
+	font-size: 24px;
 }
 
-.music-full h3, .music-half h3
+.subgroup-full > img, .subgroup-half > img, .subgroup-onethird > img, .subgroup-twothirds > img
+{
+	width: 60%;
+	max-height: 300px;
+	object-fit: cover;
+    border: 6px solid #D1D1D1;
+	margin: 20px 0px 0px 0px;
+	box-shadow: 4px 4px 10px 2px #000000;
+}
+
+.subgroup-full > h3, .subgroup-half > h3, .subgroup-onethird > h3, .subgroup-twothirds > h3
 {
 	font-size: 36px;
 }
@@ -616,12 +703,6 @@ Classes
  	transition: .3s ease-in-out;
 	width: 90%;
 	margin: 0px auto;
-}
-
-.collapsible-content embed
-{
-	width: 80%;
-	height: 600px;
 }
 
 .icon-footer
@@ -650,6 +731,165 @@ Classes
 	width: 50%;
 	float: left;
 }
+
+.tooltip
+{
+	transition: 0.3s;
+}
+
+.tooltip .tooltip-text
+{
+	visibility: hidden;
+	width: 150px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	font-weight: normal;
+	font-size: 20px;
+
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 110%;
+	left: 50%;
+	margin-left: -75px;
+
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after
+{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover
+{
+	transform: scale(1.1);
+}
+
+.tooltip img
+{
+	border-width: 0px;
+	box-shadow: 0px 0px 0px 0px black;
+	max-height: none;
+	height: auto;
+	margin: auto;
+}
+
+.tooltip:hover img, .tooltip:hover svg
+{
+	filter: drop-shadow(0px 0px 4px #F7941E);
+}
+
+.tooltip:hover .tooltip-text
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.tech-icon
+{
+	width: 60%;
+	transition: 0.3s;
+	padding-bottom: 10px;
+}
+
+.social-media-logo 
+{
+	width: 75px;
+	border: none;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	transition: 0.3s;
+}
+
+.social-media-name 
+{
+	font-size: calc(16px + 1vw);
+	font-weight: bold;
+	transition: color 0.3s;
+	width: 100%;
+	text-align: left;
+}
+
+.social-media-name:hover 
+{
+	color: #F7941E;
+	cursor: pointer;
+}
+
+.social-media-name:hover .social-media-logo 
+{
+	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 4px #F7941E);
+	overflow: auto;
+}
+
+
+/*
+.social-media-main
+{
+	cursor: pointer;
+	width: 50%;
+	height: 75px;
+}
+
+.social-media-logo 
+{
+	width: calc(25px + 4vw);
+	height: auto;
+	border: none;
+	text-align: left;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	-webkit-transition: .3s ease-in-out;
+ 	transition: .3s ease-in-out;
+	box-shadow: none;
+}
+
+.social-media-name
+{
+	font-size: 32px;
+	font-weight: bold;
+	transition: color 0.3s;
+	text-align: left;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	margin: 0px;
+}
+
+.social-media-main:hover .social-media-name
+{
+	color: #F7941E;
+}
+
+.social-media-main:hover .social-media-logo 
+{
+	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 4px #F7941E);
+	overflow: auto;
+}
+*/
 
 /*================
 Media Queries
@@ -696,9 +936,19 @@ Media Queries
 		width: 100%;
 	}
 	
-	.music-half
+	.subgroup-half, .subgroup-onethird, .subgroup-twothirds
 	{
 		width: 100%;
+	}
+	
+	hr
+	{
+		display: block;
+	}
+	
+	.social-media-main
+	{
+		width: 75%;
 	}
 }
 
