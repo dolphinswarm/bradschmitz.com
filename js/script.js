@@ -91,7 +91,7 @@ $(document).ready(function()
 		$("#modal-title").text(title);
 		
 		// Retrieve the modal text
-		var text = $(this).find("p").html();
+		var text = $(this).find("div").children().clone();
 		$("#modal-text").html(text);
 	});
 	
@@ -102,7 +102,6 @@ $(document).ready(function()
 	{
 		// Get the collapsible content
 		var content = $(this).next();
-		console.log(content);
 		
 		// Get current max height
 		var height = content.css("max-height");

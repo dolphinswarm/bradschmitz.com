@@ -139,9 +139,9 @@
 		
 		<!-- Content Section -->
 		<div class="content-section">
-			<ul>
+			<ul id="quick-nav">
 				<li><a href="#poet-shack">Gathering at the Poet's Shack</a></li>
-				<li><a href="#spotify-loops">Spotify Loops</a></li>
+				<li><a href="#spotify-loops">Spotify Canvas</a></li>
 				<li><a href="#music-videos">Music Videos</a></li>
 				<li><a href="#misc-graphics">Misc. Graphics</a></li>
 			</ul>
@@ -159,45 +159,72 @@
 			<img src="img/poetshack.JPG" alt="Poet's Shack">
 			
 			<!-- Info Section -->
-			<p><b>The Gathering at The Poet’s Shack</b> took place on November 16, 2020, from 7:30pm-10 pm in Bishop Woods on the Miami University campus in Oxford, OH. Our goal was to promote the democratization of the arts creating a more open and vibrant public discourse through the use of technology allowing all voices to be heard and to celebrate poetry and creativity throughout time. We began by recreating the Poet’s Shack, Percy Mackaye’s home at Miami University during his artist’s residency. We wanted to create an almost magical environment where the boundaries of time thinned and the past, in the form of the Poet’s Shack and the land’s Myaamia roots merged with the future.<br><br>At the event, we invited people to enter into an enchanted forest where portraits hang on trees brought to life with lights and projections even though the leaves have all fallen to the ground. Our event leaned heavily on projection mapping and interactivity through our web app encouraging participants to join in at every step along the way. Technology was our medium for perpetuating and encouraging the arts through the lens of the spoken word in poetry. The web app invited participants to share their own poems and have them projected on Upham hall and allowed people to interact with a gallery of Augmented Reality Frames with visuals powered by Machine Learning and audio recorded by members of our campus community. You can add your voice to the chorus at https://poetshack.com.<br><br>This project was a collaboration between the Emerging Technology in Business and Design (ETBD) and the Department of Theatre at Miami University and was organized by Artie Kuhn, Ben Nicholson, and concept by Gion DeFrancesco. Our team consisted of students across several disciplines and leveraged bleeding edge and emerging technologies such as projection mapping, augmented reality, virtual reality, and a multiplatform data pipeline to create an interactive, socially distanced, experience on the campus of Miami University in association with MU Theatre's Digital Fringe Festival.
+			<p><b>The Gathering at The Poet’s Shack</b> took place on November 16, 2020, from 7:30pm-10pm in Bishop Woods at Miami University in Oxford, OH. Our goal was to promote the democratization of the arts, creating a more open and vibrant public discourse through the use of technology, and allowing all voices to be heard and to celebrate poetry and creativity throughout time. We began by recreating the Poet’s Shack, Percy Mackaye’s home at Miami University during his artist’s residency. We wanted to create an almost magical environment where the boundaries of time thinned and the past, in the form of the Poet’s Shack and the land’s Myaamia roots merged with the future.<br><br>At the event, we invited people to enter into an enchanted forest where portraits hang on trees brought to life with lights and projections even though the leaves have all fallen to the ground. Our event leaned heavily on projection mapping and interactivity through our web app encouraging participants to join in at every step along the way. Technology was our medium for perpetuating and encouraging the arts through the lens of the spoken word in poetry. The web app invited participants to share their own poems and have them projected on Upham hall and allowed people to interact with a gallery of Augmented Reality Frames with visuals powered by Machine Learning and audio recorded by members of our campus community.
 			</p>
 			
-			<!-- Gallery -->
+			<!-- Poet's Shack Gallery -->
 			<div class="gallery">
-				<!-- Gallery Item -->
-				<div class="gallery-item modal-opener">
+				<!-- Poet's Shack Video -->
+				<div class="gallery-item modal-opener" id="shack-video">
 					<!-- Gallery Item Header -->
-					<h3 class="modal-opener">Gallery Label</h3>
+					<h3 class="modal-opener">Shack Video</h3>
 					
 					<!-- Gallery Item Image -->
-					<img src="img/appalogue.PNG" class="modal-opener" alt="image">
+					<img src="img/shack_video.JPG" class="modal-opener" alt="media/poet-shack-show.mp4">
 					
 					<!-- Gallery Item Buttons -->
-					<button type="button" class="gallery-button">Download Demo</button>
-					<button type="button" class="github-button" onclick="window.open('URL','_blank')">
-						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
-					</button>
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/projects/Shack Video.zip','_blank')">Download Project</button>
 					
 					<!-- Paragraph Text -->
-					<p class="hidden">Meow meow meow meow</p>
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner, Adobe AfterEffects, Notch</li>
+						<li><b>Overview</b>: The main attraction for The Poet's Shack! This video was created using lots of various motion design tools (Notch, TouchDesigner, AfterEffects), then was composited in TouchDesigner. We then used a built-tool in TouchDesigner called Camschnappr to projection-map the shack video to our 16-foot-tall wooden shack.<br><br>The poems chosen for the video are from various Miami University students, faculty, and alumni.</li>
+					</ul>
+					</div>
 				</div>
 				
-				<!-- Gallery Item -->
-				<div class="gallery-item modal-opener">
+				<!-- Poem Visualizer -->
+				<div class="gallery-item modal-opener" id="poem-visualizer">
 					<!-- Gallery Item Header -->
-					<h3 class="modal-opener">Gallery Label</h3>
+					<h3 class="modal-opener">Upham Hall Poem Visualizer</h3>
 					
 					<!-- Gallery Item Image -->
-					<img src="img/appalogue.PNG" class="modal-opener" alt="media/background.mp4">
+					<img src="img/poem_visualizer.JPG" class="modal-opener" alt="media/poem-visualizer.MOV">
 					
 					<!-- Gallery Item Buttons -->
-					<button type="button" class="gallery-button">Download Demo</button>
-					<button type="button" class="github-button" onclick="window.open('URL','_blank')">
-						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
-					</button>
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/projects/Poem Visualizer.zip','_blank')">Download Project</button>
 					
 					<!-- Paragraph Text -->
-					<p class="hidden">Meow meow meow meow 2</p>
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner, Python</li>
+						<li><b>Overview</b>: One of the attractions at the event, which took poems from our <a href="code.html#web" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;">web application</a> and displayed them against the building, complete with visually-engaging backgrounds. We used the Python "requests" module to call a simple API, then used the acquired data to display the poems.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Upham Tunnel Starfield -->
+				<div class="gallery-item modal-opener" id="upham-tunnel">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Upham Tunnel Starfield</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/upham_tunnel.PNG" class="modal-opener" alt="media/upham-arch.MOV">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('http://bradschmitz.com/projects/Upham Tunnel.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+						<li><b>Overview</b>: One of the attractions at the event, which was projected onto the ceiling of Upham Hall to simulate stars. However, the main feature of this visualization was interactivity via a Kinect Azure: whenever the sensor detected the presence of someone, their silhouette would be shown in the starfield, made of stars.</li>
+					</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -205,12 +232,71 @@
 		<!-- Content Header -->
 		<div class="content-header" id="spotify-loops">
 			<img src="img/design_icon_large.png" alt="Design Icon">
-			<h2>Spotify Loops</h2>
+			<h2>Spotify Canvas</h2>
 		</div>
 		
 		<!-- Content Section -->
 		<div class="content-section">
+			<!-- Info Section -->
+			<p><a href="https://canvas.spotify.com/en-us" target="_blank" rel="noopener noreferrer" style="color: #F7941E;"><b>Spotify Canvases</b></a> are short video loops that play over songs in the Spotify App. Below are a few conceptual Spotify Canvases I did for the band <b>Saint Motel:</b>
+			</p>
 			
+			<!-- Spotify Canvases -->
+			<div class="gallery">
+				<!-- Destroyer -->
+				<div class="gallery-item modal-opener" id="destroyer">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Destroyer</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/destroyer.PNG" class="modal-opener" alt="media/spotify-loop-1.mp4">
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Adobe AfterEffects</li>
+					</ul>
+					<p><i>Note: These are meant to be played on a vertical phone screen, so open in fullscreen for the best experience. Optionally, you can find the accompanying song online and view the visual as you listen along!</i></p>
+					</div>
+				</div>
+				
+				<!-- Van Horn -->
+				<div class="gallery-item modal-opener" id="van-horn">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Van Horn</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/vanhorn.PNG" class="modal-opener" alt="media/spotify-loop-2.mp4">
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Adobe AfterEffects</li>
+					</ul>
+					<p><i>Note: These are meant to be played on a vertical phone screen, so open in fullscreen for the best experience. Optionally, you can find the accompanying song online and view the visual as you listen along!</i></p>
+					</div>
+				</div>
+				
+				<!-- Dear Dictator -->
+				<div class="gallery-item modal-opener" id="dear-dictator">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Dear Dictator</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/deardictator.PNG" class="modal-opener" alt="media/spotify-loop-3.mp4">
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Adobe AfterEffects</li>
+					</ul>
+					<p><i>Note: These are meant to be played on a vertical phone screen, so open in fullscreen for the best experience. Optionally, you can find the accompanying song online and view the visual as you listen along!</i></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<!-- Content Header -->
@@ -221,7 +307,42 @@
 		
 		<!-- Content Section -->
 		<div class="content-section">
-			
+			<!-- Music Videos -->
+			<div class="gallery">
+				<!-- Fort Knox -->
+				<div class="gallery-item modal-opener" id="fort-knox">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Fort Knox (Goldfish)</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/destroyer.PNG" class="modal-opener" alt="media/fort-knox.mp4">
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Trojan Horse -->
+				<div class="gallery-item modal-opener" id="trojan-horse">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">TROJAN HORSE (SEBASTIAN PAUL)</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/vanhorn.PNG" class="modal-opener" alt="media/trojan-horse.mp4">
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+					</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<!-- Content Header -->
@@ -244,9 +365,9 @@
 				<video controls id="modal-video">
 					<source src="media/background-1.mp4">
 				</video>
-				<p id="modal-text">
-				TEXT
-				</p>
+				<div id="modal-text">
+					<p>SAMPLE TEXT!</p>
+				</div>
 			</div>
 		</div>
 		

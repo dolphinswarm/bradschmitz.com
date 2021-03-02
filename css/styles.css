@@ -130,6 +130,7 @@ main
 	margin: 0px auto;
 	display: block;
 	clear: both;
+	min-height: 600px;
 }
 
 main h1
@@ -277,7 +278,7 @@ IDs
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	transition-property: opacity visibility;
+	transition-property: opacity, visibility;
 	cursor: pointer;
 	font-family: "Century Gothic";
 	color: #FFFFFF;
@@ -285,7 +286,8 @@ IDs
 
 #modal
 {
-	background-color: #23272A;
+/*	background-color: #23272A;*/
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(35,39,42,1));
     border-radius: 5px;
     border: 2px solid #F7941E;
 	box-shadow: 4px 4px 20px 20px #000000;
@@ -303,19 +305,20 @@ IDs
 
 #modal-title
 {
-	font-size: 30px;
+	font-size: 50px;
 	margin: 10px;
+	color: #F7941E;
 }
 
 #modal-text
 {
 	text-align: left;
 	margin: 10px;
-	font-size: 16px;
+	font-size: 22px;
 }
 
 
-#modal-img
+#modal-img, #modal-video
 {
 	width: 60%;
     height: 400px;
@@ -323,18 +326,32 @@ IDs
     border-radius: 5px;
     border: 2px solid #D1D1D1;
 	margin: 0px auto;
+}
+
+#modal-img
+{
 	display: block;
 }
 
 #modal-video
 {
 	display: none;
-	width: 60%;
-	height: 250px;
-    object-fit: cover;
-    border-radius: 5px;
-    border: 2px solid #D1D1D1;
-	margin: 0px auto;
+}
+
+#quick-nav a, #skills-nav a
+{
+	color: #FFFFFF;
+	font-size: 36px;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition-property: color, font-size;
+	line-height: 40px;
+}
+
+#quick-nav a:hover, #skills-nav a:hover
+{
+	font-size: 40px;
+	color: #F7941E;
 }
 
 /*================
@@ -347,7 +364,7 @@ Classes
 	text-align: center;
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
-	transition-property: transform color;
+	transition-property: transform, color;
 	white-space: nowrap;
 	color: #FFFFFF;
 	text-decoration: none;
@@ -360,7 +377,7 @@ Classes
 	height: calc(30px + 2vw);
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
-	transition-property: transform drophadow;
+	transition-property: transform, drophadow;
 }
 
 .nav-item:hover h1
@@ -378,7 +395,7 @@ Classes
 .content-header
 {
     width: 95%;
-    background-color: #F7941E;
+	background-color: #F7941E;
     border: 2px solid #D1D1D1;
     color: #000000;
     text-align: left;
@@ -447,18 +464,6 @@ Classes
 	text-decoration: none;
 }
 
-.content-section ul a
-{
-	color: #FFFFFF;
-	transition: color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out;
-}
-
-.content-section ul a:hover
-{
-	color: #F7941E;
-}
-
 .content-section > img
 {
 	width: 100%;
@@ -485,7 +490,7 @@ Classes
 	vertical-align: top;
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
-	transition-property: transform background-color;
+	transition-property: transform, background-color;
     border-radius: 5px;
     border: 2px solid #F7941E;
     overflow: hidden;
@@ -703,6 +708,17 @@ Classes
  	transition: .3s ease-in-out;
 	width: 90%;
 	margin: 0px auto;
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.collapsible-content ul
+{
+	text-align: left;
+	font-weight: normal;
+	font-size: 24px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 10px;
 }
 
 .icon-footer
@@ -839,6 +855,14 @@ Classes
 	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 4px #F7941E);
 	overflow: auto;
+}
+
+.title-pic
+{
+	max-height: 600px;
+	object-fit: cover;
+	width: 75%;
+	margin: 0px auto;
 }
 
 
