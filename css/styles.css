@@ -147,6 +147,17 @@ main h1
 	text-shadow: 1px 1px 10px black;
 }
 
+main > h2
+{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'Free Pixel';
+	font-size: 45px;
+	text-shadow: 1px 1px 10px black;
+	line-height: 45px;
+	margin-top: -30px;
+}
+
 footer
 {
 	color: #FFFFFF;
@@ -198,6 +209,15 @@ embed
 /*================
 IDs
 =================*/
+#me
+{
+	width: 80%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+	margin: 0px;
+}
+
 #main-nav
 {
 	float: right;
@@ -210,6 +230,12 @@ IDs
 #bottom-nav
 {
 	display: none;
+	z-index: 1;
+}
+
+#bottom-nav .nav-item
+{
+	filter: drop-shadow(0px 0px 2px #F7941E);
 }
 
 #header-logo
@@ -514,6 +540,7 @@ Classes
 	font-size: 30px;
 	margin: 10px;
 }
+
 .gallery-item img
 {
 	width: 300px;
@@ -722,7 +749,7 @@ Classes
 	text-align: left;
 	font-weight: normal;
 	font-size: 24px;
-	background-color: rgba(0,0,0,0.3);
+	/* background-color: rgba(0,0,0,0.3); */
 	padding: 10px;
 }
 
