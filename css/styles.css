@@ -110,10 +110,11 @@ header
 {
 	font-family: 'DepredationPixie';
 	margin-top: 20px;
-	overflow: visible;
+	overflow: hidden;
 	margin: -8px;
 	padding: 15px 10px 0px;
 	text-shadow: 1px 1px 10px black;
+	height: auto;
 }
 
 body
@@ -142,7 +143,7 @@ main h1
 {
 	text-align: center;
 	color: #FFFFFF;
-	font-family: "Century Gothic";
+	font-family: 'DepredationPixie';
 	font-size: 70px;
 	text-shadow: 1px 1px 10px black;
 }
@@ -161,7 +162,8 @@ main > h2
 footer
 {
 	color: #FFFFFF;
-	font-family: "Century Gothic";
+	/* font-family: "Century Gothic"; */
+	font-family: "Free Pixel";
 }
 
 footer h1
@@ -222,6 +224,14 @@ IDs
 {
 	float: right;
 	width: 65%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+#main-nav-index
+{
+	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
@@ -311,7 +321,8 @@ IDs
 	-webkit-transition: all 0.3s ease-in-out;
 	transition-property: opacity, visibility;
 	cursor: pointer;
-	font-family: "Century Gothic";
+	/* font-family: "Century Gothic"; */
+	font-family: "Free Pixel";
 	color: #FFFFFF;
 }
 
@@ -385,20 +396,46 @@ IDs
 	color: #F7941E;
 }
 
+#index-title
+{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'Free Pixel';
+	font-size: 45px;
+	text-shadow: 1px 1px 10px black;
+	line-height: 45px;
+}
+
+#index-title h1
+{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'DepredationPixie';
+	font-size: 70px;
+	text-shadow: 1px 1px 10px black;
+	margin: 10px;
+	font-size: 70px;
+}
+
+#index-title h2
+{
+	text-align: center;
+	color: #F7941E;
+	font-family: 'Free Pixel';
+	font-size: 45px;
+	text-shadow: 1px 1px 10px black;
+	line-height: 45px;
+	margin-top: 0px;
+}
+
 /*================
 Classes
 =================*/
 .nav-item
 {
-	font-size: calc(26px + 1vw);
 	margin: 10px;
 	text-align: center;
-	transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition-property: transform, color;
 	white-space: nowrap;
-	color: #FFFFFF;
-	text-decoration: none;
 }
 
 .nav-item img
@@ -409,6 +446,20 @@ Classes
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
 	transition-property: transform, drophadow;
+}
+
+.nav-item h1
+{
+	font-family: 'Free Pixel';
+	/* font-family: 'DepredationPixie'; */
+	font-size: calc(26px + 1vw);
+	margin: 10px;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition-property: transform, color;
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .nav-item:hover h1
@@ -462,7 +513,8 @@ Classes
 	margin: 0px auto 20px;
 	width: 92%;
 	color: #FFFFFF;
-	font-family: "Century Gothic";
+	/* font-family: "Century Gothic"; */
+	font-family: "Free Pixel";
 	font-weight: bold;
 }
 
@@ -708,7 +760,8 @@ Classes
 	color: #FFFFFF;
     text-align: center;
 	font-size: 30px;
-	font-family: "Century Gothic";
+	/* font-family: "Century Gothic"; */
+	font-family: "Free Pixel";
 }
 
 .subgroup-full > p, .subgroup-half > p, .subgroup-onethird > p, .subgroup-twothirds > p
@@ -897,6 +950,61 @@ Classes
 	margin: 0px auto;
 }
 
+.carousel
+{
+	overflow: hidden;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.carousel-content
+{
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition-property: transform, background-color;	
+}
+
+.carousel-content img
+{
+	max-height: 600px;
+	object-fit: cover;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.carousel-content-caption
+{
+	background-color: rgba(0,0,0,0.6);
+	color: #FFFFFF;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	font-family: "Free Pixel";
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	max-height: 150px;
+	height: auto;
+	padding: 10px 0px;
+	overflow: visible;
+}
+
+.carousel-content-caption h3
+{
+	font-size: 40px;
+	margin: 0px;
+}
+
+.carousel-content-caption p
+{
+	font-size: 20px;
+	margin: 0px;
+}
 
 /*
 .social-media-main
@@ -1006,12 +1114,25 @@ Media Queries
 	{
 		width: 75%;
 	}
+
+	#index-title h1
+	{
+		font-size: 50px;
+		line-height: 50px;
+		margin: 0px;
+	}
+
+	#index-title h2
+	{
+		font-size: 30px;
+		line-height: 30px;
+	}
 }
 
 /* PHONES */
 @media only screen and (max-width: 480px)
 {
-	#main-nav
+	#main-nav, #main-nav-index
 	{
 		display: none
 	}

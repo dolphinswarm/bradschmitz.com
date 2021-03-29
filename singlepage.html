@@ -1,0 +1,878 @@
+<!doctype html>
+<html>
+<!-- HEAD -->
+<head>
+	<!-- Meta Information -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Brad Schmitz">
+	<meta name="description" content="Brad Schmitz: Digital Media Creator">
+	<title>Brad Schmitz's Portfolio Website!</title>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/site.webmanifest">
+	<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#f7941e">
+	<link rel="shortcut icon" href="fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#23272a">
+	<meta name="msapplication-config" content="fav/browserconfig.xml">
+	<meta name="theme-color" content="#23272A">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<!-- BODY -->
+<body>
+	<!-- BACKGROUND -->
+	<div id="background">
+		<!-- Cover -->
+		<div id="background-cover"></div>
+		
+		<!-- Video -->
+		<video muted loop id="background-video">
+			<source src="" type="video/mp4" id="background-video-source">
+		</video>
+	</div>
+	
+	<!-- HEADER -->
+	<header>
+		<!-- Title -->
+		<div id="index-title">
+			<!-- Logo Image -->
+			<img src="img/logo.png" id="header-logo" alt="Brad Schmitz's Logo">
+			<!-- Name -->
+			<h1>Brad Schmitz</h1>
+			<h2>Creative Technologist</h2>
+		</div>
+	</header>
+	
+	<!-- MAIN CONTENT -->
+		<!-- Content Section -->
+		<div class="content-section">
+			<div class="subgroup-full">
+				<!-- Intro Paragraph -->
+				<p style="text-align: left;">Hi there! I'm <b>Brad Schmitz</b>, and I'm currently a senior at Miami University of Ohio, studying Computer Science, Interactive Media Studies, and Music. I'm a huge nerd for technology, design, and music, and my main focus has been to find ways to make these realms intersect. Professionally, I am a software developer, currently working as an Associate Software Engineer for <b>ClickTime</b> in San Francisco. However, I also do music production and motion design on the side.</p>
+					
+				<!-- Image -->
+				<div class="subgroup-half">
+					<img src="img/brad_casual.jpg" alt="Brad" class="content-image">
+				</div>
+					
+				<!-- Image Sider -->
+				<div class="subgroup-half">
+					<p style="text-align: left;">
+						My main areas of interest include...
+						<ul id="skills-nav" style="text-align: left;">
+							<li>Video and motion design</li>
+							<li>3D design</a></li>
+							<li>Augmented / virtual Reality</li>
+							<li>Computer graphics</li>
+							<li>Web application development</li>
+							<li>Music composition and production</li>
+						</ul>
+					</p>
+				</div>
+				<div class="subgroup-full">
+					<p style="text-align: left;">When I'm not doing work, there's a good chance I'm either meditating, relaxing, or playing music (either saxophone, guitar, or piano). I'm also a huge cat person, and can't wait to get a cat post-graduation!</p>
+				</div>
+		</div>
+
+        <!-- Content Header -->
+		<div class="content-header" id="quick-links">
+			<img src="img/about_icon_large.png" alt="About Icon">
+			<h2>Quick Links</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<ul id="quick-nav">
+				<li><a href="#resume">Extended Resume</a></li>
+				<li><a href="#code">Code</a></li>
+                <li><a href="#poetshack">Gathering at the Poet's Shack</a></li>
+				<li><a href="#visuals">Visuals</a></li>
+				<li><a href="#music">Music</a></li>
+			</ul>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="resume">
+			<img src="img/about_icon_large.png" alt="About Icon">
+			<h2>Extended Resume</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section" style="text-align: center;">
+			<embed alt="Resume" src="docs/resume.pdf">
+		</div>
+
+        <!-- Content Header -->
+		<div class="content-header" id="vrar">
+			<img src="img/projects_icon_large.png" alt="Code Icon">
+			<h2>Code</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Gallery -->
+			<div class="gallery">
+				
+				<!-- VRchery -->
+				<div class="gallery-item modal-opener" id="vrchery">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">VRchery</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/vrchery.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<!-- <button type="button" class="gallery-button">Download Demo</button> -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/VRchery/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2019</li>
+						<li><b>Software / Languages Used</b>: Unity Game Engine, OculusVR, C#</li>
+						<li><b>Overview</b>: A simple archery demo in virtual reality. The player has 10 attempts to hit a target ~25 meters away, and receives a score based on how well they did. Included in the project are major VR concepts like haptic feedback and realistic bow pulling and firing.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- AR Looper -->
+				<div class="gallery-item modal-opener" id="ar-looper">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">AR Looper</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/arlooper.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/AR-Looper/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2019</li>
+						<li><b>Software / Languages Used</b>: Unity Game Engine, Vuforia, C#</li>
+						<li><b>Overview</b>: A music augmented reality application. This application allows people to point their phone at a printed-out piece of paper and make their own simple music loops. Users can select from five instrument sets, with five instruments per set (25 instruments total). Users can also add a lowpass, highpass, and reverb filters to their remix.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Parkinson's VR Training -->
+				<div class="gallery-item modal-opener" id="parkinsons-vr-training">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Parkinson's VR Training</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/parkinsons_vr.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="github-button" onclick="https://github.com/schmitb3/Malone-University-Parkinson-s-VR-Training/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020-2021</li>
+						<li><b>Software / Languages Used</b>: Unity Game Engine, OculusVR, C#</li>
+						<li><b>Overview</b>: A virtual reality training simulation that was developed as part of a research project to determine the effectiveness of virtual reality for training nursing students. This particular scenario involves effectively handling a Parkinson's patient, and includes immersive and interactive actions for the user - giving medicine through a syringe, performing auscultation, talking out loud to other characters, and more.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Armada Cleanup Crew -->
+				<div class="gallery-item modal-opener" id="armada-cleanup-crew">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener" style="font-size: 29px;">Armada Cleanup Crew</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/armadacleanupcrew.png" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Armada Cleanup Crew.zip','_blank')">Play Game</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Armada-Cleanup-Crew/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Unity, C#</li>
+						<li><b>Overview</b>: A Katamari-esque game, in which you control a sphere tasked with cleaning space junk off the space armada's mothership. However, for your promotion, you have to defeat the other sphere(s) who want to also get promoted. You have 90 seconds to clean off as much junk as you can! Whoever has the most junk after this time is declared winner! See the readme file in the repository for all credits about the sounds, songs, 3D models, and other assets.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Ninjas vs. Knights -->
+				<div class="gallery-item modal-opener" id="ninjas-vs-knights">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Ninjas vs. Knights</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/ninjasvsknights_2.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Ninjas vs. Knights.zip','_blank')">Play Game</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Ninjas-vs.-Knights/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Unity, C#</li>
+						<li><b>Overview</b>: A third-person shooter capture-the-flag game, in which you and a team of AI-controlled ninjas must travel to the enemy castle and steal their flag. However, at the same time, a team of AI-controlled knights is trying to the steal the flag from your village! Show them who's boss by capturing their flag and brining it back to your base. You can pick up and fire a vareity of guns to help secure your chances of capturing the enemy's flag. See the readme file in the repository for all credits about the sounds, songs, 3D models, and other assets.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Poet's Shack -->
+				<div class="gallery-item modal-opener" id="poets-shack">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Gathering at the Poet's Shack - Web App</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/poet_shack_website.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://poetshack.com','_blank')">View Website</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: NodeJS, ExpressJS, AWS, MySQL, AR.JS</li>
+						<li><b>Overview</b>: A web application used for <a href="visuals.html#poet-shack" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;">The Gathering at the Poet's Shack</a>. The website is a simplified social media app, where users can submit poems and view poems submitted by others, complete with an engaging visualization and auto-generated song. Additionally, the website has an AR library called AR.JS built into it, which allows users to point at specific QR codes and see videos.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Appalogue -->
+				<div class="gallery-item modal-opener" id="appalogue">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Appalogue</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/appalogue.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://appalogue.herokuapp.com/','_blank')">View Website</button>
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/Appalogue/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2019</li>
+						<li><b>Software / Languages Used</b>: Ruby on Rails</li>
+						<li><b>Overview</b>: A basic app catalogue web application, developed as a course project for a class. For this project, I was in charge of the user interface design, app view / creation / deletion, user login, user permissions (admin, moderator, etc.), and star reviews. The UI was created from scratch using HTML / CSS, while features like user login and star ratings were handled by Ruby gems (Devise and jQuery.raty, a jQuery plugin).<br><br>When first visiting the site, users can see a list of all apps available on Appalogue. However, to interact with some of Appalogue's features, users must first create an account using an email address. Once logged in, users have the ability to leave one review per app by viewing the app's info and leaving a review (a star rating and a comment). If the review is offensive or of poor quality, a moderator can remove the review. When logged in, users can also submit app requests to be added to Appalogue. These requests can then be approved or denied by an admin. If approved, the app is then shown to all users on the Appalogue home screen. Users may also search for apps in two ways: using the search bar to search by app name, or using advanced search (in the bottom navigation area) to search by other fields, like developer or price. Lastly, there is a Help / FAQ page in the bottom navbar, if the user is confused or needs additional help.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- The Simpsons in Statistics -->
+				<div class="gallery-item modal-opener" id="simpsons-in-stats">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener" style="font-size: 27px;">The Simpsons in Statistics</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/simpsons_statistics.PNG" class="modal-opener" alt="image">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://dolphinswarm.shinyapps.io/the-simpsons-statistics/','_blank')">View Dashboard</button> 
+					<button type="button" class="github-button" onclick="window.open('https://github.com/dolphinswarm/The-Simpsons-Statistics/','_blank')">
+						<img src="img/github_logo_transparent.png" alt="GitHub Logo">View GitHub Repository
+					</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: R, R Shiny</li>
+						<li><b>Overview</b>: An R Shiny dashboard developed as a course priject. This app uses information from TMDb and data.world to see how the popular American animated sitcom <i>The Simpsons</i> has changed in its 30+ year run. Included are analyzations and visualizations of ratings over time, number of guest stars, and popularity/frequency of guest stars, directors, and writers. Users can also select which seasons they would like to display to help compare seasons.</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- Content Header -->
+		<div class="content-header" id="poetshack">
+			<img src="img/design_icon_large.png" alt="Design Icon">
+			<h2>Gathering at the Poet's Shack</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">			
+			<!-- Info Section -->
+			<p><b>The Gathering at The Poet’s Shack</b> took place on November 16, 2020, from 7:30pm-10pm in Bishop Woods at Miami University in Oxford, OH. Our goal was to promote the democratization of the arts, creating a more open and vibrant public discourse through the use of technology, and allowing all voices to be heard and to celebrate poetry and creativity throughout time.</p>
+			</p>
+			
+			<!-- Poet's Shack Gallery -->
+			<div class="gallery">
+				<!-- Poet's Shack Video -->
+				<div class="gallery-item modal-opener" id="shack-video">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Shack Video</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/shack_video.JPG" class="modal-opener" alt="media/poet-shack-show.mp4">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Shack Video.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner, Adobe AfterEffects, Notch</li>
+						<li><b>Overview</b>: The main attraction for The Poet's Shack! This video was created using lots of various motion design tools (Notch, TouchDesigner, AfterEffects), then was composited in TouchDesigner. We then used a built-tool in TouchDesigner called Camschnappr to projection-map the shack video to our 16-foot-tall wooden shack.<br><br>The poems chosen for the video are from various Miami University students, faculty, and alumni.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Poem Visualizer -->
+				<div class="gallery-item modal-opener" id="poem-visualizer">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Upham Hall Poem Visualizer</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/poem_visualizer.JPG" class="modal-opener" alt="media/poem-visualizer.MOV">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Poem Visualizer.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner, Python</li>
+						<li><b>Overview</b>: One of the attractions at the event, which took poems from our <a href="code.html#web" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;">web application</a> and displayed them against the building, complete with visually-engaging backgrounds. We used the Python "requests" module to call a simple API, then used the acquired data to display the poems.</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Upham Tunnel Starfield -->
+				<div class="gallery-item modal-opener" id="upham-tunnel">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Upham Tunnel Starfield</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/upham_tunnel.PNG" class="modal-opener" alt="media/upham-arch.MOV">
+					
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Upham Tunnel.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+						<li><b>Overview</b>: One of the attractions at the event, which was projected onto the ceiling of Upham Hall to simulate stars. However, the main feature of this visualization was interactivity via a Kinect Azure: whenever the sensor detected the presence of someone, their silhouette would be shown in the starfield, made of stars.</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content Header -->
+		<div class="content-header" id="visuals">
+			<img src="img/design_icon_large.png" alt="Design Icon">
+			<h2>Visuals</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			<!-- Music Videos -->
+			<div class="gallery">
+				<!-- Dear Dictator (Loop) -->
+				<div class="gallery-item modal-opener" id="dear-dictator">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Dear Dictator<br>(Saint Motel)</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/deardictator.PNG" class="modal-opener" alt="media/spotify-loop-3.mp4">
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Adobe AfterEffects</li>
+					</ul>
+					<p><i>Note: These are meant to be played on a vertical phone screen, so open in fullscreen for the best experience. Optionally, you can find the accompanying song online and view the visual as you listen along!</i></p>
+					</div>
+				</div>
+
+				<!-- Fort Knox -->
+				<div class="gallery-item modal-opener" id="fort-knox">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Fort Knox <br>(Goldfish)</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/fortknox.PNG" class="modal-opener" alt="media/fort-knox.mp4">
+
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Fort Knox - TouchDesigner.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+					</ul>
+					</div>
+				</div>
+				
+				<!-- Trojan Horse -->
+				<div class="gallery-item modal-opener" id="trojan-horse">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">TROJAN HORSE <br>(SEBASTIAN PAUL)</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/trojanhorse2.PNG" class="modal-opener" alt="media/trojan-horse.mp4">
+
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Trojan Horse - TouchDesigner.zip','_blank')">Download Project</button>
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- 2001 - A Doge Odyssey -->
+				<div class="gallery-item modal-opener" id="2001-a-doge-odyssey">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">2001 - A Doge Odyssey</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/bork.jpg" class="modal-opener" alt="media/2001-a-doge-odyssey.mp4">
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Adobe AfterEffects</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- NYC Dragon Attack -->
+				<div class="gallery-item modal-opener" id="nyc-dragon-attack">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">NYC Dragon Attack</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/nyc_dragon_attack.PNG" class="modal-opener" alt="media/nyc-dragon-attack.mp4">
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Adobe AfterEffects</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- He-Man Cube -->
+				<div class="gallery-item modal-opener" id="nyc-dragon-attack">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">He-Man Cube</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/he-man.jpg" class="modal-opener" alt="media/he-man-cube.mp4">
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: Notch Builder</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- Glitch Planet -->
+				<div class="gallery-item modal-opener" id="glitch-planet">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Glitch Planet</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/glitch_planet.jpg" class="modal-opener" alt="media/planet.mp4">
+
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Glitch Planet.zip','_blank')">Download Project</button>
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2020</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- Dynamic Audio Visualizer -->
+				<div class="gallery-item modal-opener" id="audio-viz">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Dynamic Audio Visualizer</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/audio-viz.PNG" class="modal-opener" alt="media/audio-viz.mp4">
+
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Audio Spectrum Visualizer.zip','_blank')">Download Project</button>
+
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2021</li>
+						<li><b>Software / Languages Used</b>: TouchDesigner</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- Space Taco Stand -->
+				<div class="gallery-item modal-opener" id="space-taco-stand">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Space Taco Stand</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/space_taco_stand.png" class="modal-opener" alt="image">
+
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Space Taco Stand.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2021</li>
+						<li><b>Software / Languages Used</b>: Autodesk Maya</li>
+					</ul>
+					</div>
+				</div>
+
+				<!-- Miami University Sundial -->
+				<div class="gallery-item modal-opener" id="sundial">
+					<!-- Gallery Item Header -->
+					<h3 class="modal-opener">Miami University Sundial</h3>
+					
+					<!-- Gallery Item Image -->
+					<img src="img/miami_sundial.png" class="modal-opener" alt="image">
+
+					<!-- Gallery Item Buttons -->
+					<button type="button" class="gallery-button" onclick="window.open('https://bradschmitz.com/projects/Miami Sundial.zip','_blank')">Download Project</button>
+					
+					<!-- Paragraph Text -->
+					<div class="hidden">
+					<ul>
+						<li><b>Year Created</b>: 2021</li>
+						<li><b>Software / Languages Used</b>: Autodesk Maya</li>
+					</ul>
+					</div>
+				</div>
+            </div>
+        </div>
+
+        <!-- Content Header -->
+		<div class="content-header" id="music">
+			<img src="img/music_icon_large.png" alt="Music Icon">
+			<h2>Music</h2>
+		</div>
+		
+		<!-- Content Section -->
+		<div class="content-section">
+			
+			<!-- From The Ground Up -->
+			<div class="subgroup-half" id="from-the-ground-up">
+				<!-- Song Title -->
+				<h3>From The Ground Up</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/fromthegroundup.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="ground-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						<ul>
+							<li><b>Year Written</b>: 2019</li>
+							<li><b>Software Used</b>: Ableton Live, Max4Live</li>
+							<li><b>Fun Facts</b>: The name of this piece has a double meaning: <br><br><b>1)</b> nearly all of this piece was written using audio sythesia, via the help of a Doepfer Analog Modular System and Max4Live<br><br><b>2)</b> the song is meant to convey feelings of "ascending", from on-the-ground spy song to heavenly chorus</li>
+						</ul>
+					</p>
+				</div>
+			</div><hr>
+			
+			<!-- Pixel Jet: Title Theme -->
+			<div class="subgroup-half" id="pixel-jet-title">
+				<!-- Song Title -->
+				<h3>Pixel Jet: Title Theme</h3>
+			
+				<!-- Audio Player -->
+				<audio controls loop>
+					<source src="audio/pixeljet-titletheme.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="pixel-jet-title-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						<ul>
+							<li><b>Year Written</b>: 2013</li>
+							<li><b>Software Used</b>: FamiTracker</li>
+							<li><b>Fun Facts</b>: I wrote this as the main theme for a Scratch video game I made in 2013, which was a winner of the National Stem Video Game Challenge!</li>
+						</ul>
+					</p>
+				</div>
+			</div><hr>
+
+            <div class="subgroup-half" id="heist">
+				<!-- Song Title -->
+				<h3>Heist (for string quartet)</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/heist.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- View Score -->
+				<button type="button" class="view-button collapsible" id="heist-view-button">View Score<br></button>
+				<div class="collapsible-content">
+					<embed alt="Heist Score" src="docs/heist.pdf">
+				</div>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="heist-info-view-button">More Info</button>
+				<div class="collapsible-content">
+				<p>
+					<ul>
+						<li><b>Year Written</b>: 2020</li>
+						<li><b>Software Used</b>: MuseScore</li>
+						<li><b>Fun Facts</b>: Hope you like odd time signatures - this song is pretty much entirely in 7/8 time!</li>
+					</ul>
+				</p>
+				</div>
+			</div><hr>
+			
+			<!-- Devoid -->
+			<div class="subgroup-half" id="devoid">
+				<!-- Song Title -->
+				<h3>Devoid (for piano)</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/devoid.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- View Score -->
+				<button type="button" class="view-button collapsible" id="devoid-view-button">View Score</button>
+				<div class="collapsible-content">
+					<embed alt="Devoid Score" src="docs/devoid.pdf">
+				</div>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="devoid-info-view-button">More Info</button>
+				<div class="collapsible-content">
+				<p>
+					<ul>
+						<li><b>Year Written</b>: 2015</li>
+						<li><b>Software Used</b>: FL Studio</li>
+						<li><b>Fun Facts</b>: The title "Devoid" has two meanings, which are its original meaning (empty), but also "de-void" (remove the void from). This piece switches between the meanings: starting off empty, then building, then becoming empty again in the end.</li>
+					</ul>
+				</p>
+				</div>
+			</div><hr>
+			
+			<!-- Forge -->
+			<div class="subgroup-full" id="forge">
+				<!-- Song Title -->
+				<h3>Forge</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/forge.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- View Score -->
+				<button type="button" class="view-button collapsible" id="forge-view-button">View Score</button>
+				<div class="collapsible-content">
+					<embed alt="Forge Score" src="docs/forge.pdf">
+				</div>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="forge-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						<ul>
+							<li><b>Year Written</b>: 2020</li>
+							<li><b>Software Used</b>: FL Studio (EastWest Quantum Leap Symphonic Orchestra soundfont)</li>
+							<li><b>Fun Facts</b>: This song is a composition for symphony orchesta, meant to convey the dark and metallic nature of an evil metal forge. This is done through the heavy use of percussion (including an anvil) and lots of deep instruments and voices (including a male choir).</li>
+						</ul>
+					</p>
+				</div>
+			</div><hr>
+			
+			<!-- Landward Ho! -->
+			<div class="subgroup-full" id="landward-ho">
+				<!-- Song Title -->
+				<h3>Landward Ho!</h3>
+			
+				<!-- Audio Player -->
+				<audio controls>
+					<source src="audio/landwardho.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- View Score -->
+				<button type="button" class="view-button collapsible" id="landward-ho-view-button">View Score</button>
+				<div class="collapsible-content">
+					<embed alt="Landward Ho! Score" src="docs/landwardho.pdf">
+				</div>
+				
+				<!-- More Info -->
+				<button type="button" class="view-button collapsible" id="landward-ho-info-view-button">More Info</button>
+				<div class="collapsible-content">
+					<p>
+						<ul>
+							<li><b>Year Written</b>: 2017</li>
+							<li><b>Software Used</b>: FL Studio (EastWest Quantum Leap Symphonic Orchestra soundfont)</li>
+							<li><b>Fun Facts</b>: This song is a composition for symphony orchesta, meant to sound like a film score piece. This song tells the story of a ship leaving port to discover new lands, expericing various emotions along the journey, including homesickness (~1:05) and discovery (~2:41).</li>
+						</ul>
+					</p>
+				</div>
+            </div>
+		</div>
+		
+		<!-- Modal Background -->
+		<div id="modal-background">
+			<!-- Modal -->
+			<div id="modal">
+				<h3 id="modal-title">Modal</h3>
+				<img src="img/image-not-found.jpg" alt="Modal Image" id="modal-img">
+				<video controls id="modal-video">
+					<source src="media/background-1.mp4">
+				</video>
+				<div id="modal-text">
+					<p>SAMPLE TEXT!</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<!-- FOOTER -->
+	<footer>
+		<!-- Copyright Label -->
+		<div class="info-footer-container">
+			<!-- Copyright Label -->
+			<h1 id="copyright-label">Created by Brad Schmitz, © {year}. All rights reserved.</h1>
+			
+			<!-- Half-divider -->
+			<div class="half-divider">
+				<!-- Email -->
+				<a href="MAILTO:schmitb3@miamioh.edu" id="mail-label">
+					<img src="img/mail-icon.png" class="icon-footer" alt="Mail Icon">
+					<h2>schmitb3@miamioh.edu</h2>
+				</a>
+
+				<!-- Pause Background Button -->
+				<div id="playback-button">
+					<i class="fa fa-play"></i>
+					<h2>Play Background</h2>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Social Media Labels -->
+		<div class="social-media-footer-container">
+			
+			<!--GitHub -->
+			<a class="social-media-footer" id="github-footer" href="https://github.com/dolphinswarm/" target="_blank">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>GitHub</p>
+			</a>
+			
+			<!-- SoundCloud -->
+			<a class="social-media-footer" id="soundcloud-footer" href="https://soundcloud.com/dolphinswarm/" target="_blank">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>SoundCloud</p>
+			</a>
+			
+			<!-- LinkedIn -->
+			<a class="social-media-footer" id="linkedin-footer" href="https://www.linkedin.com/in/bradley-schmitz/" target="_blank">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>LinkedIn</p>
+			</a>
+			
+			<!-- Instagram -->
+			<a class="social-media-footer" id="instagram-footer" href="https://www.instagram.com/dolphinswarm/?hl=en" target="_blank">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>Instagram</p>
+			</a>
+
+			<!--Twitter -->
+			<a class="social-media-footer" id="twitter-footer" href="https://twitter.com/dolphinswarm?lang=en" target="_blank">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>Twitter</p>
+			</a>
+			
+			<!--YouTube -->
+			<a class="social-media-footer" id="youtube-footer" href="https://www.youtube.com/channel/UCE4OP0NJdNnDTuX6iUq4uXA/" target="_blank">
+				<!-- SVG -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#FFFFFF" d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"/>
+				</svg>
+
+				<!-- Text-->
+				<p>YouTube</p>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
